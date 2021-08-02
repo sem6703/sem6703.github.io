@@ -1,0 +1,80 @@
+/**/
+.about {display:flex; flex-direction:column;justify-content: center;align-items: center;}
+.about__title {font-family: g700; font-size:34px; line-height: 135px;text-align: center;}
+.about__list {font-family:g600; font-size:18px; line-height:21px;
+	display:flex;flex-direction:column;align-items: center;padding-top:0px;margin-top:-12px;
+	padding-bottom: 58px;}
+
+.about__say {background: #f6f6f6; /*облачки разговора*/
+	margin: 16px; width: 79%; position: relative;
+	padding:15px;border:2.5px solid #070707;
+	margin-bottom:20px;
+	}
+.about__say:nth-child(odd) {align-self:flex-start;}
+.about__say:nth-child(even) {align-self:flex-end;}	
+.about__say::after {content: url(static/images/tail.svg);position: absolute;bottom: -26px;display: block;}
+.about__say:nth-child(odd)::after {right: 24px;}
+.about__say:nth-child(even)::after {left: 24px;}
+
+@media screen and (min-width:1200px){}
+@media screen and (min-width:768px) and (max-width:1199px){}
+@media screen and (max-width:767px){
+
+.about {display:flex; flex-direction:column;justify-content: center;align-items: center;
+padding-top: 60px;}
+.about__title {font-family: g700; font-size:34px; line-height: 0px;text-align: center;margin-bottom:45px;}
+.about__list {font-family:g600; font-size:18px; line-height:21px;
+	display:flex;flex-direction:column;align-items: center;padding-top:0px;margin-top:-12px;
+	padding-bottom: 42px;text-align: left;}
+.about__say {background: #f6f6f6; /*облачки разговора*/
+	margin: 16px 0; width: 100%; position: relative;
+	padding:15px;border:2.5px solid #070707;
+	margin-bottom:20px;
+	}
+.about__say:nth-child(odd) {align-self:center;}
+.about__say:nth-child(even) {align-self:center;}	
+.about__say::after {content: url(static/images/tail.svg);position: absolute;bottom: -26px;display: block;}
+.about__say:nth-child(odd)::after {right: 24px;}
+.about__say:nth-child(even)::after {left: 24px;}	
+
+}
+
+/**/
+
+@media screen and (min-width:1200px){
+	
+/*.about{background: green;}.about__say {background: green;}.about__list {background: red;}*/
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+	
+	
+}
+@media screen and (max-width:767px){
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

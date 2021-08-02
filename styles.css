@@ -23,11 +23,7 @@ fieldset {border: none;}
 	overflow: hidden;		
 } 
   
-.container {
-margin: 0 auto;
-max-width: 1000px;
-width: 100%;
-}
+
 
 .overlay {  
 position: fixed;
@@ -46,8 +42,27 @@ display: none;
 	color: red;
 	font-weight:bold;
 	}
-.charm {top:0; right: 100%; transition all 1s ease-out;}
-.bt1 {margin-top: 3px; margin-bottom: 3px; border: 2.5px solid; border-radius: 50px;f0ont-size: 20px;}	
+	
+/*charm*/	
+
+.charm {position: fixed; width: 100vw;top:0; right:-100%; z-index:5;	
+	top:0; transition: all 1s ease-out;
+	display: flex; flex-direction: column;justify-content: flex-start; 
+	align-items: flex-end;text-align:right;
+	font-family: g700; font-size: 34px; line-height: 82px; color: #828282;
+	w000idth:320px; height:812px; padding:49px 13px;
+	background: #f6f6f6;
+}
+.charm__closer {width: 25px; height: 25px;border:none;background: transparent; 
+cursor: pointer;opacity:.5;}
+.charm__closer:hover {opacity:1;}
+.charm__ul {padding-top:161px;}
+.charm__li {padding-right: 5px;margin-left: 20px; color: #828282; cursor: pointer;}
+.charm__li:hover {color: #070707; text-decoration: none;}
+.charm__li_active {margin-left: 20px; color: #070707;}
+
+
+.bt1 {margin-top: 3px; margin-bottom: 3px; border: 2.5px solid; border-radius: 50px;}	
 
 .btn1 {background: #070707; color: #ffffff; border-color: #070707;/* message*/
 padding: 9px 18px; 
@@ -63,22 +78,7 @@ font-family: g700; font-size: 18px; line-height: 22px; color: #070707; }
 .btn2:hover {color: white;background: black;}
 /***************************************body******/
 body {font-family: "Gilroy-Regular";}
-/********************************************HEADER ************************************/
- .header {display: flex;font-family: g700;font-size:18px;
-line-height: 22px;
-justify-content: space-between;align-items: center;;padding: 35px 0 31px 10px;border-bottom: 1px solid #070707;}
-.header__menu {
 
-    display: flex;
-    align-items: center;
-	margin-bottom: 0px;
-}
-.header__nav {margin-left: 20px; color: #828282; cursor: pointer;}
-.header__nav:hover {color: #070707; text-decoration: none;}
-.header__link {color: #828282;}
-.header__link:hover, .link:focus {color: #070707; text-decoration: none;}
-.header__logo {color: #070707;}
-.header__logo:hover, .logo:focus {color: #828282; text-decoration: none;}
 /**************************************/
 .center {display: flex;
 justify-content: center;
@@ -87,11 +87,7 @@ flex-direction: column;}
 .dash {display: block-inline; color: black;border-bottom: 4px dashed black;padding:0 0 1px 0;}
 .dash:hover {border-bottom-style: solid;background: transparent; color: black;}
 /***********************************************FOOTER******************************/
-footer {
-margin: 0 auto;
-max-width: 440px;
-width: 100%;
-}  
+
 /***************************************************************************/
 /* checkbox customer */
 	input[type='checkbox'] {display: none;}
@@ -149,6 +145,16 @@ width: 100%;
 .svg25 {width:25px; height:25px;}
 .svg42 {width:42px; height:42px;}
 .stick {stroke: #070707; stroke-width: 3; stroke-linecap: round;}
+/* media media media*/
+@media screen and (min-width:1200px){
 
+	
+	
 
+	}
+@media screen and (min-width: 768px) and (max-width: 1199px){
 
+	}
+@media screen and (max-width:767px){
+	}
+	

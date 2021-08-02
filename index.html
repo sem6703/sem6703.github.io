@@ -8,13 +8,23 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="mystyle.css">
-  <link rel="stylesheet" href="fonts/gilroy.css">
-   <link rel="stylesheet" href="static/fonts/gilroy.css">
-  <link rel="stylesheet" href="../../static/fonts/gilroy.css">
+  <link rel="stylesheet" href="container.css"> 
+  <link rel="stylesheet" href="port.css"> 
+  <link rel="stylesheet" href="foot.css">  
+  <link rel="stylesheet" href="skill.css"> 
+  <link rel="stylesheet" href="about.css"> 
+  <link rel="stylesheet" href="ant.css">   
+  <link rel="stylesheet" href="head.css">   
+  
+
+  <link rel="stylesheet" href="static/fonts/gilroy.css">
   
   <title>Start</title>
 </head>  
 <body>
+
+
+
 <div>
 
 <svg class="svg1 sword" viewBox="0 0 15 15" fill="white">
@@ -35,25 +45,39 @@
 </ul>
 </header>
 
-<div class="charm charm_js" id="charm" style="position: fixed; width: 100px; height: 300px; background: red; z-index:5;">
+
+
+<div class="charm charm_js" id="charm">
+	<button class="charm__closer" type="button">
+		<svg class="svg25" viewBox="0 0 15 15" fill="none">
+		<path class="stick" d="M1.5 1.5 13.5 13.5" />
+		<path class="stick" d="M1.5 13.5 13.5 1.5" />
+		</svg>
+	</button>
+	<ul class="charm__ul">
+		<li class="charm__li charm__li_active">Home</li>
+		<li class="charm__li">My blog</li>
+		<li class="charm__li">Sign in</li>
+		<li class="charm__li">Register</li>
+	</ul>
 </div>
 
 
 
 
 <main>
-<section style="padding-bottom:70px;">
+<section>
 
 	<div class="container ant">
 		<div class="" style="margin-right: 25px;">
 			<h1 class="ant__name">Antonina <br> Antoninovna</h1>		
 		</div>
-		<div class="ant__future" style="">
-			<div style=" ">
-			Future front-end develiper 23 yaers old, Tolyatti
+		<div class="ant__future">
+			<div class="ant__old" onclick="charm.style.right='0px';">
+			Future front-end developer 23 years old, Tolyatti
 			</div>
-			<svg class="burger burg_js"
-			width="32" height="24" viewBox="0 0 32 24" fill="none">
+			<svg class="ant__burger burg_js"
+			width="32" height="28" viewBox="0 0 32 28" fill="none">
 			<rect y="4.00107" width="32" height="4" rx="2" fill="#070707"/>
 			<rect y="12.00006" width="32" height="4" rx="2" fill="#070707"/>
 			<rect y="20.0001" width="32" height="4" rx="2" fill="#070707"/>
@@ -61,7 +85,7 @@
 		</div>
 	</div>	
 	
-	<div class="container unshow"> <img src="sample/an.bmp" alt="образец"></div>
+
 	
 	<div class="container">
 		<div class="slider">
@@ -69,32 +93,32 @@
 				<div class="slider__inner-wrapper">
 					<div class="slider__slide">
 						<picture>			
-							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width: 375px)">
-							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width: 768px)">
+							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width:767px)">
+							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width:1199px)">
 							<source srcset="static/images/portrait.jpg, static/images/portrait@2x.jpg 2x">
 							<img src="static/images/portrait.jpg" loading="lazy" alt="fallback" />
 						</picture>					
 					</div>
 					<div class="slider__slide">
 						<picture>			
-							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width: 375px)">
-							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width: 768px)">
+							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width:767px)">
+							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width:1199px)">
 							<source srcset="static/images/portrait.jpg, static/images/portrait@2x.jpg 2x">
 							<img src="static/images/portrait.jpg" loading="lazy" alt="fallback" />
 						</picture>			
 					</div>
 					<div class="slider__slide">
 						<picture>			
-							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width: 375px)">
-							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width: 768px)">
+							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width:767px)">
+							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width:1199px)">
 							<source srcset="static/images/portrait.jpg, static/images/portrait@2x.jpg 2x">
 							<img src="static/images/portrait.jpg" loading="lazy" alt="fallback" />
 						</picture>			
 					</div>
 					<div class="slider__slide">
 						<picture>			
-							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width: 375px)">
-							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width: 768px)">
+							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width:767px)">
+							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width:1199px)">
 							<source srcset="static/images/portrait.jpg, static/images/portrait@2x.jpg 2x">
 							<img src="static/images/portrait.jpg" loading="lazy" alt="fallback" />
 						</picture>			
@@ -120,8 +144,8 @@
 
 <section class="about">
 	<h2 class="about__title">About me</h2>
-	<ul class="about__list">
-		<li class="about__say" style="">
+	<ul class="about__list container">
+		<li class="about__say">
 			Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis
 			semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit
 			consequat. Vel ac elit vel sagittis.
@@ -133,81 +157,82 @@
 		<li class="about__say"  style="position: relative;">
 			Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus
 			nec
-			vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.
+			vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.			
 		</li>
 	</ul>	
 </section>
 
 
 
-<section class="skill" style="">
-<div class="container skill__wrapper" style="">
-	<h2 class="skill__h2" style="">Skills</h2>
-	<h3 class="skill__h3" style="">I work in such programs as</h3>
-	<ul class="skill__ul" style="">
-		<li class="skill__li">
-			<img src="static/images/html.svg" alt="" width=79px height=90px>
-			<p class="skill__name">HTML 5</p>		
-			<div class="skill__1">85%
-				<div class="skill__2">
-					<div class="skill__3 skill__3_85" width=85%></div>
+<section class="skill">
+	<h2 class="skill__h2">Skills</h2>
+	<div class="container skill__wrapper">
+		
+		<h3 class="skill__h3">I work in such programs as</h3>
+
+		<ul class="skill__ul">
+			<li class="skill__li">
+				<img src="static/images/h5.svg" alt="" width="79" height="90">
+				<p class="skill__name">HTML 5</p>		
+				<div class="skill__1">85%
+					<div class="skill__2">
+						<div class="skill__3 skill__3_85"></div>
+					</div>
 				</div>
-			</div>
-		</li>
-		<li class="skill__li">
-			<img src="static/images/css.svg" alt="" width=79px height=90px>
-			<p class="skill__name" style="">CSS/SCSS</p>
-			<div class="skill__1">55%
-				<div class="skill__2">
-					<div class="skill__3 skill__3_55" width=55%></div>
+			</li>
+			<li class="skill__li">
+				<img src="static/images/css.svg" alt="" width="79" height="90">
+				<p class="skill__name">CSS/SCSS</p>
+				<div class="skill__1">55%
+					<div class="skill__2">
+						<div class="skill__3 skill__3_55"></div>
+					</div>
 				</div>
-			</div>
-		</li>		
-		<li class="skill__li">
-			<img src="static/images/js.svg" alt="" width=79px height=90px>
-			<p class="skill__name">JavaScript</p>
-			<div class="skill__1">5%
-				<div class="skill__2">
-					<div class="skill__3 skill__3_5"></div>
+			</li>		
+			<li class="skill__li">
+				<img src="static/images/js.svg" alt="" width="79" height="90">
+				<p class="skill__name">JavaScript</p>
+				<div class="skill__1">5%
+					<div class="skill__2">
+						<div class="skill__3 skill__3_5"></div>
+					</div>
 				</div>
-			</div>
-		</li>		
-		<li class="skill__li">
-			<img src="static/images/git.svg" alt="" width=79px height=90px>
-			<p class="skill__name">Git/GitHub</p>
-			<div class="skill__1">15%
-				<div class="skill__2">
-					<div class="skill__3 skill__3_15"></div>
+			</li>		
+			<li class="skill__li">
+				<img src="static/images/git.svg" alt="" width="79" height="90">
+				<p class="skill__name">Git/GitHub</p>
+				<div class="skill__1">15%
+					<div class="skill__2">
+						<div class="skill__3 skill__3_15"></div>
+					</div>
 				</div>
-			</div>
-		</li>		
-		<li class="skill__li">
-			<img src="static/images/figma.svg" alt="" width=79px height=90px>
-			<p class="skill__name">Figma</p>
-			<div class="skill__1">80%
-				<div class="skill__2">
-					<div class="skill__3 skill__3_80" ></div>
+			</li>		
+			<li class="skill__li">
+				<img src="static/images/figma.svg" alt="" width="79" height="90">
+				<p class="skill__name">Figma</p>
+				<div class="skill__1">80%
+					<div class="skill__2">
+						<div class="skill__3 skill__3_80" ></div>
+					</div>
 				</div>
-			</div>
-		</li>	
-	</ul>						
-</div>		
+			</li>	
+		</ul>						
+	</div>		
 </section>
 
 
 
-<!-- 
-position: relative;
-<div class="container" style="position:absolute;top:-163px;left:501px;z-index:4"> <img src="sample/3.bmp" alt="образец"></div>
--->
+
 <section class="port">
 	<h2 class="port__h2">Portfolio</h2>	
-	<div class="container zet">
-		<div class="zet__slider">
-							<img src="static/images/m.jpg" alt="">
-							<div class="zet__note">
-								<a class="zet__link">Learning site for DL Academy courses</a>
-								<p class="zet__text">A simple multi-page static site. The design layout was
+	<div class="container port__zet">
+		<div class="port__slider">
+							<img class="port__desctop" src="static/images/m.jpg" alt="">
+							<img class="port__tablet" src="static/images/m-tab.jpg" alt="">
+							<img class="port__mobile" src="static/images/m-mob.jpg" alt="">
+							<div class="port__note">
+								<a class="port__link">Learning site for DL <br class="port__br">Academy courses</a>
+								<p class="port__text">A simple multi-page static site. The design layout was
 									in Figma.
 									HTML
 									and CSS were used. The site is responsive and cross-browser, but without adding
@@ -215,9 +240,8 @@ position: relative;
 									via
 									JavaScript.</p>
 							</div>
-							<button class="zet__btn zet__btn-left" type="button"><img src="static/images/left.svg" alt=""></button>
-							<button class="zet__btn zet__btn-right" type="button"><img src="static/images/right.svg" alt=""></button>
-					
+							<button class="port__btn port__btn_left" type="button"><img src="static/images/left.svg" alt=""></button>
+							<button class="port__btn port__btn_right" type="button"><img src="static/images/right.svg" alt=""></button>					
 		</div>	
 	</div>				
 </section>
@@ -227,18 +251,18 @@ position: relative;
 
 <!-- кнопка вверх-->
 <div class="button-to-top_js" id="button-to-top_js"
-style="width:100px; height:100px; background: rgba(0, 127, 0, .2);border-radius: 50%;
+style="width:42px; height:42px; background: rgba(0, 127, 0, .2);border-radius: 50%;
 cursor: pointer; display: none;
 position: fixed; bottom:0; right: 0;">
-<img src="static/images/ar.svg" alt="" width=100px height=100px style="transform: rotate(-90deg);">
+<img src="static/images/ar.svg" alt="" width="42" height="42" style="transform: rotate(-90deg);">
 </div>
 
 <!-- кнопка вверх-->
 
 <footer class="footer">
 	<h2 class="footer__h2">Contacts</h2>
-	<p class="footer__8">Want to know more or just chat? You are welcome!</p>
-	<button class="bt1 btn1 send_js" type="button">Send message</button>	
+	<p class="footer__want">Want to know more or just chat? You are welcome!</p>
+	<button class="bt1 btn1 footer__btn send_js" type="button">Send message</button>	
 	<ul class="footer__ul">
 		<li class="footer__li"><button class="bt1 btn2" type="button">Instagram</button></li>
 		<li class="footer__li"><button class="bt1 btn2" type="button">Vk</button></li>
@@ -247,7 +271,6 @@ position: fixed; bottom:0; right: 0;">
 		<li class="footer__li"><button class="bt1 btn2" type="button">GitHub</button></li>
 		<li class="footer__li"><button class="bt1 btn2" type="button">Phone</button></li>
 	</ul>
-
 	<p class="footer__9">
 			Design by <a class="footer__link">DL Academy</a>
 			Program code from Antonina
@@ -279,24 +302,24 @@ position: fixed; bottom:0; right: 0;">
 
 <div class="mo" id="m2">
 <form class="reg" name="filter" id="f2">
-				<fieldset class="reg__fs1" style="">
-					<label class="reg__lbl1 rqr" for="i1" style="">Email </label>
-					<input class="reg__edit1" type="email" id="i1" name="email" placeholder="" style="">
+				<fieldset class="reg__fs1">
+					<label class="reg__lbl1 rqr" for="i1">Email </label>
+					<input class="reg__edit1" type="email" id="i1" name="email" placeholder="">
 				</fieldset>
 				
 				
-				<fieldset class="reg__fs2" style="">
-					<div class="reg__small" style="">
-						<label class="reg__lbl2 rqr" for="i2" style="">Name </label>
-						<input class="reg__edit2" type="text" id="i2" name="name" style="">
+				<fieldset class="reg__fs2">
+					<div class="reg__small">
+						<label class="reg__lbl2 rqr" for="i2">Name </label>
+						<input class="reg__edit2" type="text" id="i2" name="name">
 					</div>
-					<div class="reg__small" style="">
-						<label class="reg__lbl2 rqr" for="i3" style="">Surname </label>
-						<input class="reg__edit2" type="text" id="i3" name="surname" style="">
+					<div class="reg__small">
+						<label class="reg__lbl2 rqr" for="i3">Surname </label>
+						<input class="reg__edit2" type="text" id="i3" name="surname">
 					</div>
 				</fieldset>			
 
-				<fieldset class="reg__fs2" style="">
+				<fieldset class="reg__fs2">
 					<div class="reg__small">
 						<label class="reg__lbl2 rqr" for="i4">Password </label>
 						<input class="reg__edit2" type="password" id="i4" name="password">
@@ -306,7 +329,7 @@ position: fixed; bottom:0; right: 0;">
 						<input class="reg__edit2" type="password" id="i5" name="location">
 					</div>
 				</fieldset>	
-				<fieldset class="reg__fs2" style="">
+				<fieldset class="reg__fs2">
 					<div class="reg__small">
 						<label class="reg__lbl2 rqr" for="i6">Location </label>
 						<input class="reg__edit2"type="text" id="i6" name="age">
@@ -322,7 +345,7 @@ position: fixed; bottom:0; right: 0;">
 				
 				<fieldset class="reg__fs1">
 					<input class="mod-ch" type="checkbox" name="agreement" id="i50">
-					<label class="mod-ch-lbl" for="i50" style="">
+					<label class="mod-ch-lbl" for="i50">
 					Clicking on the button, you consent to the processing of your personal data.</label>
 				</fieldset>
 				<button class="btn btn2 taboo" type="submit">Send</button>
@@ -333,7 +356,7 @@ position: fixed; bottom:0; right: 0;">
 	</svg>
 </button>
 
-<div style="display: none"><img src="sample/modal-check.bmp" alt="образец"></div>
+
 </form>
 </div>
 
@@ -369,7 +392,7 @@ position: fixed; bottom:0; right: 0;">
 				
 				<fieldset class="reg__fs1" style="display: flex; flex-direction: column;">	
 					<label class="reg__lbl1" for="contact-message">What do you want to discuss with me?</label>
-					<textarea class="reg__txt" id="contact-message" name="message" cols="30" rows="5" style=""></textarea>
+					<textarea class="reg__txt" id="contact-message" name="message" cols="30" rows="5"></textarea>
 				</fieldset>	
 				
 				<fieldset class="reg__fs1">

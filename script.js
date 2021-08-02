@@ -11,7 +11,7 @@ reg.addEventListener('click',(e) => {m2.style.display='block'; over.classList.re
 const charm = document.querySelector('.charm_js');
 charm.addEventListener('click',(e) => {charm.style.right='-100%';});
 
-const burger = document.querySelector('.burger');
+const burger = document.querySelector('.burg_js');
 burger.addEventListener('click',(e) => {charm.style.right='0px';});
 
 const up = document.querySelector('.button-to-top_js');
