@@ -1,416 +1,147 @@
-<!doctype html>
-<html lang="ru">
-<head> 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="mystyle.css">
+<!DOCTYPE html>
+<html lang="en">
 
-  <link rel="stylesheet" href="container.css"> 
-  <link rel="stylesheet" href="port.css"> 
-  <link rel="stylesheet" href="foot.css">  
-  <link rel="stylesheet" href="skill.css"> 
-  <link rel="stylesheet" href="about.css"> 
-  <link rel="stylesheet" href="ant.css">   
-  <link rel="stylesheet" href="head.css">   
-  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="common.css">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description"
+        content="On this site, I will tell you about myself, my professional skills, and show you a portfolio of developed projects. Here you will find the contact information for contacting me.">
+    <title>My project Antonina</title>
+</head>
 
-  <link rel="stylesheet" href="static/fonts/gilroy.css">
-
-  
-  <title>Start</title>
-</head>  
 <body>
-
-
-
-<div>
-
-<svg class="svg1 sword" viewBox="0 0 15 15" fill="white">
-<path class="cross__1" d="M1.5 1.5 13.5 13.5" />
-</svg>
-</div>
-
-
 <header class="header container">
-<a class="header__logo taboo" href="index.html">Home</a>
-<ul class="header__menu">
-<li class="header__nav"><a class="header__link" href="blog.html">My Blog </a></li>
-<li class="header__nav case1 sign_js" tabindex=0">Sign in</li>
-<li class="header__nav case1 reg_js" tabindex=0>Register</li>
+    <nav class="header__nav" aria-label="Main menu">
+        <ul class="header__ul">
+            <li class="header__li"><a class="header__item header__active-link" href="index.html">Home</a></li>             
+            <li class="header__li"><a class="header__item " href="pages/blog/index.html">My blog</a></li>
+        </ul>
+    </nav>
 
-<li class="header__nav case2 visually-hidden"><a class="header__link" href="pro.html">My Profile</a></li>
-
-</ul>
+    <button type="button" class="mm-open-btn x_js"><span class="mm-btn-content"></span></button>
+   <div class="mm-wrapper mm-hidden mm-wrapper_js"></div> 
+    <div class="mm mm-hidden mm_js">
+        <button type="button" class="mm__close-btn y_js">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+				<style>
+					.rect1 {x:-3; y:11; rx:2; fill:#070707}
+				</style>
+                <rect class="rect1" width="32" height="4" transform="rotate(45 13 13)" />
+                <rect class="rect1" width="32" height="4" transform="rotate(-45 13 13)" />
+            </svg>
+        </button>
+        <ul class="mm__list">
+            <li class="mm__items"><a class="mm__item header__active-link" href="index.html">Home</a></li>
+            <li class="mm__items"><a class="mm__item " href="pages/blog/index.html">My blog</a></li>
+        </ul>
+    </div>
 </header>
 
 
-
-<div class="charm charm_js" id="charm">
-	<button class="charm__closer" type="button">
-		<svg class="svg25" viewBox="0 0 15 15" fill="none">
-		<path class="stick" d="M1.5 1.5 13.5 13.5" />
-		<path class="stick" d="M1.5 13.5 13.5 1.5" />
-		</svg>
-	</button>
-	<ul class="charm__ul">
-		<li class="charm__li charm__li_active">Home</li>
-		<li class="charm__li">My blog</li>
-		<li class="charm__li">Sign in</li>
-		<li class="charm__li">Register</li>
-	</ul>
-</div>
-
-
-
-
-<main>
-<section>
-
-	<div class="container ant">
-		<div class="" style="margin-right: 25px;">
-			<h1 class="ant__name">Antonina <br> Antoninovna</h1>		
-		</div>
-		<div class="ant__future">
-			<div class="ant__old" onclick="charm.style.right='0px';">
-			Future front-end developer 23 years old, Tolyatti
-			</div>
-			<svg class="ant__burger burg_js"
-			width="32" height="28" viewBox="0 0 32 28" fill="none">
-			<rect y="4.00107" width="32" height="4" rx="2" fill="#070707"/>
-			<rect y="12.00006" width="32" height="4" rx="2" fill="#070707"/>
-			<rect y="20.0001" width="32" height="4" rx="2" fill="#070707"/>
-			</svg>
-		</div>
-	</div>	
+<section class="sli container sli_js">
+	<div class="sli__con">
+		<h1 class="sli__h1">Antonina Antoninovna</h1>
+		<p class="sli__text">Future front-end developer 23 years old, Tolyatti</p>
+	</div> 
+</section>
 	
-
-	
-	<div class="container">
-		<div class="slider">
-			<div class="slider__wrapper">
-				<div class="slider__inner-wrapper">
-					<div class="slider__slide">
-						<picture>			
-							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width:767px)">
-							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width:1199px)">
-							<source srcset="static/images/portrait.jpg, static/images/portrait@2x.jpg 2x">
-							<img src="static/images/portrait.jpg" loading="lazy" alt="fallback" />
-						</picture>					
-					</div>
-					<div class="slider__slide">
-						<picture>			
-							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width:767px)">
-							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width:1199px)">
-							<source srcset="static/images/portrait.jpg, static/images/portrait@2x.jpg 2x">
-							<img src="static/images/portrait.jpg" loading="lazy" alt="fallback" />
-						</picture>			
-					</div>
-					<div class="slider__slide">
-						<picture>			
-							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width:767px)">
-							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width:1199px)">
-							<source srcset="static/images/portrait.jpg, static/images/portrait@2x.jpg 2x">
-							<img src="static/images/portrait.jpg" loading="lazy" alt="fallback" />
-						</picture>			
-					</div>
-					<div class="slider__slide">
-						<picture>			
-							<source srcset="static/images/portrait-mob.jpg, static/images/portrait@2x-mob.jpg 2x" media="(max-width:767px)">
-							<source srcset="static/images/portrait-tab.jpg, static/images/portrait@2x-tab.jpg 2x" media="(max-width:1199px)">
-							<source srcset="static/images/portrait.jpg, static/images/portrait@2x.jpg 2x">
-							<img src="static/images/portrait.jpg" loading="lazy" alt="fallback" />
-						</picture>			
-					</div>
-					
-				</div>
-			</div>
-			
-			<div class="slider__panel">
-				<button class="slider__button_back taboo">
-					<img class="slider__back-img" src="static/images/ar.svg" alt="">
-				</button>
-				<ul class="slider__pagination"></ul>
-				<button class="slider__button_next taboo">
-					<img class="slider__next-img" src="static/images/ar.svg" alt="">
-				</button>
-			</div>
-		</div>
+<section class="grey">
+    <div class="container about">
+		<h2 class="about__title">About&nbsp;me</h2>
+		<ul class="about__ul">
+			<li>Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</li>
+			<li>Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</li>
+			<li>Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</li>
+			<li>Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.</li>
+		</ul>
 	</div>
-</section>
+</section>	
+	
+<section class="container skill">
+	<h2 class="skill__title">Skills</h2>
+	<p class="skill__text">I work in such programs as</p>
+	<div class="skill__cards">
+		<div class="skill__card">
+		<img src="static/images/skill/sk1.svg" alt="">  
+		<h3 class="skill__name">HTML 5</h3>
+		<div class="skill__bar">
+			<span>80%</span>
+			<progress value="80" max="100"></progress>
+		</div>
+		</div>  
 
+	
+		<div class="skill__card">
+		<img src="static/images/skill/sk2.svg" alt="">  
+		<h3 class="skill__name">CSS/SCSS</h3>
+		<div class="skill__bar">
+			<span>44%</span>
+			<progress value="44" max="100"></progress>
+		</div>
+		</div> 
+ 
+		<div class="skill__card">
+		<img src="static/images/skill/sk3.svg" alt="">  
+		<h3 class="skill__name">JavaScript</h3>
+		<div class="skill__bar">
+			<span>73%</span>
+			<progress value="73" max="100"></progress>
+		</div>
+		</div> 
+ 
+		<div class="skill__card">
+		<img src="static/images/skill/sk4.svg" alt="">  
+		<h3 class="skill__name">Git/GitHub</h3>
+		<div class="skill__bar">
+			<span>52%</span>
+			<progress value="52" max="100"></progress>
+		</div>
+		</div> 
+ 
+		<div class="skill__card">
+		<img src="static/images/skill/sk5.svg" alt="">  
+		<h3 class="skill__name">Figma</h3>
+		<div class="skill__bar">
+			<span>45%</span>
+			<progress value="45" max="100"></progress>
+		</div>
+		</div> 
+	</div>
+  </section>	
 
+<footer class="grey">
+    <div class="foot container2">
+        <h2 class="foot__title">Contacts</h2>
+        <p class="foot__text">Want to know more or just chat? You&nbsp;are welcome!</p>
 
-<section class="about">
-	<h2 class="about__title">About me</h2>
-	<ul class="about__list container">
-		<li class="about__say">
-			Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis
-			semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit
-			consequat. Vel ac elit vel sagittis.
-		</li>
-		<li class="about__say">
-			Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum
-			nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.
-		</li>
-		<li class="about__say"  style="position: relative;">
-			Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus
-			nec
-			vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.			
-		</li>
-	</ul>	
-</section>
+        <ul class="foot__soc">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Vk</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Mail</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Phone</a></li>
+        </ul>
+		<div class="container3">
+        Design by <a href="https://dlacademy.ru/">DL&nbsp;Academy</a>
+        Program code from Antonina
+		</div>
+    </div>
+</footer>  	
+	
+<button class="to-up-btn hidden to-up-btn_js" type="button">	
+	<svg width="24" height="15" viewBox="0 0 24 15" fill="none">
+		<rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"></rect>
+		<rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"></rect>
+	</svg>	
+</button>	
 
-
-
-<section class="skill">
-	<h2 class="skill__h2">Skills</h2>
-	<div class="container skill__wrapper">
-		
-		<h3 class="skill__h3">I work in such programs as</h3>
-
-		<ul class="skill__ul">
-			<li class="skill__li">
-				<img src="static/images/h5.svg" alt="" width="79" height="90">
-				<p class="skill__name">HTML 5</p>		
-				<div class="skill__1">85%
-					<div class="skill__2">
-						<div class="skill__3 skill__3_85"></div>
-					</div>
-				</div>
-			</li>
-			<li class="skill__li">
-				<img src="static/images/css.svg" alt="" width="79" height="90">
-				<p class="skill__name">CSS/SCSS</p>
-				<div class="skill__1">55%
-					<div class="skill__2">
-						<div class="skill__3 skill__3_55"></div>
-					</div>
-				</div>
-			</li>		
-			<li class="skill__li">
-				<img src="static/images/js.svg" alt="" width="79" height="90">
-				<p class="skill__name">JavaScript</p>
-				<div class="skill__1">5%
-					<div class="skill__2">
-						<div class="skill__3 skill__3_5"></div>
-					</div>
-				</div>
-			</li>		
-			<li class="skill__li">
-				<img src="static/images/git.svg" alt="" width="79" height="90">
-				<p class="skill__name">Git/GitHub</p>
-				<div class="skill__1">15%
-					<div class="skill__2">
-						<div class="skill__3 skill__3_15"></div>
-					</div>
-				</div>
-			</li>		
-			<li class="skill__li">
-				<img src="static/images/figma.svg" alt="" width="79" height="90">
-				<p class="skill__name">Figma</p>
-				<div class="skill__1">80%
-					<div class="skill__2">
-						<div class="skill__3 skill__3_80" ></div>
-					</div>
-				</div>
-			</li>	
-		</ul>						
-	</div>		
-</section>
-
-
-
-
-<section class="port">
-	<h2 class="port__h2">Portfolio</h2>	
-	<div class="container port__zet">
-		<div class="port__slider">
-							<img class="port__desctop" src="static/images/m.jpg" alt="">
-							<img class="port__tablet" src="static/images/m-tab.jpg" alt="">
-							<img class="port__mobile" src="static/images/m-mob.jpg" alt="">
-							<div class="port__note">
-								<a class="port__link">Learning site for DL <br class="port__br">Academy courses</a>
-								<p class="port__text">A simple multi-page static site. The design layout was
-									in Figma.
-									HTML
-									and CSS were used. The site is responsive and cross-browser, but without adding
-									interactivity
-									via
-									JavaScript.</p>
-							</div>
-							<button class="port__btn port__btn_left" type="button"><img src="static/images/left.svg" alt=""></button>
-							<button class="port__btn port__btn_right" type="button"><img src="static/images/right.svg" alt=""></button>					
-		</div>	
-	</div>				
-</section>
-
-</main>
-
-
-<!-- кнопка вверх-->
-<div class="button-to-top_js" id="button-to-top_js"
-style="width:42px; height:42px; background: rgba(0, 127, 0, .2);border-radius: 50%;
-cursor: pointer; display: none;
-position: fixed; bottom:0; right: 0;">
-<img src="static/images/ar.svg" alt="" width="42" height="42" style="transform: rotate(-90deg);">
-</div>
-
-<!-- кнопка вверх-->
-
-<footer class="footer">
-	<h2 class="footer__h2">Contacts</h2>
-	<p class="footer__want">Want to know more or just chat? You are welcome!</p>
-	<button class="bt1 btn1 footer__btn send_js" type="button">Send message</button>	
-	<ul class="footer__ul">
-		<li class="footer__li"><button class="bt1 btn2" type="button">Instagram</button></li>
-		<li class="footer__li"><button class="bt1 btn2" type="button">Vk</button></li>
-		<li class="footer__li"><button class="bt1 btn2" type="button">Telegram</button></li>
-		<li class="footer__li"><button class="bt1 btn2" type="button">Mail</button></li>
-		<li class="footer__li"><button class="bt1 btn2" type="button">GitHub</button></li>
-		<li class="footer__li"><button class="bt1 btn2" type="button">Phone</button></li>
-	</ul>
-	<p class="footer__9">
-			Design by <a class="footer__link">DL Academy</a>
-			Program code from Antonina
-	</p>		
-</footer>
-
-
-
-<div class="overlay unshow" id="overlay"></div>
-<div class="mo" id="m1">
-<form  class="fm" id="f1" name="lform">
-				<fieldset class="" style="display: flex;flex-direction: column;padding-bottom: 15px;">
-					<label class="rqr" for="l1" style="font-family:g700;font-size:14px;color: #070707;line-height: 30px;">Email </label>
-					<input type="text" id="l1" name="email" style="border: 2.5px solid #e5e5e5;padding: 13px 19px;font-family:g500;font-size:18px;">
-				</fieldset>
-				<fieldset class="" style="display: flex;flex-direction: column;padding-bottom: 30px;">
-					<label class="rqr" for="l2" style="font-family:g700;font-size:14px;color: #070707;line-height: 30px;">Password </label>
-					<input type="password" id="l2" name="password" style="border: 2.5px solid #e5e5e5;padding: 13px 19px;font-family:g500;font-size:18px;">
-				</fieldset>
-				<button class="btn btn2" type="submit">Log in</button>
-<button class="closer m1_js" type="reset">
-	<svg class="svg25" viewBox="0 0 15 15" fill="none">
-	<path class="stick" d="M1.5 1.5 13.5 13.5" />
-	<path class="stick" d="M1.5 13.5 13.5 1.5" />
-	</svg>
-</button>
-</form>
-</div>
-
-<div class="mo" id="m2">
-<form class="reg" name="filter" id="f2">
-				<fieldset class="reg__fs1">
-					<label class="reg__lbl1 rqr" for="i1">Email </label>
-					<input class="reg__edit1" type="email" id="i1" name="email" placeholder="">
-				</fieldset>
-				
-				
-				<fieldset class="reg__fs2">
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" for="i2">Name </label>
-						<input class="reg__edit2" type="text" id="i2" name="name">
-					</div>
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" for="i3">Surname </label>
-						<input class="reg__edit2" type="text" id="i3" name="surname">
-					</div>
-				</fieldset>			
-
-				<fieldset class="reg__fs2">
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" for="i4">Password </label>
-						<input class="reg__edit2" type="password" id="i4" name="password">
-					</div>
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" for="i5">Repeat password </label>
-						<input class="reg__edit2" type="password" id="i5" name="location">
-					</div>
-				</fieldset>	
-				<fieldset class="reg__fs2">
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" for="i6">Location </label>
-						<input class="reg__edit2"type="text" id="i6" name="age">
-					</div>
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" for="i7">Age </label>
-						<input class="reg__edit2" type="number" id="i7">
-					</div>
-				</fieldset>					
-				
-				
-				
-				
-				<fieldset class="reg__fs1">
-					<input class="mod-ch" type="checkbox" name="agreement" id="i50">
-					<label class="mod-ch-lbl" for="i50">
-					Clicking on the button, you consent to the processing of your personal data.</label>
-				</fieldset>
-				<button class="btn btn2 taboo" type="submit">Send</button>
-<button class="closer m2_js" type="reset">
-	<svg class="svg25" viewBox="0 0 15 15" fill="none">
-	<path class="stick" d="M1.5 1.5 13.5 13.5" />
-	<path class="stick" d="M1.5 13.5 13.5 1.5" />
-	</svg>
-</button>
-
-
-</form>
-</div>
-
-<div class="mo" id="m3">
-<form class="reg" id="f3">
-<!-- send message -->
-				<fieldset class="reg__fs2">
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" class="rqr" for="n1">What is your name? </label>
-						<input class="reg__edit2" type="tel" id="n1" name="tel">
-					</div>
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" class="rqr" for="n2">Message subject </label>
-						<input class="reg__edit2" type="email" id="n2" name="email">
-					</div>
-				</fieldset>
-
-				
-				
-				<fieldset class="reg__fs2" style="display: flex;">
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" for="n3">Your Email </label>
-						<input class="reg__edit2" type="tel" id="n3" name="tel">
-					</div>
-					<div class="reg__small">
-						<label class="reg__lbl2 rqr" for="n4">Your mobile phone </label>
-						<input class="reg__edit2" type="email" id="n4" name="email">
-					</div>
-				</fieldset>	
-
-
-
-				
-				<fieldset class="reg__fs1" style="display: flex; flex-direction: column;">	
-					<label class="reg__lbl1" for="contact-message">What do you want to discuss with me?</label>
-					<textarea class="reg__txt" id="contact-message" name="message" cols="30" rows="5"></textarea>
-				</fieldset>	
-				
-				<fieldset class="reg__fs1">
-					<input class="mod-ch" type="checkbox" name="agreement" id="n50">
-					<label class="mod-ch-lbl" for="n50">Clicking on the button, you consent to the processing of your personal data.</label>
-				</fieldset>
-				
-	<button class="btn btn2" type="submit">Send</button>
-	<button class="closer m3_js" type="reset">
-		<svg class="svg25" viewBox="0 0 15 15" fill="none">
-		<path class="stick" d="M1.5 1.5 13.5 13.5" />
-		<path class="stick" d="M1.5 13.5 13.5 1.5" />
-		</svg>
-	</button>
-</form>
-</div>
-<script src="script.js"></script> 
+<script src="script.js"></script>
 </body>
-</html>
+
+</html> 

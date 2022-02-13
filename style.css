@@ -1,0 +1,191 @@
+/**********************************************/
+.sli__con {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 40px 0 36px; }
+
+.sli__h1 {
+  font-size: 47px;
+  line-height: 57px;
+  width: 300px;
+  margin: 0 20px 0 0; }
+
+.sli__text {
+  width: 23%;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 10px; }
+
+@media screen and (max-width: 1200px) {
+  .sli__text {
+    width: 35%; } }
+
+@media screen and (max-width: 767px) {
+  .sli__h1 {
+    margin-right: 50%; }
+  .sli__text {
+    width: 40%; } }
+
+@media screen and (max-width: 486px) {
+  .sli__text {
+    width: 61%; }
+  .sli__con {
+    margin: 13px 0 36px; } }
+
+@media screen and (max-width: 320px) {
+  .sli__h1 {
+    margin-bottom: 22px; }
+  .sli__text {
+    width: 70%; }
+  .sli__con {
+    margin: 9px 0 26px; } }
+
+/***************************************************2*/
+.about {
+  padding-top: 44px;
+  padding-bottom: 40px; }
+
+.about__title {
+  text-align: center;
+  line-height: 1px;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 12px; }
+
+.about__ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 80%;
+  max-width: 700px;
+  margin: 60px auto 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  padding-inline-start: 0px;
+  background: none; }
+
+.about__ul li {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 40px;
+  padding: 15px;
+  border: 2.5px solid #070707;
+  background: #f6f6f6; }
+
+.about__ul li:nth-child(odd) {
+  align-self: flex-start; }
+
+.about__ul li:nth-child(even) {
+  align-self: flex-end; }
+
+.about__ul li::after {
+  content: url("data:image/svg+xml,%3Csvg width='40' height='22' viewBox='0 0 40 22' fill='%23f6f6f6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='0 0, 20 20, 40 0' stroke='%23070707' stroke-width='2' /%3E%3C/svg%3E");
+  display: block;
+  position: absolute;
+  bottom: -26px; }
+
+.about__ul li:nth-child(odd)::after {
+  right: 24px; }
+
+.about__ul li:nth-child(even)::after {
+  left: 24px; }
+
+/********************************************3*/
+.skill {
+  padding-top: 70px;
+  padding-bottom: 0; }
+
+.skill__title {
+  text-align: center;
+  line-height: 1px;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 12px; }
+
+.skill__text {
+  text-align: center;
+  line-height: 17px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 38px; }
+
+.skill__cards {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  /***** -*- **************/
+  flex-wrap: wrap; }
+
+.skill__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+  /************************ -*- *********************/
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 2px;
+  background: white;
+  font-size: 14px;
+  color: #828282; }
+
+.skill__card h3 {
+  padding-top: 17px;
+  padding-bottom: 17px; }
+
+.skill__name {
+  font-size: 14px; }
+
+.skill__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.skill__bar progress {
+  width: 100%;
+  max-width: 142px;
+  /*****  -*- *************************/
+  height: 9px;
+  border-radius: unset;
+  background: #E5E5E5; }
+
+.skill__bar progress::-webkit-progress-bar {
+  background: #E5E5E5; }
+
+.skill__bar progress::-webkit-progress-value {
+  background: #070707; }
+
+.skill__bar progress::-moz-progress-bar {
+  background: #070707; }
+
+@media screen and (max-width: 768px) {
+  .skill__card {
+    max-width: 147px; }
+  /****************cr******** 768 *********************/
+  .skill__bar progress {
+    max-width: 111px; }
+  /***** 1200  ************************/ }
+
+@media screen and (max-width: 368px) {
+  .skill__cards {
+    justify-content: space-evenly; }
+  /******  320 ************/ }
+
+@media screen and (max-width: 320px) {
+  .skill__bar progress {
+    max-width: 94px; }
+  /***** 320  **************************/
+  .skill__card {
+    max-width: 130px; }
+  /************************ 320 *********************/ }
+
+/*************************************4***/
