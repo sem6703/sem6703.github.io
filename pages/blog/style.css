@@ -526,24 +526,36 @@ legend {
 .pagination__btn-prev, .pagination__btn-next {
   width: 42px;
   height: 42px;
+  padding-top:2px;	
   border: 2.5px solid #070707;
-  box-sizing: border-box;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer;
+  background: none;}
 
-.pagination__btn-prev:hover, .pagination__btn-prev:active, .pagination__btn-next:hover, .pagination__btn-next:active {
+.pagination__btn-prev:hover, 
+.pagination__btn-prev:active, 
+.pagination__btn-next:hover, 
+.pagination__btn-next:active {
   border: 2.5px solid #828282; }
+  
+  
+.pagination__btn-prev:hover > svg path, 
+.pagination__btn-prev:active > svg path, 
+.pagination__btn-next:hover > svg path, 
+.pagination__btn-next:active > svg path {
+  stroke: #828282; }  
 
+
+
+
+  
 .pagination__btn-prev:disabled, .pagination__btn-next:disabled {
-  border: 2.5px solid #E5E5E5; }
+  cursor: default;
+  border-color: #E5E5E5; }  
 
-.pagination__btn-prev:hover svg,
-.pagination__btn-prev:active svg, .pagination__btn-next:hover svg,
-.pagination__btn-next:active svg {
-  fill: #828282; }
-
-.pagination__btn-prev:disabled svg, .pagination__btn-next:disabled svg {
-  fill: #E5E5E5; }
-
+.pagination__btn-prev:disabled > svg path, .pagination__btn-next:disabled > svg path {
+  stroke: #E5E5E5; }
+  
 /******************************************/
 .article {
   display: flex;
@@ -593,6 +605,13 @@ legend {
   height: 10px;
   border-radius: 5px; }
 
+
+@media screen and (max-width: 767px) {
+
+.article {flex-wrap: wrap;}
+.article__content {margin-left: 0px;}
+
+ }
 /******************************************spinner**/
 .spinner-wrapper {
   width: 100%;

@@ -69,18 +69,24 @@
   margin-bottom: 60px; }
 
 .main-slider__prev-btn, .main-slider__next-btn {
-  border: 2.5px solid #070707;
-  border-radius: 50%;
   width: 42px;
   height: 42px;
-  padding-top:2px;
+  padding-top:2px;	
+  border: 2.5px solid #070707;
+  border-radius: 50%;
   cursor: pointer;
   background: none; }
 
-.main-slider__prev-btn:hover, .main-slider__prev-btn:active, .main-slider__next-btn:hover, .main-slider__next-btn:active {
+.main-slider__prev-btn:hover, 
+.main-slider__prev-btn:active, 
+.main-slider__next-btn:hover, 
+.main-slider__next-btn:active {
   border-color: #828282; }
 
-.main-slider__prev-btn:hover > svg path, .main-slider__prev-btn:active > svg path, .main-slider__next-btn:hover > svg path, .main-slider__next-btn:active > svg path {
+.main-slider__prev-btn:hover > svg path, 
+.main-slider__prev-btn:active > svg path, 
+.main-slider__next-btn:hover > svg path, 
+.main-slider__next-btn:active > svg path {
   stroke: #828282; }
 
 .main-slider__prev-btn:disabled, .main-slider__next-btn:disabled {
@@ -89,7 +95,7 @@
 
 .main-slider__prev-btn:disabled > svg path, .main-slider__next-btn:disabled > svg path {
   stroke: #E5E5E5; }
-
+/********/
 .main-slider__pagination {
   display: flex; }
 
