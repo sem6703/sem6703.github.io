@@ -221,7 +221,7 @@ body {
   margin-top: 39px;
   padding-bottom: 32px; }
 
-.foot__soc a {
+.foot__soc_2 a {
   display: inline-block;
   text-decoration: none;
   border: 2.5px solid #070707;
@@ -233,11 +233,30 @@ body {
   padding: 8px 16px;
   transition: 0.4s; }
 
-.foot__soc a:focus,
-.foot__soc a:hover {
+.foot__soc_2 a:focus,
+.foot__soc_2 a:hover {
   background: #070707;
   color: #fff; }
+/*********/
+.foot__soc_1 {width: 100%}
 
+.foot__soc_1 a {
+  display: inline-block;
+  text-decoration: none;
+  border: 2.5px solid #070707;
+  border-radius: 30px;
+  color: #fff;
+  background: #070707;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 5px 5.5px 4px;
+  padding: 8px 16px;
+  transition: 0.4s; }
+
+.foot__soc_1 a:hover {
+  background: #fff;
+  color: #070707; }
+/*********/
 .container3 {
   max-width: 190px;
   width: 90%;
