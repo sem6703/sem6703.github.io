@@ -17,7 +17,7 @@
 		box-sizing: border-box;
 		margin:0;padding:0;
 		} 
-ul {list-style-type: none}  
+ul,ol {list-style-type: none}  
   
 body {
 	font-weight: 400;
@@ -82,10 +82,18 @@ header {
 	line-height: 17px; 
 	text-transform: uppercase;
 }
-header li {
-	margin: 0 13px;
-	cursor: pointer;
-	}
+header ul {
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center;
+} 
+header ol {display: none}
+@media screen and (max-width: 810px) {header ul {display:none} header ol {display: block}}
+
+header li {cursor: pointer}
+header ul li {margin: 0 13px}	
+header ol li {margin: 0 0}
+	
 .the {
 	position: relative;
 	border-radius: 32px;
@@ -143,6 +151,7 @@ header li {
 	background: #000;
 	margin:0 20px;
 	position: relative;
+	cursor: pointer;
 	}
 .theul li::before {
 	position: absolute;
