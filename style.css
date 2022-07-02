@@ -52,6 +52,8 @@ section {background: white;}
 	color: #000;
 	border-radius: 54px 0px 0px 54px;
 	margin-right: -5px;
+	width:70%; 
+	max-width: 299px;	
 }
 .cont2 .edit::placeholder {color: #000}
 .cont2 .btn {
@@ -66,7 +68,8 @@ section {background: white;}
 	}
 @media screen and (max-width: 767px) {.cont2 .btn {padding: 14px 13px;}}	
 #fm7 {padding:14px 0 26px}
-  
+ 
+/**************************; background: red********************************/ 
 header {
 	display: flex; 
 	justify-content: space-between; 
