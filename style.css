@@ -280,6 +280,7 @@ header img {margin-left: 10px;}
 	display:flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	overflow: hidden;
 	}
 .api2 {
 	width:41%; 
