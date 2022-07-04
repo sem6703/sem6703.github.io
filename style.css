@@ -122,6 +122,11 @@ header img {margin-left: 10px;}
 .stodia {
 	display:flex;
 	justify-content: space-between;
+	height: 461px;
+	background: url(img/pic1.png);
+	b0ackground-repeat: norepeat;
+	background-repeat: no-repeat;
+	background-position: right;
 	}
 .sto3 {align-self: end;}
 .sto4 {align-self: end;}
