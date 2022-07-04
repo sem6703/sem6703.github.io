@@ -128,7 +128,7 @@ header img {margin-left: 10px;}
 	background-repeat: no-repeat;
 	background-position: right;
 	}
-.sto3 {align-self: end;}
+.sto3 {align-self: end; margin-top: 25px;}
 .sto4 {align-self: end;}
 
 
@@ -220,6 +220,7 @@ header img {margin-left: 10px;}
 .sleek2 {
 	max-width:558px; 
 	width: 100%;
+	overflow: hidden;
 	}
 .sleek3 {
 	padding: 26px 6px 6px 15px;
@@ -332,7 +333,9 @@ header img {margin-left: 10px;}
 	color: #E0E0E0;
 	padding:1px 0px 15px 0px;
 	}
-.api9{padding: 0px}
+.api9{padding: 0px;
+	overflow: hidden;
+	}
 
 /*****/
 .build {
@@ -392,6 +395,7 @@ header img {margin-left: 10px;}
 .footul li:not(:first-child) {
 	min-width: 111px;
 	margin-bottom:12px;
+	margin-right: 8px;
 	}
 .footul li:last-child {
 	margin-bottom:32px;
