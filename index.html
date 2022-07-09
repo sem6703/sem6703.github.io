@@ -15,23 +15,25 @@
 		}   
 	ul,ol {list-style-type: none} 	
 	.container {max-width: 1200px; width: 98%; margin:0 auto}
-	
+	.container1440 {max-width: 1440px; width: 98%; margin:0 auto; padding:0 42px;}
+	.pix {background-color: red; background-image: url('Desktop (1).png');background-repeat:no-repeat;background-position-x: center;}
 	.burg {cursor:pointer}
 	.mob,
 	.mob button {font-family: sans-serif; font-size:26px;}
-	.mob { color: #000;width:100vw;height:100vh;
-		background: #00ffff80; position: fixed;right:0;top: 0;
-		display: flex; justify-content: flex-end;
-		transition: opacity 2s;
-		z-index: 10;}
-	.mob li {margin: 14px 0;}
-	.mob li:hover {opacity:.65; cursor: pointer;}
+																	.mob { color: #000;width:100vw;height:100vh;
+																		background: #00ffff80; position: fixed;right:0;top: 0;
+																		display: flex; justify-content: flex-end;
+																		transition: opacity 2s;
+																		z-index: 10;}
+																	.mob li {margin: 14px 0;}
+																	.mob li:hover {opacity:.65; cursor: pointer;}
 	.vid {opacity: 0; pointer-events: none;}
 	.hidden {display: none;}
 	
 	header ul {display: flex;justify-content: space-between;align-items: center;
-	gap:20px;margin: 2px 37px;
-	font-family:'Rail';font-weight:700"
+	
+	font-family:'Raleway';/*Rob700*/
+	font-weight:700;
 	font-size: 14px;
 	line-height: 20px;
 	color: #214E41;	}
@@ -53,18 +55,20 @@
     bottom: 50px;
     width: 42px;
     height: 42px;
-    background: #000;
-    border: 2px solid #070707;
+    background: #43806C;
+    border: 2px solid #43806C;
     box-sizing: border-box;
     border-radius: 50%;
     cursor: pointer;
+	padding-left:7px;
+	padding-top:7px;
     z-index: 8;
 }
 
 
-.btn1 {display: inline-block;background:#43806C;padding: 6px 23px;border-radius: 6px;
-	font-family:'Rail';
-	font-weight:700;
+.btn1 {display: inline-block;background:#43806C;padding: 11px 14px;border-radius: 6px;
+	font-family:'Raleway';/*'Rob700';*//*	'Raleway' normal 700 14-20 */
+	f0ont-weight:700;
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;	
@@ -73,19 +77,30 @@
 .btn1:hover {cursor: pointer; opacity:.7}	
   </style>  
 </head>
-<body>
-<div class="to-up-btn hidden to-up-btn_js"></div>
+<body class="p0ix">
+<div class="to-up-btn hidden to-up-btn_js">
+	<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+	<path d="M2.4 15.8L12.0 6.2 21.6 15.8" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="rotate(0 12 12)"/>
+	</svg></div>
 
-<header class="container" style="display:flex;justify-content: space-between;align-items: center;">
-<img src="img/logo.svg" alt="logo">
-	<ul>	
+<header class="container1440" style="display:flex;
+justify-content: space-between;align-items: center;
+padding-top:16px;
+padding-bottom:28px">
+<img class="logo" src="img/logo.svg" alt="logo" style="margin-left:3px;margin-top:9px;">
+<nav style="display:flex;justify-content: space-between;align-items: center;">
+	<ul class="part1" style="gap:53.5px;margin: 2px 69px 2px 0px;">	
 	<li><span style='white-space: nowrap;'>Our Plan</span>
 	<li>Employers
 	<li>Brokers
 	<li>Members
 	<li>About
 	<li>Blog
+	</ul>
+	<ul class="part2" style="gap:0px;margin: 2px 0px;">	
 	<li><button class="btn1"><span style='white-space: nowrap;'>Request a demo</span></button>
+	</ul>
+	<ul class="part3" style="gap:42px;margin: 2px 37px 2px 28px;">	
 	<li><span style='white-space: nowrap;'>Login
 	<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.3371 1.18649L11.3988 0.113544L6.46055 5.7606L1.53874 0.113544L0.600464 1.18649L6.46055 7.88766H6.47701L12.3371 1.18649Z" fill="#214E41"/>
@@ -94,6 +109,9 @@
 	<li class="lng">EN
 	<li class="lng hidden">RU
 	</ul>
+</nav>	
+	
+	
 	<ol class="burg" onclick="mmm()">
 		<li>
 		<svg width="35" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,26 +122,30 @@
 	</ol>
 </header>
 
-<div class="mob vid" id="mob" style="">
-<ul style="margin: 2px 37px;"><li><span style="font-size:80px;line-height: 81px" 
->&times;</span>
-<li>Our Plan
-<li>Employers
-<li>Brokers
-<li>Members
-<li>About
-<li>Blog
-<li><button class="btn1">Request a demo</button>
-<li>Login
-<li class="lng">EN
-<li class="lng hidden">RU
-</ul>
-</div>	
+																							<div class="mob vid" id="mob" style="">
+																							<ul style="margin: 2px 37px;"><li><span style="font-size:80px;line-height: 81px" 
+																							>&times;</span>
+																							<li>Our Plan
+																							<li>Employers
+																							<li>Brokers
+																							<li>Members
+																							<li>About
+																							<li>Blog
+																							<li><button class="btn1">Request a demo</button>
+																							<li>Login
+																							<li class="lng">EN
+																							<li class="lng hidden">RU
+																							</ul>
+																							</div>	
 
 
 
-<section></section><section></section><section></section><section></section>
-
+<section class="container pix">
+<div id="op7" style=""></div>
+</section>
+<section></section><section></section><section></section>
+<section></section><section></section><section></section>
+<section></section><section></section><section></section>
 <script>
 const mob=document.querySelector('.mob');
 const mobs=document.querySelectorAll('.mob li');
@@ -161,6 +183,64 @@ lng.forEach(x=>{x.addEventListener('click',
 		lng.forEach(x=>{x.classList.toggle('hidden');});
 		})
 	});
+//--------------------слайдер
+let aa=['','red','black','maroon','white','lime','fuchsia'];
+let ac2=[];
+
+const feb2=(x)=>{// создание слайдера
+var color=aa[Math.random()*5|0];//
+ac2.push(color);
+x.innerHTML=`
+<button style="width:42px;height:42px;background: transparent;border: none; border-radius:50%;padding:3px 0 0 0px"> 
+<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.8106 10.6252H7.32406L14.1008 3.93617L12.6412 2.46973L4.90009 10.1107L3.41442 11.5771L4.90009 13.0178L12.6412 20.6588L14.1008 19.1923L7.50651 12.6834H27.8106V10.6252Z" fill="#214E41"/>
+</svg>
+</button>
+
+<div style="width:1200px;height:100px;border:0px solid black;overflow:hidden;">
+	<div style="width:3000px; height:100px;background: white;
+	display:flex;justify-content:space-around;align-items: center;">
+<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
+<img src="img/pic11.png"><img src="img/pic12.png">
+<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
+<img src="img/pic11.png"><img src="img/pic12.png">
+<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
+<img src="img/pic11.png"><img src="img/pic12.png">
+	</div>
+</div>
+
+<button style="width:42px;height:42px;background: none;border: none; border-radius:50%;padding:3px 0 0 3px"> 
+<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.41443 12.5034H23.901L17.1242 19.1924L18.6099 20.6589L26.3249 13.0179H26.351L27.8106 11.5772L26.351 10.1108H26.3249L18.6099 2.46985L17.1242 3.93629L23.7446 10.4452H3.41443V12.5034Z" fill="#214E41"/>
+</svg>
+</button>
+`;
+
+x.setAttribute('style','display:flex;justify-content: space-between;align-items: center;');
+x.style.width = '100%';//'410px';
+let id=null;
+let dots=[];
+
+
+const lenta=x.childNodes[3].childNodes[1];
+const pred=x.childNodes[1];
+const next=x.childNodes[5];
+const f=(e)=>{ 
+	clearTimeout(id);
+	lenta.style.transition = `transform 2000ms`;
+	id = setTimeout(()=>{lenta.style.transition = '';}, 2000); 
+
+	lenta.style.transform = `translateX(-${200 * e}px)`;
+
+	a=e;
+	}
+
+
+let a=0;
+pred.onclick=()=>{if(a>0)f(a-1)};
+next.onclick=()=>{if(a<5)f(a+1)};
+}
+feb2(op7); 	
 </script>   
 </body>
 </html>
