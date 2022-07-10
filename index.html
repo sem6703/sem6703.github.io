@@ -34,6 +34,7 @@
 																		background: #00ffffcc; position: fixed;right:0;top: 0;
 																		display: flex; justify-content: flex-end;
 																		transition: opacity 2s;
+																		pointer-events: auto;
 																		z-index: 10;}
 																	.mob li {margin: 14px 0;}
 																	.mob li:hover {opacity:.65; cursor: pointer;}
@@ -163,7 +164,7 @@
 	height:3px;
 	background: transparent;
 	}
-.give__more2 { 	
+.give__more { 	
 	top: 157px;
 	background:white;
 	position:absolute;
@@ -197,14 +198,14 @@
 	border-radius: 0px 6px 6px 0px;
 	}
 .give__find:hover {background: green}
-@media screen and (max-width: 858px) {.give__more{bottom: -32%}}
+
 
 @media screen and (max-width: 400px) {
 	.give{
 		background-position: left 61% bottom;
 		background-color: #c4c0b4;
 		}
-	.give__more2{top:0;}
+	.give__more{top:0;}
 	.give__how{width:77%}
 	.give__find{padding:25px 12px}	
 	} 
@@ -214,7 +215,7 @@
   s0ection:nth-child(6n+1){background: #00000010}
   section:nth-child(6n+2){background: #00000020}  
   section:nth-child(6n+3){background: #00000030}  
-  section:nth-child(6n+4){background: #00000040} 
+  section:nth-child(6n+4){background: #00000000} 
   section:nth-child(6n){background: #00000080}  
 /*********/
 .to-up-btn {
@@ -233,15 +234,22 @@
 	z-index: 8;
 	}
 
-.btn1 {display: inline-block;background:#43806C;padding: 11px 14px;border-radius: 6px;
-	font-family:'Raleway';/*'Rob700';*//*	'Raleway' normal 700 14-20 */
-	f0ont-weight:700;
+.btn1 {
+	display: inline-block;
+	background:#43806C;
+	padding: 11px 14px;
+	border-radius: 6px;
+	font-family:'Raleway';
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;	
 	border: none;
-	transition: opacity .5s}
-.btn1:hover {cursor: pointer; opacity:.7}	
+	transition: opacity .5s
+	}
+.btn1:hover {
+	cursor: pointer; 
+	background: green;
+	}	
   </style>  
 </head>
 <body>
@@ -318,7 +326,7 @@
 		</fieldset>
 		</form>
 		<div class="give__dress">
-			<div class="container give__more2">
+			<div class="container give__more">
 				<ul class="give__1">
 					<li class="give__card">
 						<img src="img/pic2.png" alt="">
@@ -334,10 +342,13 @@
 		</div>
 	</div>
 </section>
-<section class="h755"></section><section class="h755"></section><section class="h755"></section>
+<script>/*******************************************************/</script>
+
+<section class="h755"></section>
 <section class="container">
 <div id="op7" style=""></div>
 </section>
+<section class="h755"></section><section class="h755"></section>
 <section class="h755"></section><section class="h755"></section><section class="h755"></section>
 <section class="h755"></section><section class="h755"></section><section class="h755"></section>
 
@@ -350,7 +361,7 @@ const mmm=()=>{
 	}
 mobs.forEach(x=>x.addEventListener('click',mmm));
 
-(function () {
+(function () {//Elevator
   var lift = document.querySelector('.to-up-btn_js');
   var limitV = 500;
   if (!lift) return;
@@ -378,64 +389,75 @@ lng.forEach(x=>{x.addEventListener('click',
 		lng.forEach(x=>{x.classList.toggle('hidden');});
 		})
 	});
+	
 //--------------------слайдер
-let aa=['','red','black','maroon','white','lime','fuchsia'];
-let ac2=[];
-
+(function (){
 const feb2=(x)=>{// создание слайдера
-var color=aa[Math.random()*5|0];//
-ac2.push(color);
-x.innerHTML=`
-<button style="width:42px;height:42px;background: transparent;border: none; border-radius:50%;padding:3px 0 0 0px"> 
-<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M27.8106 10.6252H7.32406L14.1008 3.93617L12.6412 2.46973L4.90009 10.1107L3.41442 11.5771L4.90009 13.0178L12.6412 20.6588L14.1008 19.1923L7.50651 12.6834H27.8106V10.6252Z" fill="#214E41"/>
-</svg>
-</button>
+	x.innerHTML=`
+	<button style="width:42px;height:42px;background: transparent;border: none;padding:3px 0 0 0px"> 
+	<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M27.8106 10.6252H7.32406L14.1008 3.93617L12.6412 2.46973L4.90009 10.1107L3.41442 11.5771L4.90009 13.0178L12.6412 20.6588L14.1008 19.1923L7.50651 12.6834H27.8106V10.6252Z" fill="#214E41"/>
+	</svg>
+	</button>
 
-<div style="width:1200px;height:100px;border:0px solid black;overflow:hidden;">
-	<div style="width:3000px; height:100px;background: white;
-	display:flex;justify-content:space-around;align-items: center;">
-<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
-<img src="img/pic11.png"><img src="img/pic12.png">
-<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
-<img src="img/pic11.png"><img src="img/pic12.png">
-<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
-<img src="img/pic11.png"><img src="img/pic12.png">
+	<div style="width:1046px;height:100px;border:0px solid black;overflow:hidden;
+	margin-right:8px;">
+		<div style="width:3273px; height:100px;background: white;
+		display:flex;justify-content:space-between;align-items: center;">
+	<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
+	<img src="img/pic11.png"><img src="img/pic12.png" style="margin-left:14px; margin-right:14px">
+	<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
+	<img src="img/pic11.png"><img src="img/pic12.png" style="margin-left:14px; margin-right:14px">
+	<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
+	<img src="img/pic11.png"><img src="img/pic12.png" style="margin-left:14px; margin-right:14px">
+		</div>
 	</div>
-</div>
 
-<button style="width:42px;height:42px;background: none;border: none; border-radius:50%;padding:3px 0 0 3px"> 
-<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.41443 12.5034H23.901L17.1242 19.1924L18.6099 20.6589L26.3249 13.0179H26.351L27.8106 11.5772L26.351 10.1108H26.3249L18.6099 2.46985L17.1242 3.93629L23.7446 10.4452H3.41443V12.5034Z" fill="#214E41"/>
-</svg>
-</button>
-`;
+	<button style="width:42px;height:42px;background: none;border: none;padding:3px 0 0 3px"> 
+	<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M3.41443 12.5034H23.901L17.1242 19.1924L18.6099 20.6589L26.3249 13.0179H26.351L27.8106 11.5772L26.351 10.1108H26.3249L18.6099 2.46985L17.1242 3.93629L23.7446 10.4452H3.41443V12.5034Z" fill="#214E41"/>
+	</svg>
+	</button>
+	`;
+	//
+	x.setAttribute('style','display:flex;justify-content: space-between;align-items: center;');
+	x.style.width = '100%';
 
-x.setAttribute('style','display:flex;justify-content: space-between;align-items: center;');
-x.style.width = '100%';//'410px';
-let id=null;
-let dots=[];
+	const lenta=x.childNodes[3].childNodes[1];//экран
+	const pred=x.childNodes[1];//кнопка лево
+	const next=x.childNodes[5];//кнопка право
+	const step=146+((3273-146*15)/14);
+	const ip=`translateX(-${step * 5}px)`;
+	lenta.style.transform = ip;//ип
+	let a=0;
 
+	const f=(e)=>{ // плавно перемещаю кадр
+		lenta.style.transition = 'transform 1000ms';
+		lenta.style.transform = `translateX(-${step * (5+e)}px)`;
+		a=e;
+		}
 
-const lenta=x.childNodes[3].childNodes[1];
-const pred=x.childNodes[1];
-const next=x.childNodes[5];
-const f=(e)=>{ 
-	clearTimeout(id);
-	lenta.style.transition = `transform 2000ms`;
-	id = setTimeout(()=>{lenta.style.transition = '';}, 2000); 
-
-	lenta.style.transform = `translateX(-${200 * e}px)`;
-
-	a=e;
-	}
-
-
-let a=0;
-pred.onclick=()=>{if(a>0)f(a-1)};
-next.onclick=()=>{if(a<5)f(a+1)};
+	pred.onclick=()=>{
+		if(a===-5){
+			lenta.style.transition = '';
+			lenta.style.transform = ip;
+			a=0;
+			setTimeout(()=>{f(-1)},0);// телепортирую кадр
+			return};
+		if(a>-5)f(a-1)};
+	next.onclick=()=>{
+		if(a===5){
+			lenta.style.transition = '';
+			lenta.style.transform = ip;
+			a=0;
+			setTimeout(()=>{f(+1)},0);// телепортирую кадр
+			return};
+		if(a<5)f(a+1)};
 }
-feb2(op7); 	
+
+feb2(op7);
+})()
+ 	
 </script>   
 </body>
 </html>
