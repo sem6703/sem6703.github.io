@@ -210,11 +210,34 @@
 	.give__find{padding:25px 12px}	
 	} 
 
+/************************************/
+.today__plan{padding:24px 20px 35px;width:107px; text-align:center;font-family: 'Raleway';font-weight: 400;font-size: 18px;line-height: 18px;letter-spacing: 0.02px;color: #757575;position:relative;}
+.today__plan::after{content:'';position:absolute;display:block;
+width:107px;height:3px;background:#757575;top:54px;left:0;}	
+.today__ul {b0ackground: yellow;width:77px;}
+.today__ul li:nth-child(1){font-family: 'Raleway';font-weight: 400;font-size: 13px;line-height: 22px;text-align: center;color: #214E41;}	
+.today__ul li:nth-child(2){width:75px;display: block;background:#214E41;;}	
+.today__ul li:nth-child(3){padding-top:24px;font-family: 'Raleway';font-weight: 700;font-size: 13px;line-height: 22px;text-align: center;}	
+.today__of{font-family: 'Raleway';font-weight: 700;font-size: 13px;line-height: 22px;letter-spacing: 0.02px;max-width:226px;padding:25px 0 71px;}
+.today__wo{font-family: 'Raleway';font-weight: 700;font-size: 13px;line-height: 22px;letter-spacing: 0.02px;text-decoration-line: underline;}
+.today__60{margin: 7px 0px 7px;position:relative;margin-right:7px;b0ackground:#fed}
+.today__60::after{content:'';position:absolute;display:block;
+width:225%;height:3px;background:olive;top:103px;left:0;}	/*513px*/
+.today{flex-wrap:wrap;padding:185px 0 56px;color: #214E41;display:flex;justify-content: space-between;align-items: flex-end;}
+.today__wr{padding-left: 60px;max-width:687px;text-align:left;b0ackground:pink}
+.today__h3{padding:28px 0 0px;font-family: 'Raleway';font-weight: 400;font-size: 14px;line-height: 20px;text-transform:uppercase;}
+.today__h2{max-width:450px;padding:19px 0 27px;font-family: 'Rob700';font-weight: 700;font-size: 36px;line-height: 46px;}
+.today__5{padding: 6px 0 0px;max-width:535px;font-family: 'Raleway';	font-weight: 400;font-size: 18px;line-height: 30px;letter-spacing: 0.02px;color: #757575;}
+.today__1{b0ackground:pink;padding-right: 86px;display:flex;justify-content: space-between;align-items: flex-end;}
+.today__7{padding:4px 0 7px;font-family: 'Rob700';font-weight: 700;font-size: 70px;line-height: 90px;b0ackground:transparent}
+.today__table {display:flex;justify-content: flex-end;align-items: flex-end;flex-direction:column}
+.today__graph{padding-bottom:10px;display:flex;justify-content: space-between;align-items: flex-end;gap:41px;}
+.today__titr{font-family: 'Raleway';font-weight: 400;font-size: 13px;line-height: 22px;text-align: center;color: #757575;}
 /*****************************************/
   s0ection {width:100%; max-width: 1300px;margin:0 auto;}
   s0ection:nth-child(6n+1){background: #00000010}
   section:nth-child(6n+2){background: #00000020}  
-  section:nth-child(6n+3){background: #00000030}  
+  section:nth-child(6n+3){background: #00000000}  
   section:nth-child(6n+4){background: #00000000} 
   section:nth-child(6n){background: #00000080}  
 /*********/
@@ -339,6 +362,31 @@
 						<ul class="give__2"><li>Faster benefits<li>Brella pays claims in hours–not weeks so your people can rest easy.</ul>
 				</ul>
 			</div>					
+		</div>
+	</div>
+</section>
+<script>/*******************************************************/</script>
+<section class="container today">
+	<div class="today__wr">
+		<h3 class="today__h3">Why Brella?</h3>	
+		<h2 class="today__h2">
+			Today, any health insurance deductible can feel like a high deductible.
+		</h2>
+		<p class="today__5">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p>	
+		<div class="today__plan">See our plan</div>
+	</div>
+	<div class="today__1">
+		<div class="today__60">
+			<p class="today__7">60%</p>
+			<div class="today__of">of Americans <span class="today__wo">would have to borrow</span> to cover an unexpected $1000 expense
+			</div>
+		</div>
+		<div class="today__table">
+			<div class="today__graph">
+				<ul class="today__ul"><li>$1,644<li style="height:149px;"><li>Deductible</ul>
+				<ul class="today__ul"><li>$4,039<li style="height:299px;"><li>Annual Max</ul>
+			</div>
+			<span class="today__titr">2020 individual averages (Source: KFF)</span>
 		</div>
 	</div>
 </section>
