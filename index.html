@@ -4,223 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./style.css" rel="stylesheet">
+  <link href="./font.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">  
   <link rel="shortcut icon" href="img/my.ico">
   <title>4-land</title>
   <style>
-  	*, *::after, *::before {
-		box-sizing: border-box;
-		margin:0;padding:0;
-		font-style: normal; 
-		}   
-	ul,ol {list-style-type: none} 	
 
-/***************************************/	
-.container {max-width: 1200px;width: 100%; margin:0 auto;}
-.container1440 {max-width: 1440px;width: 100%; margin:0 auto;}
-.mob,
-.mob button {
-	font-family: sans-serif; 
-	font-size:26px;
-	}
-																	.mob { color: #000;width:150vw;height:150vh;
-																		background: #00ffffcc; position: fixed;right:0;top: 0;
-																		display: flex; justify-content: flex-end;
-																		transition: opacity 2s;
-																		pointer-events: auto;
-																		z-index: 10;}
-	
-	
-.vid {
-	opacity: 0; 
-	pointer-events: none;
-	}
-.hidden {display: none;}
-.weld {white-space: nowrap;}
-
-
-
-
-
-
-/*************************************/
-.w700-1818 {font-family: 'Raleway';font-weight: 700;font-size: 18px;line-height: 18px;}
-.w700-1624 {font-family: 'Raleway';font-weight: 700;font-size: 16px;line-height: 24px;}
-.w700-1420 {font-family: 'Raleway';font-weight: 700;font-size: 14px;line-height: 20px;}
-
-
-.w700-1322 {font-family: 'Raleway';font-weight: 700;font-size: 13px;line-height: 22px;}
-.w700-1321 {font-family: 'Raleway';font-weight: 700;font-size: 13px;line-height: 21px;}
-.w700-1320 {font-family: 'Raleway';font-weight: 700;font-size: 13px;line-height: 20px;}
-.w400-2034 {font-family: 'Raleway';font-weight: 400;font-size: 20px;line-height: 34px;}
-.w400-1830 {font-family: 'Raleway';font-weight: 400;font-size: 18px;line-height: 30px;}
-.w400-1627 {font-family: 'Raleway';font-weight: 400;font-size: 16px;line-height: 27px;}
-.w400-1624 {font-family: 'Raleway';font-weight: 400;font-size: 16px;line-height: 24px;}
-.w400-1424 {font-family: 'Raleway';font-weight: 400;font-size: 14px;line-height: 24px;}
-.w400-1420 {font-family: 'Raleway';font-weight: 400;font-size: 14px;line-height: 20px;}
-.w400-1324 {font-family: 'Raleway';font-weight: 400;font-size: 13px;line-height: 24px;}
-.w400-1322 {font-family: 'Raleway';font-weight: 400;font-size: 13px;line-height: 22px;}
-.w400-1320 {font-family: 'Raleway';font-weight: 400;font-size: 13px;line-height: 20px;}
-.w400-1118 {font-family: 'Raleway';font-weight: 400;font-size: 11px;line-height: 18px;}
-.r900 {font-family: 'Rob';font-weight: 900;font-size: 13px;line-height: 20px;}
-
-.r700-7090 {font-family: 'Rob700';font-weight: 700;font-size: 70px;line-height: 90px;}
-.r700-6078 {font-family: 'Rob700';font-weight: 700;font-size: 60px;line-height: 78px;}
-
-.r700-3646 {font-family: 'Rob700';font-weight: 700;font-size: 36px;line-height: 46px;}
-.r700-3242 {font-family: 'Rob700';font-weight: 700;font-size: 32px;line-height: 42px;}
-.r700-2026 {font-family: 'Rob700';font-weight: 700;font-size: 20px;line-height: 26px;}
-.r700-1324 {font-family: 'Rob700';font-weight: 700;font-size: 13px;line-height: 24px;}
-.r700-1320 {font-family: 'Rob700';font-weight: 700;font-size: 13px;line-height: 20px;}
-.r400-3242 {font-family: 'Rob700';font-weight: 400;font-size: 32px;line-height: 42px;}
-.r400-1830 {font-family: 'Rob700';font-weight: 400;font-size: 18px;line-height: 30px;}
-
-.fss {display:flex;justify-content: flex-start;align-items: flex-start;}
-.fsb {display:flex;justify-content: flex-start;align-items: space-between;}
-.fsa {display:flex;justify-content: flex-start;align-items: space-around;}
-.fsv {display:flex;justify-content: flex-start;align-items: space-evenly;}
-.fsc {display:flex;justify-content: flex-start;align-items: center;}
-.fse {display:flex;justify-content: flex-start;align-items: flex-end;}
-
-.fbs {display:flex;justify-content: space-between;align-items: flex-start;}
-.fbb {display:flex;justify-content: space-between;align-items: space-between;}
-.fba {display:flex;justify-content: space-between;align-items: space-around;}
-.fbv {display:flex;justify-content: space-between;align-items: space-evenly;}
-.fbc {display:flex;justify-content: space-between;align-items: center;}
-.fbe {display:flex;justify-content: space-between;align-items: flex-end;}
-
-.fas {display:flex;justify-content: space-around;align-items: flex-start;}
-.fab {display:flex;justify-content: space-around;align-items: space-between;}
-.faa {display:flex;justify-content: space-around;align-items: space-around;}
-.fav {display:flex;justify-content: space-around;align-items: space-evenly;}
-.fac {display:flex;justify-content: space-around;align-items: center;}
-.fae {display:flex;justify-content: space-around;align-items: flex-end;}
-
-.fvs {display:flex;justify-content: space-evenly;align-items: flex-start;}
-.fvb {display:flex;justify-content: space-evenly;align-items: space-between;}
-.fva {display:flex;justify-content: space-evenly;align-items: space-around;}
-.fvv {display:flex;justify-content: space-evenly;align-items: space-evenly;}
-.fvc {display:flex;justify-content: space-evenly;align-items: center;}
-.fve {display:flex;justify-content: space-evenly;align-items: flex-end;}
-
-.fcs {display:flex;justify-content: center;align-items: flex-start;}
-.fcb {display:flex;justify-content: center;align-items: space-between;}
-.fca {display:flex;justify-content: center;align-items: space-around;}
-.fcv {display:flex;justify-content: center;align-items: space-evenly;}
-.fcc {display:flex;justify-content: center;align-items: center;}
-.fce {display:flex;justify-content: center;align-items: flex-end;}
-
-.fes {display:flex;justify-content: flex-end;align-items: flex-start;}
-.feb {display:flex;justify-content: flex-end;align-items: space-between;}
-.fea {display:flex;justify-content: flex-end;align-items: space-around;}
-.fev {display:flex;justify-content: flex-end;align-items: space-evenly;}
-.fec {display:flex;justify-content: flex-end;align-items: center;}
-.fee {display:flex;justify-content: flex-end;align-items: flex-end;}
-
-.u01 {gap:53.5px;margin: 2px 69px 2px 0px;}/*fbc*/
-	.u01 li {}/*weld*/	
-.u02 {gap:0px;margin: 2px 0px;}/*fbc*/		
-.u03 {gap:42px;margin: 2px 37px 2px 28px;}	/*fbc*/
-.u04 {cursor:pointer}
-.u05 {margin: 2px 37px;}
-	.u05 li {margin: 14px 0;}
-	.u05 li:hover {opacity:.7; cursor: pointer;}
-.u06 {margin:32px 0 26px;flex-wrap: wrap;color: #214E41;}/*w400-1420 fec*/
-	.u06 > li {
-		width:353px;
-		padding:6px 6px 24px;
-		display:flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		gap:8px;	
-		}
-.u07 {}/*give__2*/
-	.u07 li:first-child {border-radius: 6px;color: #214E41;}/*w400-1624*/	
-.u08 {width:77px;text-align: center;color: #214E41;}	
-	.u08 > li:nth-child(1){}/*w400-1322*/
-	.u08 > li:nth-child(2){width:75px;display: block;background:#214E41;}
-	.u08 > li:nth-child(3){padding-top:24px;}/*w700-1322*/
-.u09 {color: #43806C;}/*color: #43806C;*//*r400-3242*/
-	.u09 li {padding-bottom:17px;}
-.u10 {letter-spacing: 0.02px;color: #FFFFFF;}/*w400-2034*/
-	.u10 li {padding-bottom:36px;}
-.u11 {width:25%;}
-	.u11 li:nth-child(1) {color: #F0A446;}/*r700-6078*/
-	.u11 li:nth-child(2) {padding:13px 53px 0 0; letter-spacing: 0.02px;color: #214E41;}/*w700-1322*/
-.u12 {gap:39px;display:flex;justify-content: flex-end;align-items: center;flex-wrap:wrap;color: #214E41;}/*bet__card r700-2026*/
-	.u12 li {width:355px;height:384px;}
-	.u12 li h6 {padding-top: 21px;padding-bottom:12px;letter-spacing: 0.05px;text-transform: uppercase;color: #43806C;}/*bet__h6 w400-1118*/
-	.u12 li p {}/*bet__p*/	
-.u13 {margin-right:30px;}
-	.u13 li {margin-bottom:14px;}
-	.u13 li:first-child {letter-spacing: 0.02px;text-transform: uppercase;color: #FFFFFF;}/*r700-1324*/	
-	.u13 li:last-child {margin-bottom:20px;}
-	.u13 li:not(:first-child){cursor: pointer;color: #FFFFFF;}
-	.u13 li:not(:first-child):hover{text-decoration:underline;}
-/*****************************/
-.hd ul {display:flex;}
-.hd ol {
-	display: none;
-	margin-right:44px;
-	}
-.hd li:hover {cursor: pointer;}	
-@media screen and (max-width: 850px) 
-	{.hd ul {display: none}
-	.hd ol {display: flex}}
-.hd .lng {width:22px}
-
-.give__find {background:#43806c}	
-.give__find:hover {background: green}	
-
-
-.today__liner {position:relative;display:flex;justify-content: flex-start;align-items: flex-end;}
-.today__liner::after {content:'';position:absolute;width:92%;height:3px;background:#F0A446;
-bottom:150px;
-}
-.today__60{margin: 7px 0px 7px;position:relative;margin-right:7px;b0ackground:#fed}
-.today__table {display:flex;justify-content: flex-end;align-items: flex-end;flex-direction:column}
-.today__graph{padding-bottom:10px;display:flex;justify-content: space-between;align-items: flex-end;gap:41px;}
-
-.read p {padding-bottom: 42px;}
-.read__get {background:#43806c}
-.read__get:hover {background: green}
-
-.ft2 p {padding:11px 0;}
-
-/*********/
-.to-up-btn {
-	position: fixed;
-	right: 50px;
-	bottom: 50px;
-	width: 42px;
-	height: 42px;
-	background: #43806C;
-	border: 2px solid #43806C;
-	box-sizing: border-box;
-	border-radius: 50%;
-	cursor: pointer;
-	padding-left:7px;
-	padding-top:7px;
-	z-index: 8;
-	}
-
-
-.btn1 {
-	display: inline-block;
-	background:#43806C;
-	padding: 11px 14px;
-	border-radius: 6px;
-	font-family:'Raleway';
-	font-size: 14px;
-	line-height: 20px;
-	color: #ffffff;	
-	border: none;
-	transition: opacity .5s
-	}
-.btn1:hover {
-	cursor: pointer; 
-	background:green;
-	}
   </style>  
 </head>
 <body>
@@ -230,22 +19,22 @@ bottom:150px;
 	<path d="M2.4 15.8L12.0 6.2 21.6 15.8" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="rotate(0 12 12)"/>
 	</svg></div>
 <script>/********<div class="" style=""></div>***********************************/</script>
-<section class="container1440 hd w700-1420 fbc" style="padding:16px 42px 28px;line-height: 20px;color: #214E41;">
-	<img class="logo" src="img/logo.svg" alt="logo" style="margin-left:3px;
-	margin-top:9px;">
-	<nav class="fbc">
-		<ul class="u01 fbc">	
+<section class="container1440 hd ">
+	<img class="hd__logo" src="img/logo.svg" alt="logo">
+	<nav class="hd__nav">
+		<ul class="u01">	
 			<li>Our Plan
 			<li>Employers
 			<li>Brokers
 			<li>Members
 			<li>About
 			<li>Blog
-		</ul>		
-		<ul class="u02 fbc">	
-			<li><button class="btn1" style="color: #FFFFFF;"><span class="weld">Request a demo</span></button>
 		</ul>
-		<ul class="u03 fbc">	
+
+		<ul class="u02">	
+			<li><button class="btn1 hd__btn"><span class="weld">Request a demo</span></button>
+		</ul>
+		<ul class="u03">	
 			<li><span class="weld">Login
 				<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M12.3371 1.18649L11.3988 0.113544L6.46055 5.7606L1.53874 0.113544L0.600464 1.18649L6.46055 7.88766H6.47701L12.3371 1.18649Z" fill="#214E41"/>
@@ -255,7 +44,7 @@ bottom:150px;
 			<li class="lng hidden">RU
 		</ul>
 	</nav>		
-	<ol class="burg u04 mmm"><!--onclick="mmm()"-->
+	<ol class="hd__burg u04 mmm"><!--onclick="mmm()"-->
 		<li>
 		<svg width="35" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<rect x="0" y="0" width="35" height="5" fill="#000" />
@@ -283,50 +72,40 @@ bottom:150px;
 									</ul>
 									</div>	
 <script>/*****************************/</script>
-<section class="container1440 give" style="background: url('img/pic1.png');
-	background-position: left bottom;background-repeat:no-repeat;
-	background-color:#dddbce;">
-	<div class="container give__wr fss" style="flex-direction: column;
-	padding-top:0px;padding-bottom:260px;position:relative;">
-		<h1 class="give__h1 r700-3646" style="max-width: 547px;
-	padding: 161px 0 39px;color: #214E41;">
+<section class="container1440 give">
+	<div class="container give__wr">
+		<h1 class="give__h1">
 		Give your team peace of mind with supplemental health insurance from Brella.
 		</h1>	
 		<form>
-		<fieldset class="give__fs1" style="padding-top: 18px;border: none;">
-		<legend class="give__leg w700-1624" style="
-	text-align:left;color: #214E41;">I'm wondering...</legend>
-		<span class="weld">
-		<input class="give__how w700-1420"  style="padding: 24px 22px;width:309px;
-	border: none;text-align:left;
-	margin-right:-33px;border-radius: 6px 0px 0px 6px;color: #222222;" type="search" placeholder="how Brella's plan works">
-		<input class="give__find w700-1320"  style="
-	padding: 26px 36px;border: none;text-align:center;
-	border-radius: 0px 6px 6px 0px;color: #FFFFFF;" type="submit" value="Find out">
-		</span>
-		</fieldset>
+			<fieldset class="give__fs1">
+			<legend class="give__leg">I'm wondering...</legend>
+			<span class="weld">
+			<input class="give__how" type="search" placeholder="how Brella's plan works">
+			<input class="give__find" type="submit" value="Find out">
+			</span>
+			</fieldset>
 		</form>		
-		<div class="give__dress" style="margin-top:8px;width:100%;	height:3px;position: relative;">
-			<div class="container give__more" style="padding: 24px 24px 0;top: 166px;
-	position:absolute;border-radius: 6px;
-	background: white;box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);">
-				<ul class="w400-1420 u06 fvc">
+		<div class="give__dress">
+		
+			<div class="container give__more">
+				<ul class=" u06">
 					<li>
 						<img src="img/pic2.png" alt="">
 						<ul class="u07">
-							<li class="w400-1624">More coverage
+							<li>More coverage
 							<li>Brella covers 13,000+ injuries and illnesses from concussions to cancer.
 						</ul>
 					<li>
 						<img src="img/pic3.png" alt="">
 						<ul class="u07">
-							<li class="w400-1624">Less hassle
+							<li>Less hassle
 							<li>One easy-to-manage plan with paperless install and online admin tools.
 						</ul>
 					<li>
 						<img src="img/pic4.png" alt="">
 						<ul class="u07">
-							<li class="w400-1624">Faster benefits
+							<li>Faster benefits
 							<li>Brella pays claims in hours–not weeks so your people can rest easy.
 						</ul>
 				</ul>
@@ -335,42 +114,39 @@ bottom:150px;
 	</div>
 </section>
 <script>/******************************/</script>
-<section class=" container _60">
-<div style="padding:199px 0 101px;display:grid;grid-template-columns: 1fr 1fr;">
-<!-- секция типа -->
-	<div style="padding:11px 0 0px;max-width:550px;display:grid;grid-template-columns: 1fr 13fr;">
-	<div></div>
-	<div>
-		<div class="w400-1420" style="letter-spacing: 0.05px;text-transform: uppercase;color: #214E41;">Why Brella?</div>
-		<div class="r700-3646" style="max-width:480px;padding-top:18px;color: #214E41;">Today, any health insurance deductible can feel like a high deductible.</div>	
-		<p class="w400-1830" style="
-		padding:38px 0px 20px;max-width:493px;
-		letter-spacing: 0.02px;color: #757575;">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p>
+<section class="container _60">
+<div class="_60__1">
+	<div class="_60__2">
+		<div></div>
+		<div>
+			<div class="_60__3">Why Brella?</div>
+			<div class="_60__4">Today, any health insurance deductible can feel like a high deductible.</div>	
+			<p class="_60__5">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p>
 
-		<img src="img/pic18.png" alt="">
-	</div>	
-	</div>	
-
-	<div class="today__liner" style="display:grid;grid-template-columns: 6fr 6fr  1fr 1fr;">
-		<div class="today__60">
-			<p class="today__7 r700-7090"  style="color: #214E41;">60%</p>
-			<div class="today__of w700-1322" style="padding:30px 0 70px; max-width:235px;letter-spacing: 0.02px;color: #214E41;">of Americans <span class="today__wo w700-1322" style="letter-spacing: 0.02px;text-decoration-line: underline;color: #214E41;">would have to borrow</span> to cover an unexpected $1000 expense
+			<img src="img/pic18.png" alt="">
+		</div>	
+	</div>
+	<div class="_60__liner">
+		<div class="_60__60">
+			<p class="_60__7">60%</p>
+			<div class="_60__of">of Americans <span class="today__wo">would have to borrow</span> to cover an unexpected $1000 expense
 			</div>
 		</div>
-		<div class="today__table" style="padding-top:5px;">
-			<div class="today__graph">
+
+		<div class="_60__table">
+			<div class="_60__graph">
 				<ul class="u08">
-					<li class="w400-1322">$1,644
+					<li>$1,644
 					<li style="height:149px;">
-					<li class="w700-1322 weld">Deductible
+					<li>Deductible
 				</ul>
 				<ul class="u08">
-					<li class="w400-1322">$4,039
+					<li>$4,039
 					<li style="height:299px;">
-					<li class="w700-1322 weld">Annual Max
+					<li>Annual Max
 				</ul>
 			</div>
-			<p class="today__titr w400-1322" style="text-align: center;color: #757575;">2020 individual averages (Source: KFF)</p>
+			<p class="_60__titr">2020 individual averages (Source: KFF)</p>
 		</div>
 	</div>
 </div>	
@@ -378,19 +154,18 @@ bottom:150px;
 
 
 <script>/****************************/</script>
-<section class=" container1440 cust">	
-	<div class="container1440" style="padding:13px 10px 10px 10px;display:grid;grid-template-columns: 1fr 1fr;">
-		<div style="background:#e3eeed;">
-			<div style="margin:120px auto;max-width:440px;padding:0px 0px 0px 10px;">
-				<div class="w400-1320" style="padding-bottom:29px;letter-spacing: 0.05px;text-transform: uppercase;color: #214E41;">brella brings</div>
-				<div class="r700-3242" style="padding-bottom:19px;color: #214E41;">Customizable benefits
-				<span style="padding:12px;"></span>
+<section class=" container1440 cust">
+		<div class="cust__1">
+			<div class="cust__2">
+				<div class="cust__3 ">brella brings</div>
+				<div class="cust__4 ">Customizable benefits
+				<span class="cust__5"></span>
 				<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M3.41443 12.5034H23.901L17.1242 19.1924L18.6099 20.6589L26.3249 13.0179H26.351L27.8106 11.5772L26.351 10.1108H26.3249L18.6099 2.46985L17.1242 3.93629L23.7446 10.4452H3.41443V12.5034Z" fill="#214E41"/>
 		</svg>
 				</div>	
-			
-				<ol class="r400-3242 u09"> 
+
+				<ol class="u09"> 
 					<li>Paperless install & admin
 					<li>Effortless enrollment
 					<li>Easy claims experience
@@ -399,313 +174,159 @@ bottom:150px;
 				</ol>
 			</div>	
 		</div>
-		<div style="background: #214e41">
-			<div style="margin:163px auto;max-width:528px;">
-				<ul class="w400-2034 u10" 
-				style="">
+		<div class="cust__6">
+			<div class="cust__7">		
+				<ul class="u10">
 				<li>Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic conditions. Employees can select the payout amounts that fit their needs and their budget.
 				<li>Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.
 				</ul>
 			</div>	
-		</div>
-	</div>
+		</div>	
 </section>
 <script>/*******************************************************/</script>
-<section class=" container no" style="padding:107px 0 30px; background-image:url(img/pic5.png);background-repeat:no-repeat;
-background-position:right top 70%;">
-
-	<div style="max-width:528px;padding:0px;">
-		<div class="r700-1320" style="letter-spacing: 0.05px;text-transform: uppercase;color: #43806C;">one plan, more coverage</div>
-		<div class="r700-3646" style="padding-top:18px;color: #214E41;">No one can predict which health issues might come their way.</div>
-		<p class="w400-1830" style="padding-top:38px;letter-spacing: 0.02px;color: #757575;">Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.</p>
-
+<section class=" container no">
+	<div class="no__1">
+		<div class="no__2">one plan, more coverage</div>
+		<div class="no__3">No one can predict which health issues might come their way.</div>
+		<p class="no__4">Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.</p>
 	</div>	
-
 </section>
 <script>/**********/</script>
-<section class=" container k5 fbc" style="padding:73px 0 108px;">
+
+<section class="container k5">
 	<ul class="u11">
-		<li class="r700-6078">5K
-		<li class="w700-1322">covered injuries and illnesses from fractures and appendicitis to cancer
+		<li>5K
+		<li>covered injuries and illnesses from fractures and appendicitis to cancer
 	</ul>
 	<ul class="u11">
-		<li class="r700-6078">1X
-		<li class="w700-1322">more covered conditions than Accident and Critical Illness plans—combined
+		<li>1X
+		<li>more covered conditions than Accident and Critical Illness plans—combined
 	</ul>
 	<ul class="u11">
-		<li class="r700-6078">40%
-		<li class="w700-1322">plans are 100% guaranteed issue. <br>No medical underwriting required
+		<li>40%
+		<li>plans are 100% guaranteed issue. <br>No medical underwriting required
 	</ul>
 	<ul class="u11">
-		<li class="r700-6078">0
-		<li class="w700-1322">Zero limitations or exclusions for <br>pre-existing conditions
+		<li>0
+		<li>Zero limitations or exclusions for <br>pre-existing conditions
 	</ul>
 </section>
 <script>/****************************/</script>
-<section class=" container cel fec" style="padding:72px 0 114px; background-image:url(img/pic6.png);background-repeat:no-repeat;
-background-position: left 23% top; 
-">
-
-
-
-	<div style="max-width:480px;padding:0px;">
-		<div class="r900" style="letter-spacing: 0.05px;text-transform: uppercase;color: #43806C;">better claims experience</div>
-		<div class="r700-3646" style="padding-top:18px;color: #214E41;">Give your people a plan that pays in hours—not weeks.</div>
-		<p class="w400-1830" style="padding-top:38px;letter-spacing: 0.02px;color: #757575;">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</p>
-
-		<button class="w700-1818" style="padding:26px 0px 12px;background: transparent;border: none;
-		border-bottom:2px solid #214E41;letter-spacing: 0.02px;color: #214E41;">
+<section class="container cel">
+	<div class="cel__1">
+		<div class="cel__r900">better claims experience</div>
+		<div class="cel__2">Give your people a plan that pays in hours—not weeks.</div>
+		<p class="cel__3">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</p>
+		<button class="cel__4">
 		Play Video
 		</button>
-	</div>	
-
-
+	</div>
 </section>
 <script>/********************/</script>
-<section class="container1440 easy" style="padding:128px 0 65px; background-image:url(img/pic7.png);">
-
+<section class="container1440 easy">
 <div class="container">
-	<div style="max-width:503px;/*padding:0px 0px 0px;*/">
-		<div class="w700-1320" style="letter-spacing: 0.05px;text-transform: uppercase;color: #43806C;">for employers</div>
-		<div class="r700-3646" style="padding-top:18px;max-width:480px;color: #214E41;">Easy enrollment meets simple administration.</div>
-		<p class="w400-1830" style="padding-top:38px;letter-spacing: 0.02px;color: #757575;">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</p>
-
-		<button class="w700-1818" style="padding:27px 0px 12px; background: transparent; border: none;
-		border-bottom:2px solid #214E41;letter-spacing: 0.02px;color: #214E41;">
+	<div class="easy__1">
+		<div class="easy__2">for employers</div>
+		<div class="easy__3">Easy enrollment meets simple administration.</div>
+		<p class="easy__4">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</p>
+		<button class="easy__5">
 		Learn more
 		</button>
 	</div>	
 </div>
 </section>
 <script>/*********/</script>
-<section class=" container pro" style="padding:162px 0 223px;">
-<div class="r700-3646" style="padding-bottom:97px; text-align: center;color: #214E41;">
-Proudly backed by</div>
+<section class=" container pro">
+<div class="pro__1">Proudly backed by</div>
 <div id="megaslider">this is place for slider</div>
 </section>
 <script>/*****************/</script>
-<section class="container bet" style="padding:2px 0 105px;">
-
-
-<ul class="u12 r700-2026 ">
-	<li><img src="img/pic13.png">
-		<h6 class="w400-1118">Podcast</h6>
-		<p>Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</p>
-	<li><img src="img/pic14.png">
-		<h6 class="w400-1118">Insurance Innovation</h6>
-		<p>How to Design Simpler Insurance Benefits</p>
-	<li><img src="img/pic15.png">
-		<h6 class=" w400-1118">Benefits Strategy</h6>
-		<p>Executive Benefits Outlook with Dan Aceti</p>
-</ul>
-</div>
+<section class="container bet">
+	<ul class="u12">
+		<li><img src="img/pic13.png">
+			<h6">Podcast</h6>
+			<p>Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</p>
+		<li><img src="img/pic14.png">
+			<h6>Insurance Innovation</h6>
+			<p>How to Design Simpler Insurance Benefits</p>
+		<li><img src="img/pic15.png">
+			<h6>Benefits Strategy</h6>
+			<p>Executive Benefits Outlook with Dan Aceti</p>
+	</ul>
 </section>
 <script>/**********************/</script>
-<section class=" container1440 read fec" style="background-image:url(img/pic16.png);">
-
-<div style="padding: 105px 0 55px 79px;width:50%;background: #e3eeed">
-
-	<div style="width:480px;padding:40px;">
-		<div class="r700-3646" style="padding-bottom:23px;color: #214E41;">
-			<p>Ready to explore Brella’s supplemental health solution?</p>
-			<p>Let’s talk.</p>
-		</div>
-
-		<button class="read__get w700-1321" style="padding:12px 24px;border-radius: 6px;border: none;text-align: center;letter-spacing: 0.02px;color: #FFFFFF;">
-		Get in touch
-		</button>
-	</div>	
-</div>
-
-
-
+<section class=" container1440 read">
+	<div class="read__1">
+		<div class="read__2">
+			<div class="read__3">
+				<p>Ready to explore Brella’s supplemental health solution?</p>
+				<p>Let’s talk.</p>
+			</div>
+			<button class="read__get">
+			Get in touch
+			</button>
+		</div>	
+	</div>
 </section>
 <script>/*******************/</script>
-<footer class=" container1440 ft1" style="background: #214e41;">
-<div class="container fbs" style="padding:103px 0 70px;">
-
-
-
-	<div class="w400-1627 fbs" style="width:495px;">
-		<img src="img/pic17.png" style="margin-right:20px;">	
-
-	
-		<ul class="u13">
-			<li class="r700-1324">Join Brella
-			<li>Our Plan	
-			<li>Employers
-			<li>Brokers
-			<li>Members
-		</ul>
-		
-		<ul class="u13">
-			<li class="r700-1324">Company
-			<li>About
-			<li>Blog
-			<li>Careers
-			<li>Contact
-		</ul>	
-	</div>
-
-	
-
-	<div class="" style="width:356px;">
-	<div class="w400-1324" style="letter-spacing: 0.02px;text-transform: uppercase;color: #FFFFFF;">Get the latest</div>
-	<div class="w400-1424" style="padding-top:18px;letter-spacing: 0.02px;color: #FFFFFF;">
-	Sign up to receive benefits news and insights in your inbox once a month.
-
-		<form class="edit" style="margin-top:16px;border:2px solid white;width:355px;height:50px;">
-		<input type="email" placeholder="Email*" 
-		style="display: none;margin-right:-5px;width:295px;background:transparent">
-		<button type="submit" 
-		style="display: none;width:53px;height:50px;background:white;"></button>             
-		</form>
-
-		<div class="soc fsc" style="padding-top:31px;gap:25px;">
-			<img src="img/soc1.svg" alt="soc1">
-			<img src="img/soc2.svg" alt="soc2">
-			<img src="img/soc3.svg" alt="soc3">	
+<footer class=" container1440 ft1">
+	<div class="container ft1__1">
+		<div class="ft1__2">
+			<img class="ft1__3" src="img/pic17.png">	
+			<ul class="u13">
+				<li>Join Brella
+				<li>Our Plan	
+				<li>Employers
+				<li>Brokers
+				<li>Members
+			</ul>		
+			<ul class="u13">
+				<li>Company
+				<li>About
+				<li>Blog
+				<li>Careers
+				<li>Contact
+			</ul>	
 		</div>
-	</div>
-	</div>
+		<div class="ft1__4">
+			<div class="ft1__5">Get the latest</div>
+			<div class="ft1__6">
+			Sign up to receive benefits news and insights in your inbox once a month.
 
+				<form class="ft1__edit">
+				<input class="ft1__email" type="email" placeholder="Email*">
+				<button class="ft1__submit" type="submit"></button>             
+				</form>
+
+				<div class="ft1__soc">
+					<img src="img/soc1.svg" alt="soc1">
+					<img src="img/soc2.svg" alt="soc2">
+					<img src="img/soc3.svg" alt="soc3">	
+				</div>
+			</div>
+		</div>
 	</div><!--container-->
-	</footer>
-	<script>/**********************/</script>
-	<footer class=" container1440 ft2" style="background: #214e41;">
-	<div class="container w400-1424" style="padding: 64px 0 50px; border-top:2px solid white;letter-spacing: 0.02px;color: #FFFFFF;">
-	<p>Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.
-	</p>	
-	<p>Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX</p>
-	<p>Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at
-	(844) 987-1070
-	.</p>
+</footer>
+<script>/**********************/</script>
+<footer class="container1440 ft2">
+	<div class="container ft2__1">
+		<p>Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.
+		</p>	
+		<p>Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX</p>
+		<p>Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at
+		(844) 987-1070
+		.</p>
 	<br>
-
-	<div class="fbc" style="padding: 47px 0 0px;">
+	<div class="ft2__2">
 		<span>© 2021 Brella Insurance Inc. All Rights Reserved.</span>
-
-		<div class="fbc" style="display:flex;justify-content: space-between;align-items: center;">
-		<div style="padding:4px 11px 4px 0">Privacy</div>
-		<div style="border-left:1px solid white;padding:4px 0 4px 6px">Terms of Service</div>
+		<div class="ft2__3">
+		<div class="ft2__4">Privacy</div>
+		<div class="ft2__5">Terms of Service</div>
 		</div>
-
 	</div>
-
 </div><!--container-->
 </footer>
-<script>/*****************/
-(function () {//моб меню
-const mobs=document.querySelectorAll('.mob li, .mmm');
-const mob=document.querySelector('.mob');
-let tm=null;
-const mmm=()=>{
-	mob.classList.toggle('vid');
-	}
-mobs.forEach(x=>x.addEventListener('click',mmm));
-})();
-
-(function () {//Elevator
-  var lift = document.querySelector('.to-up-btn_js');
-  //console.log(lift);
-  var limitV = 500;
-  if (!lift) return;
-  lift.addEventListener('click', function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-  window.addEventListener('scroll', function () {
-    if (window.pageYOffset > limitV) {
-      lift.classList.remove('hidden');
-    }
-
-    if (window.pageYOffset < limitV) {
-      lift.classList.add('hidden');
-    }
-  });
-})(); //Elevator
-
-(function (){// смена языка 
-const lng=document.querySelectorAll('.lng');
-//console.log(lng);
-lng.forEach(x=>{x.addEventListener('click',
-	(e)=>{
-		e.stopPropagation();
-		lng.forEach(x=>{x.classList.toggle('hidden');});
-		})
-	});
-})();
-
-(function (){//slider
-const feb2=(x)=>{// создание слайдера
-	x.innerHTML=`
-	<button style="width:42px;height:42px;background: transparent;border: none;padding:3px 0 0 0px"> 
-	<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M27.8106 10.6252H7.32406L14.1008 3.93617L12.6412 2.46973L4.90009 10.1107L3.41442 11.5771L4.90009 13.0178L12.6412 20.6588L14.1008 19.1923L7.50651 12.6834H27.8106V10.6252Z" fill="#214E41"/>
-	</svg>
-	</button>
-
-	<div style="width:1046px;height:100px;border:0px solid black;overflow:hidden;
-	margin-right:8px;">
-		<div style="width:3273px; height:100px;background: white;
-		display:flex;justify-content:space-between;align-items: center;">
-	<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
-	<img src="img/pic11.png"><img src="img/pic12.png" style="margin-left:14px; margin-right:14px">
-	<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
-	<img src="img/pic11.png"><img src="img/pic12.png" style="margin-left:14px; margin-right:14px">
-	<img src="img/pic8.png"><img src="img/pic9.png"><img src="img/pic10.png">
-	<img src="img/pic11.png"><img src="img/pic12.png" style="margin-left:14px; margin-right:14px">
-		</div>
-	</div>
-
-	<button style="width:42px;height:42px;background: none;border: none;padding:3px 0 0 3px"> 
-	<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M3.41443 12.5034H23.901L17.1242 19.1924L18.6099 20.6589L26.3249 13.0179H26.351L27.8106 11.5772L26.351 10.1108H26.3249L18.6099 2.46985L17.1242 3.93629L23.7446 10.4452H3.41443V12.5034Z" fill="#214E41"/>
-	</svg>
-	</button>
-	`;
-
-	x.setAttribute('style','display:flex;justify-content: space-between;align-items: center;');
-	x.style.width = '100%';
-
-	const lenta=x.childNodes[3].childNodes[1];//экран
-	const pred=x.childNodes[1];//кнопка лево
-	const next=x.childNodes[5];//кнопка право
-	const step=146+((3273-146*15)/14);
-	const ip=`translateX(-${step * 5}px)`;
-	lenta.style.transform = ip;//ип
-	let a=0;
-
-	const f=(e)=>{ // плавно перемещаю кадр
-		lenta.style.transition = 'transform 500ms';
-		lenta.style.transform = `translateX(-${step * (5+e)}px)`;
-		a=e;
-		}
-
-	pred.onclick=()=>{
-		if(a===-5){
-			lenta.style.transition = '';
-			lenta.style.transform = ip;
-			a=0;
-			setTimeout(()=>{f(-1)},0);// телепортирую кадр
-			return};
-		if(a>-5)f(a-1)};
-	next.onclick=()=>{
-		if(a===5){
-			lenta.style.transition = '';
-			lenta.style.transform = ip;
-			a=0;
-			setTimeout(()=>{f(+1)},0);// телепортирую кадр
-			return};
-		if(a<5)f(a+1)};
-}
-
-feb2(megaslider);
-})()
-
-
+<script src="script.js">
 
 </script>
 
