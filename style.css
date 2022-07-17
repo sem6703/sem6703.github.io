@@ -173,7 +173,7 @@ ul, ol {
 .u10 li {
   padding-bottom: 36px;
 }
-
+@media screen and (max-width: 767px) {.u10 li {width:90%;padding-left:5%}}
 .u11 {
   width: 25%;
 }
@@ -298,7 +298,7 @@ ul, ol {
 }
 .give {
   background: url("img/pic1.png");
-  background-position: left bottom;
+  background-position: left 44% bottom;
   background-repeat: no-repeat;
   background-color: #dddbce;
 }
@@ -320,10 +320,11 @@ ul, ol {
   padding: 161px 0 39px;
   color: #214E41;
 }
-.give__fs1 {
+.give__fm {
+  display: flex;
   padding-top: 18px;
-  border: none;
 }
+
 .give__leg {
   font-family: "Raleway";
   font-weight: 700;
@@ -334,14 +335,13 @@ ul, ol {
 }
 .give__how {
   padding: 24px 22px;
-  width: 309px;
+  width: 274px;
   border: none;
   text-align: left;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  margin-right: -33px;
   border-radius: 6px 0px 0px 6px;
   color: #222222;
 }
@@ -366,7 +366,7 @@ ul, ol {
   height: 3px;
   position: relative;
 }
-.give__more {
+.give__more { 
   padding: 24px 24px 0;
   top: 166px;
   position: absolute;
@@ -374,13 +374,15 @@ ul, ol {
   background: white;
   box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
 }
-
+@media screen and (max-width: 700px) {.give__more {top:0}}
 ._60__1 {
   padding: 199px 0 101px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 ._60__2 {
+width: 50%;
   padding: 11px 0 0px;
   max-width: 550px;
   display: grid;
@@ -415,10 +417,13 @@ ul, ol {
   color: #757575;
 }
 ._60__liner {
+  width: 50%;
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-end;  
+  display: grid;
+  grid-template-columns: 6fr 6fr 1fr 1fr;    
 }
 ._60__liner::after {
   content: "";
@@ -438,6 +443,7 @@ ul, ol {
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
+
 }
 ._60__graph {
   padding-bottom: 10px;
@@ -445,10 +451,6 @@ ul, ol {
   justify-content: space-between;
   align-items: flex-end;
   gap: 41px;
-}
-._60__liner {
-  display: grid;
-  grid-template-columns: 6fr 6fr 1fr 1fr;
 }
 ._60__7 {
   font-family: "Rob700";
@@ -488,13 +490,17 @@ ul, ol {
   text-align: center;
   color: #757575;
 }
+@media screen and (max-width: 999px) {
+._60__1 {width:100%}
+._60__liner {width:100%}}
 
 .cust {
   padding: 13px 10px 10px 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 13px 10px 10px 10px;
+  display: flex;
 }
 .cust__1 {
+  width:50%;	
   background: #e3eeed;
 }
 .cust__2 {
@@ -524,13 +530,18 @@ ul, ol {
   padding: 12px;
 }
 .cust__6 {
+  width:50%;	
   background: #214e41;
 }
 .cust__7 {
   margin: 163px auto;
   max-width: 528px;
 }
-
+@media screen and (max-width: 1100px) {.cust{flex-direction: column;
+justify-content: center;}
+.cust__1 {width: 100%}
+.cust__6 {width: 100%}
+}
 .no {
   padding: 107px 0 30px;
   background-image: url(img/pic5.png);
@@ -777,22 +788,28 @@ ul, ol {
   letter-spacing: 0.02px;
   color: #FFFFFF;
 }
-.ft1__edit {
+.ft1__form {
   margin-top: 16px;
   border: 2px solid white;
-  width: 355px;
-  height: 50px;
+  width: fit-content;
+  position: relative;
 }
 .ft1__email {
-  display: none;
-  margin-right: -5px;
+  width: 355px;
+  padding: 22px 53px 6px 21px;
   width: 295px;
   background: transparent;
 }
+.ft1__email::placeholder {
+  color: white;
+}
 .ft1__submit {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   width: 53px;
-  height: 50px;
+  border: none;
   background: white;
 }
 .ft1__soc {
@@ -826,8 +843,7 @@ ul, ol {
   padding: 47px 0 0px;
 }
 .ft2__3 {
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
 }
 .ft2__4 {
   padding: 4px 11px 4px 0;
