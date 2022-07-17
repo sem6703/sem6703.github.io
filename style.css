@@ -193,7 +193,8 @@ ul, ol {
   letter-spacing: 0.02px;
   color: #214E41;
 }
-
+@media screen and (max-width: 767px) {.u11 {width: 50%;}.u11 li:nth-child(2){padding-right:40px;}}
+@media screen and (max-width: 360px) {.u11 {width: 95%;}.u11 li:nth-child(2){padding-right:0;}}
 .u12 {
   gap: 39px;
   display: flex;
@@ -580,12 +581,12 @@ justify-content: center;}
 }
 
 .k5 {
-  padding: 73px 0 108px;
+  padding: 73px 10px 108px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-
 .cel {
   padding: 72px 0 114px;
   display: flex;
