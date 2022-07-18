@@ -151,7 +151,7 @@ ul, ol {
   padding-top: 24px;
 }
 
-@media screen and (max-width: 390px) {.u08 > li:nth-child(2) {width: 2px;}}
+@media screen and (max-width: 1000px) {.u08 > li:nth-child(2) {width: 2px;}}
 .u09 {
   font-family: "Rob";
   font-weight: 400;
