@@ -152,6 +152,7 @@ ul, ol {
 }
 
 @media screen and (max-width: 1000px) {.u08 > li:nth-child(2) {width: 2px;}}
+@media screen and (max-width: 400px) {.u08{display: none;}}
 .u09 {
   font-family: "Rob";
   font-weight: 400;
