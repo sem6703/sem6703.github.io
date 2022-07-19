@@ -763,7 +763,7 @@ justify-content: center;}
   background-position: center;
 }
 @media screen and (max-width: 703px) {
-.read__1 {width:100%}
+.read__1 {width:100%; height: fit-content;}
 .read__man {width:100%}
 }
 
