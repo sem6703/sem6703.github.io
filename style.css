@@ -503,7 +503,7 @@ width: 50%;
   color: #757575;
 }
 @media screen and (max-width: 999px) {
-._60__1 {width:100%}
+._60__1 {width:100%;justify-content: flex-start;}
 ._60__liner {width:100%}}
 ._60__graph {gap: 5px}
 
