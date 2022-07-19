@@ -143,7 +143,7 @@ ul, ol {
   background: #214E41;
 }
 .u08 > li:nth-child(3) {
-  white-space: nowrap;
+
   font-family: "Raleway";
   font-weight: 700;
   font-size: 13px;
@@ -507,8 +507,7 @@ width: 50%;
 ._60__graph {gap: 5px}
 
 .cust {
-  padding: 13px 10px 10px 10px;
-  padding: 13px 10px 10px 10px;
+
   display: flex;
 }
 .cust__1 {
@@ -556,9 +555,8 @@ justify-content: center;}
 }
 .no {
   padding: 107px 0 30px;
-  background-image: url(img/pic5.png);
-  background-repeat: no-repeat;
-  background-position: right top 70%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .no__1 {
   max-width: 528px;
@@ -591,25 +589,31 @@ justify-content: center;}
   color: #757575;
 }
 
+@media screen and (max-width: 479px) {.no__1 {max-width: 100%;}}
+
 .k5 {
   padding: 73px 10px 108px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 767px) {.k5{justify-content: center}.u11 {width: 41%;}.u11 li:nth-child(2){padding-right:40px;}}
+@media screen and (max-width: 360px) {.u11 {width: 52%;}.u11 li:nth-child(2){padding-right:0;}}
+
 .cel {
   padding: 72px 0 114px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-image: url(img/pic6.png);
-  background-repeat: no-repeat;
-  background-position: left 23% top;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
 }
 .cel__1 {
   max-width: 480px;
   padding: 0px;
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 .cel__r900 {
   letter-spacing: 0.05px;
@@ -650,9 +654,19 @@ justify-content: center;}
   color: #214E41;
 }
 
+.cel__5 {width:50%;text-align: center;}
+
+.cel__6 {width:90%; max-width: 296px;}
+
+@media screen and (max-width: 590px) {
+.cel__5 {width:100%;}
+}
+
 .easy {
   padding: 128px 0 65px;
   background-image: url(img/pic7.png);
+  background-position: center;
+  background-size: auto 100% ;
 }
 .easy__1 {
   max-width: 503px;
@@ -820,11 +834,15 @@ justify-content: center;}
   position: relative;
 }
 .ft1__email {
-
-  max-width: 355px;
-  
+  max-width: 355px;  
   padding: 22px 53px 6px 21px;
   width: 295px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.02px;  
+  color: white;
   background: transparent;
 }
 .ft1__email::placeholder {
