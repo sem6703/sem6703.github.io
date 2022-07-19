@@ -151,7 +151,6 @@ ul, ol {
   padding-top: 24px;
 }
 
-@media screen and (max-width: 1000px) {.u08 > li:nth-child(2) {width: 2px;}}
 .u09 {
   font-family: "Rob";
   font-weight: 400;
@@ -505,6 +504,7 @@ width: 50%;
 @media screen and (max-width: 999px) {
 ._60__1 {width:100%}
 ._60__liner {width:100%}}
+._60__graph {gap: 5px}
 
 .cust {
   padding: 13px 10px 10px 10px;
