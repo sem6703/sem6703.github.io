@@ -143,8 +143,9 @@ ul, ol {
   background: #214E41;
 }
 .u08 > li:nth-child(3) {
-  padding-top: 24px;	
-height: max-content;
+  height: 46px;
+  display:flex;
+  align-items: flex-end;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 13px;
