@@ -44,7 +44,7 @@ lng.forEach(x=>{x.addEventListener('click',
 (function (){//slider
 const feb2=(x)=>{// создание слайдера
 	x.innerHTML=`
-	<button style="width:42px;height:42px;background: transparent;border: none;padding:3px 0 0 0px"> 
+	<button class="pointer" style="width:42px;height:42px;background: transparent;border: none;padding:3px 0 0 0px"> 
 	<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M27.8106 10.6252H7.32406L14.1008 3.93617L12.6412 2.46973L4.90009 10.1107L3.41442 11.5771L4.90009 13.0178L12.6412 20.6588L14.1008 19.1923L7.50651 12.6834H27.8106V10.6252Z" fill="#214E41"/>
 	</svg>
@@ -63,7 +63,7 @@ const feb2=(x)=>{// создание слайдера
 		</div>
 	</div>
 
-	<button style="width:42px;height:42px;background: none;border: none;padding:3px 0 0 3px"> 
+	<button class="pointer" style="width:42px;height:42px;background: none;border: none;padding:3px 0 0 3px"> 
 	<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M3.41443 12.5034H23.901L17.1242 19.1924L18.6099 20.6589L26.3249 13.0179H26.351L27.8106 11.5772L26.351 10.1108H26.3249L18.6099 2.46985L17.1242 3.93629L23.7446 10.4452H3.41443V12.5034Z" fill="#214E41"/>
 	</svg>
