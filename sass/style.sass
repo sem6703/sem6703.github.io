@@ -2,33 +2,35 @@
 	box-sizing: border-box
 	margin: 0
 	padding: 0
-	font-style: normal 
-	   
-ul,ol 
-	list-style-type: none 	
+	font-style: normal
 
 
+ul, ol 
+	list-style-type: none
 
 
-
-//***************************************/	
 .container 
 	max-width: 1200px
 	width: 100%
 	margin: 0 auto
-.container1440
+
+
+.container1440 
 	max-width: 1440px
 	width: 100%
 	margin: 0 auto
-.mob,.mob button 
+
+
+.mob, .mob button 
 	font-family: sans-serif
 	font-size: 26px
-	
-.mob  
+
+
+.mob 
 	color: #000
 	width: 150vw
 	height: 150vh
-	background: #00ffffcc
+	background: rgba(0, 255, 255, 0.8)
 	position: fixed
 	right: 0
 	top: 0
@@ -37,263 +39,331 @@ ul,ol
 	transition: opacity 2s
 	pointer-events: auto
 	z-index: 10
-	
-	
-.vid
+
+
+.vid 
 	opacity: 0
 	pointer-events: none
 
-.hidden
+
+.hidden 
 	display: none
-.weld
+
+
+.weld 
 	white-space: nowrap
+	
+.pointer:hover
+	cursor: pointer 	
 
 
-.u01
+.u01 
 	gap: 53.5px
 	margin: 2px 69px 2px 0px
 	display: flex
 	justify-content: space-between
 	align-items: center
+
 	& li 
-		white-space: nowrap	
-.u02
+		white-space: nowrap
+
+
+.u02 
 	gap: 0px
 	margin: 2px 0px
 	display: flex
 	justify-content: space-between
-	align-items: center		
-.u03
+	align-items: center
+
+
+.u03 
 	margin: 2px 37px 2px 28px
 	gap: 42px
 	display: flex
 	justify-content: space-between
 	align-items: center
-.u04
+
+
+.u04 
 	cursor: pointer
-.u05
+
+
+.u05 
 	margin: 2px 37px
-	& li
+
+	& li 
 		margin: 14px 0
-	& li:hover
-		opacity: .7
+
+	& li:hover 
+		opacity: 0.7
 		cursor: pointer
-.u06
+
+
+.u06 
 	margin: 32px 0 26px
 	display: flex
 	justify-content: space-evenly
 	align-items: center
-	font-family: 'Raleway'
+	font-family: "Raleway400"
 	font-weight: 400
 	font-size: 14px
 	line-height: 20px
 	flex-wrap: wrap
 	color: #214E41
-	& > li
+
+	& > li 
 		width: 353px
 		padding: 6px 6px 24px
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
-		gap: 8px	
-		
-.u07 
-	& li:first-child
-		font-family: 'Raleway'
-		font-weight: 400
-		font-size: 16px
-		line-height: 24px
-		border-radius: 6px
-		color: #214E41	
-.u08
+		gap: 8px
+
+
+.u07 li:first-child 
+	font-family: "Raleway400"
+	font-weight: 400
+	font-size: 16px
+	line-height: 24px
+	border-radius: 6px
+	color: #214E41
+
+
+.u08 
 	width: 77px
 	text-align: center
 	color: #214E41
-	
-	& > li:nth-child(1)
-		font-family: 'Raleway'
+
+	& > li:nth-child(1) 
+		font-family: "Raleway"
 		font-weight: 400
 		font-size: 13px
 		line-height: 22px
-	& > li:nth-child(2)
+
+	& > li:nth-child(2) 
 		width: 75px
 		display: block
 		background: #214E41
-	& > li:nth-child(3)
-		white-space: nowrap
-		font-family: 'Raleway'
+
+	& > li:nth-child(3) 
+		height: 46px
+		display: flex
+		align-items: flex-end
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 13px
-		line-height: 22px
-		padding-top: 24px
-.u09
-	font-family: 'Rob'
+		line-height: 12px
+
+
+.u09 
+	font-family: "Rob"
 	font-weight: 400
 	font-size: 32px
 	line-height: 42px
 	color: #43806C
-	& li
+
+	& li 
 		padding-bottom: 17px
-.u10
-	font-family: 'Raleway'
+
+
+.u10 
+	font-family: "Raleway400"
 	font-weight: 400
 	font-size: 20px
 	line-height: 34px
 	letter-spacing: 0.02px
 	color: #FFFFFF
-	& li
+
+	& li 
 		padding-bottom: 36px
-.u11
-	width: 25%
-	& li:nth-child(1)
-		font-family: 'Rob700'
+
+@media screen and (max-width: 767px)
+	.u10 li
+		width: 90%
+		padding-left: 5%
+
+.u11 
+	width: 22%
+
+	& li:nth-child(1) 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 60px
 		line-height: 78px
 		color: #F0A446
-	& li:nth-child(2)
-		padding: 13px 53px 0 0 
-		font-family: 'Raleway'
+
+	& li:nth-child(2) 
+		padding: 13px 0px 0 0
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 13px
 		line-height: 22px
 		letter-spacing: 0.02px
 		color: #214E41
-.u12
-	gap: 39px
+
+@media screen and (max-width: 767px)
+	.u11
+		width: 50%
+		& li:nth-child(2)
+			padding-right: 40px
+@media screen and (max-width: 360px)
+	.u11
+		width: 95%
+		& li:nth-child(2)
+			padding-right: 0
+.u12 
+	gap: 40px 39px
 	display: flex
 	justify-content: flex-end
 	align-items: center
-	font-family: 'Rob700'
+	font-family: "Rob700"
 	font-weight: 700
 	font-size: 20px
 	line-height: 26px
 	flex-wrap: wrap
 	color: #214E41
-	& li
+
+	& li 
 		width: 355px
 		height: 384px
-	& li h6
+
+	& li h6 
 		padding-top: 21px
 		padding-bottom: 12px
-		font-family: 'Raleway'
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 11px
 		line-height: 18px
 		letter-spacing: 0.05px
 		text-transform: uppercase
 		color: #43806C
-.u13
+
+
+.u13 
+	width: 100px
 	margin-right: 30px
-	& li
+	& li 
 		margin-bottom: 14px
-	& li:first-child
-		font-family: 'Rob700'
+		white-space: nowrap
+
+	& li:first-child 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 13px
 		line-height: 24px
 		letter-spacing: 0.02px
 		text-transform: uppercase
-		color: #FFFFFF	
-	& li:last-child
+		color: #FFFFFF
+
+	& li:last-child 
 		margin-bottom: 20px
-	& li:not(:first-child)
+
+	& li:not(:first-child) 
 		cursor: pointer
 		color: #FFFFFF
-	& li:not(:first-child):hover
+
+	& li:not(:first-child):hover 
 		text-decoration: underline
-//*****************************/
 
 
-.hd	
+.hd 
 	display: flex
 	justify-content: space-between
 	align-items: center
-	font-family: 'Raleway'
+	font-family: "Raleway"
 	font-weight: 700
 	font-size: 14px
 	line-height: 20px
 	padding: 16px 42px 28px
 	line-height: 20px
 	color: #214E41
-	& ul
+
+	& ul 
 		display: flex
 
-	& ol
+	& ol 
 		display: none
 		margin-right: 44px
-	
-	& li:hover
-		cursor: pointer	
 
-	& .lng
+	& li:hover 
+		cursor: pointer
+
+	& .lng 
 		width: 22px
-	
 
-
-	&__logo
+	&__logo 
 		margin-left: 3px
 		margin-top: 9px
-	&__nav
+
+	&__nav 
 		display: flex
 		justify-content: space-between
-		align-items: center	
-	&__btn
-		color: #FFFFFF	
+		align-items: center
+
+	&__btn 
+		color: #FFFFFF
+
 
 @media only screen and (max-width: 850px)
 	.hd ul
-		display: none	
-@media only screen and (max-width: 850px)
-	.hd ol
-		display: flex		
+		display: none
 
-.give
-	background: url('img/pic1.png')
-	background-position: left bottom
+@media only screen and (max-width: 850px) 
+	.hd ol
+		display: flex
+
+.give 
+	background: url("img/pic1.png")
+	background-position: left 44% bottom
 	background-repeat: no-repeat
 	background-color: #dddbce
-	&__wr
+
+	&__wr 
 		padding-top: 0px
 		padding-bottom: 260px
 		display: flex
 		justify-content: flex-start
 		align-items: flex-start
 		position: relative
-		flex-direction: column	
-	&__h1
+		flex-direction: column
+
+	&__h1 
 		max-width: 547px
-		font-family: 'Rob700'
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 36px
 		line-height: 46px
 		padding: 161px 0 39px
 		color: #214E41
-	&__fs1
+
+	&__fm 
+		display: flex
 		padding-top: 18px
-		border: none
-	&__leg
-		font-family: 'Raleway'
+
+
+	&__leg 
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 16px
 		line-height: 24px
 		text-align: left
-		color: #214E41	
-	&__how
+		color: #214E41
+
+	&__how 
 		padding: 24px 22px
-		width: 309px
+		width: 274px
 		border: none
 		text-align: left
-		font-family: 'Raleway'
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 14px
 		line-height: 20px
-		margin-right: -33px
 		border-radius: 6px 0px 0px 6px
 		color: #222222
-	&__find
+
+	&__find 
 		padding: 26px 36px
-		font-family: 'Raleway'
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 13px
 		line-height: 20px
@@ -302,131 +372,183 @@ ul,ol
 		border-radius: 0px 6px 6px 0px
 		color: #FFFFFF
 		background: #43806c
-	&__find:hover
-		background: green	
-	&__dress
+
+	&__find:hover 
+		background: green
+
+	&__dress 
 		margin-top: 8px
 		width: 100%
 		height: 3px
-		position: relative		
-	&__more
+		position: relative
+
+	&__more  
 		padding: 24px 24px 0
 		top: 166px
 		position: absolute
 		border-radius: 6px
 		background: white
 		box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6)
-._60		
-	&__1
-		padding: 199px 0 101px
-		display: grid
-		grid-template-columns: 1fr 1fr
-	&__2
-		padding: 11px 0 0px
+
+
+@media screen and (max-width: 700px)
+	.give__more
+		top: 0
+	.give
+		background-position: left 44% top
+
+@media screen and (max-width: 420px)
+	.give__fm
+		width: 97%
+	.give__how
+		width: 70%
+	.give__find
+		width: 30%
+		padding: 26px 6px
+
+._61 
+	padding: 199px 0 114px
+	display: flex
+	
+	justify-content: space-between
+	flex-wrap: wrap
+	row-gap: 55px
+	column-gap: 0px
+
+	&__2 
+		width: 50%
+		padding: 11px 0 0 58px
 		max-width: 550px
-		display: grid
-		grid-template-columns: 1fr 13fr	
-	&__3
-		font-family: 'Raleway'
+
+	&__3 
+		font-family: "Raleway"
 		font-weight: 400
 		font-size: 14px
 		line-height: 20px
 		letter-spacing: 0.05px
 		text-transform: uppercase
 		color: #214E41
-	&__4
-		font-family: 'Rob700'
+
+	&__4 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 36px
 		line-height: 46px
 		max-width: 480px
-		padding-top: 18px
+		padding-top: 16px
 		color: #214E41
-	&__5
-		font-family: 'Raleway'
+
+	&__5 
+		font-family: "Raleway"
 		font-weight: 400
 		font-size: 18px
 		line-height: 30px
-		padding: 38px 0px 20px
+		padding: 38px 0px 25px
 		max-width: 493px
 		letter-spacing: 0.02px
 		color: #757575
-	&__liner
+
+
+	&__liner 
+		width: 47%
 		position: relative
 		display: flex
 		justify-content: flex-start
-		align-items: flex-end
-	&__liner::after
-		content: ''
+		align-items: flex-start    
+
+	&__liner::after 
+		content: ""
 		position: absolute
-		width: 92%
+		width: 95%
+		max-width: 510px
 		height: 3px
 		background: #F0A446
-		bottom: 150px
+		bottom: 165px
+		left: 5px
 
-	&__60
-		margin: 7px 0px 7px
-		position: relative
-		margin-right: 7px
-	&__table
+	&__60 
+		padding: 140px 7px 4px 4px
+
+	&__table 
+		padding-top: 11px
 		display: flex
+		flex-direction: column
 		justify-content: flex-end
 		align-items: flex-end
-		flex-direction: column
-	&__graph
+
+	&__graph 
+		padding-top: 1px
 		padding-bottom: 10px
+		padding-right: 9px
 		display: flex
 		justify-content: space-between
 		align-items: flex-end
 		gap: 41px
-	&__liner
-		display: grid
-		grid-template-columns: 6fr 6fr  1fr 1fr
-		
-	&__7
-		font-family: 'Rob700'
+
+	&__7 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 70px
 		line-height: 90px
-		color: #214E41	
-	&__of
-		font-family: 'Raleway'
+		color: #214E41
+
+	&__8
+		cursor: pointer
+	&__of 
+		padding: 33px 0 0px	
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 13px
 		line-height: 22px
-		padding: 30px 0 70px
 		max-width: 235px
 		letter-spacing: 0.02px
 		color: #214E41
-	&__wo
-		font-family: 'Raleway'
+
+	&__wo 
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 13px
 		line-height: 22px
 		letter-spacing: 0.02px
-		text-decoration-line: underline
+		-webkit-text-decoration-line: underline
+				text-decoration-line: underline
 		color: #214E41
-	&__table
-		padding-top: 5px	
-	&__titr
-		font-family: 'Raleway'
+
+
+	&__titr 
+		font-family: "Raleway"
 		font-weight: 400
 		font-size: 13px
 		line-height: 22px
 		text-align: center
-		color: #757575	
-.cust
-	padding: 13px 10px 10px 10px
-	display: grid
-	grid-template-columns: 1fr 1fr
-	&__1
+		color: #757575
+	 
+
+@media screen and (max-width: 999px)
+	._61__2
+		width: 100%
+		padding-left: 0
+	._61__liner
+		width: 100%
+	._61__graph
+		gap: 5px
+
+
+.cust 
+	display: flex
+	background: #214e41
+
+	&__1 
+		width: 49%	
 		background: #e3eeed
-	&__2
+
+	&__2 
 		margin: 120px auto
-		max-width: 440px
-		padding: 0px 0px 0px 10px
-	&__3
-		font-family: 'Raleway'
+		max-width: 460px
+
+
+	&__3 
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 13px
 		line-height: 20px
@@ -434,93 +556,138 @@ ul,ol
 		letter-spacing: 0.05px
 		text-transform: uppercase
 		color: #214E41
-	&__4
-		font-family: 'Rob700'
+
+	&__4 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 32px
 		line-height: 42px
 		padding-bottom: 19px
 		color: #214E41
-	&__5
-		padding: 12px			
-	&__6
-		background: #214e41
-	&__7
+
+	&__5 
+		padding: 12px
+
+	&__6 
+		width: 50%	
+
+
+	&__7 
 		margin: 163px auto
-		max-width: 528px	
-.no
-	padding: 107px 0 30px
-	background-image: url(img/pic5.png)
-	background-repeat: no-repeat
-	background-position: right  top 70%
-	&__1
+		max-width: 494px
+
+@media screen and (max-width: 1100px)
+	.cust
+		flex-direction: column
+		justify-content: center
+	.cust__1
+		width: 100%
+	.cust__6
+		width: 100%
+
+.no 
+	padding: 116px 0 0px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+	&__1 
 		max-width: 528px
 		padding: 0px
-	&__2
-		font-family: 'Rob700'
+
+	&__2 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 13px
 		line-height: 20px
 		letter-spacing: 0.05px
 		text-transform: uppercase
 		color: #43806C
-	&__3
-		font-family: 'Rob700'
+
+	&__3 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 36px
 		line-height: 46px
 		padding-top: 18px
 		color: #214E41
-	&__4
-		font-family: 'Raleway'
+
+	&__4 
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 18px
 		line-height: 30px
 		padding-top: 38px
 		letter-spacing: 0.02px
 		color: #757575
-.k5
-	padding: 73px 0 108px
-	display: flex
-	justify-content: space-between
-	align-items: center
-.cel
-	padding: 72px 0 114px
-	display: flex
-	justify-content: flex-end
-	align-items: center
-	background-image: url(img/pic6.png)
-	background-repeat: no-repeat
-	background-position: left 23% top
 
-	&__1
-		max-width: 480px
-		padding: 0px
-	&__r900
+
+@media screen and (max-width: 479px)
+	.no__1
+		max-width: 100%
+
+
+.k5 
+	padding: 55px 10px 10px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-wrap: wrap
+	gap:  20px 47px
+
+@media screen and (max-width: 767px)
+	.k5
+		justify-content: center
+	.u11
+		width: 41%
+		& li:nth-child(2)
+			padding-right: 40px
+@media screen and (max-width: 360px)
+	.u11
+		width: 52%
+		& li:nth-child(2)
+			padding-right: 0
+
+.cel 
+	padding: 110px 0 0px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-wrap: wrap
+
+	&__1 
+		max-width: 582px
+		padding: 67px 0px 105px 43px
+
+	&__r900 
 		letter-spacing: 0.05px
 		text-transform: uppercase
 		color: #43806C
-		font-family: 'Rob'
+		font-family: "Rob"
 		font-weight: 900
 		font-size: 13px
 		line-height: 20px
-	&__2
-		font-family: 'Rob700'
+
+	&__2 
+		max-width: 480px
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 36px
 		line-height: 46px
 		padding-top: 18px
 		color: #214E41
-	&__3
-		font-family: 'Raleway'
+
+	&__3 
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 18px
 		line-height: 30px
 		padding-top: 38px
 		letter-spacing: 0.02px
 		color: #757575
-	&__4
-		font-family: 'Raleway'
+
+	&__4 
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 18px
 		line-height: 18px
@@ -530,79 +697,124 @@ ul,ol
 		border-bottom: 2px solid #214E41
 		letter-spacing: 0.02px
 		color: #214E41
-.easy
-	padding: 128px 0 65px
+
+	&__4:hover
+		cursor: pointer
+	&__5 
+		width: 49%
+		text-align: left
+		padding-left: 114px
+		margin-bottom: -6px
+
+	&__6
+		width: 90%
+		max-width: 296px
+
+@media screen and (max-width: 590px)
+	.cel__1
+		padding-left: 0	
+	.cel__5
+		width: 100%
+		padding-left: 43px
+		margin: 0 auto
+
+
+.easy 
+	padding: 128px 0 113px
 	background-image: url(img/pic7.png)
-	&__1
+	&__1 
 		max-width: 503px
-	&__2
+
+	&__2 
 		letter-spacing: 0.05px
 		text-transform: uppercase
 		color: #43806C
-		font-family: 'Raleway'
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 13px
 		line-height: 20px
-	&__3
+
+	&__3 
 		padding-top: 18px
 		max-width: 480px
 		color: #214E41
-		font-family: 'Rob700'
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 36px
 		line-height: 46px
-	&__4
+
+	&__4 
 		padding-top: 38px
 		letter-spacing: 0.02px
 		color: #757575
-		font-family: 'Raleway'
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 18px
 		line-height: 30px
-	&__5
-		padding: 27px 0px 12px
+
+	&__5 
+		padding: 23px 0px 12px
 		background: transparent
 		border: none
 		border-bottom: 2px solid #214E41
 		letter-spacing: 0.02px
 		color: #214E41
-		font-family: 'Raleway'
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 18px
 		line-height: 18px
-.pro
-	padding: 162px 0 223px
-	&__1
-		font-family: 'Rob700'
+
+	&__5:hover 
+		cursor: pointer
+
+@media screen and (max-width: 590px)
+	.easy
+		background-position: center
+		background-size: auto 100%		
+
+
+
+.pro 
+	padding: 116px 0 223px
+
+	&__1 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 36px
 		line-height: 46px
 		padding-bottom: 97px
 		text-align: center
 		color: #214E41
-.bet
+
+
+.bet 
 	padding: 2px 0 105px
-.read
+
+
+.read 
 	display: flex
-	justify-content: flex-end
-	align-items: center
-	background-image: url(img/pic16.png)
-	&__1
-		padding: 105px 0 55px 79px
+	flex-wrap: wrap
+
+	&__1 
+		padding: 108px 0 0 80px 
 		width: 50%
+		height: 577px
 		background: #e3eeed
-	&__2
-		width: 480px
+
+	&__2 
 		padding: 40px
-	&__3
-		font-family: 'Rob700'
+		max-width: 480px
+
+	&__3 
+		font-family: "Rob700"
 		font-weight: 700
 		font-size: 36px
 		line-height: 46px
 		padding-bottom: 23px
 		color: #214E41
-	&__get
-		font-family: 'Raleway'
+
+	&__get 
+		font-family: "Raleway"
 		font-weight: 700
 		font-size: 13px
 		line-height: 21px
@@ -613,105 +825,175 @@ ul,ol
 		letter-spacing: 0.02px
 		color: #FFFFFF
 		background: #43806c
-	&__get:hover
+		cursor: pointer
+
+	&__get:hover 
 		background: green
-	& p
+		
+
+	& p 
 		padding-bottom: 42px
 
-.ft1
+
+	&__man 
+		width: 50%
+		height: 577px
+		background-image: url(img/pic16.png)
+		background-position: center
+
+@media screen and (max-width: 703px)
+	.read__1
+		padding-left: 0
+		width: 100%
+		height: fit-content
+	.read__2
+		padding-left: 0
+	.read__man
+		width: 100%
+
+
+.ft1 
 	background: #214e41
-	&__1
+
+	&__1 
 		padding: 103px 0 70px
 		display: flex
 		justify-content: space-between
-		align-items: flex-start
+		flex-wrap: wrap
 
-	&__2
-		width: 495px
+
+	&__2 
+		max-width: 542px
+		width: 100%
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
-		font-family: 'Raleway'
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 16px
 		line-height: 27px
 
-	&__3
+	&__3 
 		margin-right: 20px
 
-	&__4
-		width: 356px
-	&__5
-		font-family: 'Raleway'
+	&__4 
+		max-width: 356px
+		width: 97%
+
+	&__5 
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 13px
 		line-height: 24px
 		letter-spacing: 0.02px
 		text-transform: uppercase
-		color: #FFFFFF	
-	&__6
+		color: #FFFFFF
+
+	&__6 
 		padding-top: 18px
-		font-family: 'Raleway'
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 14px
 		line-height: 24px
 		letter-spacing: 0.02px
 		color: #FFFFFF
-	&__edit
-		margin-top: 16px
+
+	&__form 
+		margin-top: 13px
 		border: 2px solid white
-		width: 355px
-		height: 50px
-	&__email
-		display: none
-		margin-right: -5px
-		width: 295px
+		width: fit-content
+		position: relative
+
+	&__email 
+		padding: 18px 53px 6px 21px
+		width: 353px
+		font-family: "Raleway400"
+		font-weight: 400
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: 0.02px  
+		color: white
 		background: transparent
-	&__submit
-		display: none
+
+	&__email::placeholder 
+		color: white
+
+	&__submit 
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
 		width: 53px
-		height: 50px
+		border: none
 		background: white
-	&__soc
+		cursor: pointer
+
+	&__soc 
 		display: flex
 		justify-content: flex-start
 		align-items: center
-		padding-top: 31px
+		padding-top: 26px
 		gap: 25px
 
-.ft2
+@media screen and (max-width: 850px)
+	.ft1__1
+		justify-content: center
+	.ft1__4
+		margin-top: 41px
+
+@media screen and (max-width: 400px)
+	.ft1__form
+		width: 97%
+	.ft1__2
+		display: block
+	.ft1__email
+		width: 100%
+	.u13:nth-child(even)
+		margin-left: 20%
+		margin-top: 43px
+	.u13:nth-child(odd)
+		margin-left: 40%
+
+.ft2 
 	background: #214e41
-	& p
+
+	& p 
 		padding: 11px 0
-	&__1
-		padding: 64px 0 50px 
-		font-family: 'Raleway'
+
+	&__1 
+		padding: 64px 0 50px
+		font-family: "Raleway400"
 		font-weight: 400
 		font-size: 14px
 		line-height: 24px
 		border-top: 2px solid white
 		letter-spacing: 0.02px
 		color: #FFFFFF
-	&__2
+
+	&__2 
 		display: flex
 		justify-content: space-between
 		align-items: center
 		padding: 47px 0 0px
-	&__3
-		
-		justify-content: space-between
-		align-items: center
-	&__4
-		padding: 4px 11px 4px 0
 
-	&__5
+	&__3 
+		display: flex
+
+	&__4 
+		padding: 4px 11px 4px 0
+		cursor: pointer
+
+	&__5 
 		border-left: 1px solid white
 		padding: 4px 0 4px 6px
+		cursor: pointer
 
+	&__4:hover
+		text-decoration: underline
+	&__5:hover
+		text-decoration: underline
 
-
-//*********/
-.to-up-btn
+.to-up-btn 
 	position: fixed
 	right: 50px
 	bottom: 50px
@@ -724,21 +1006,20 @@ ul,ol
 	padding-left: 7px
 	padding-top: 7px
 	z-index: 8
-	
 
 
-.btn1
+.btn1 
 	display: inline-block
 	background: #43806C
 	padding: 11px 14px
 	border-radius: 6px
-	font-family: 'Raleway'
+	font-family: "Raleway"
 	font-size: 14px
 	line-height: 20px
-	color: #ffffff	
+	color: #ffffff
 	border: none
-	transition: opacity .5s
-	
-.btn1:hover 
-	cursor: pointer
-	background: green
+	transition: opacity 0.5s
+	&:hover 
+		cursor: pointer
+		background: green
+
