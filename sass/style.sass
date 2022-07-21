@@ -27,16 +27,17 @@ a
 
 
 .mobile 
-	color: #000
+	color: #ffffff
 	width: 150vw
 	height: 150vh
-	background: rgba(0, 255, 255, 0.8)
+	background: #057272f5
 	position: fixed
 	right: 0
 	top: 0
 	display: flex
 	justify-content: flex-end
-	transition: opacity 2s
+	transform: translateX(0)
+	transition: 2s
 	pointer-events: auto
 	z-index: 10
 	font-family: sans-serif
@@ -61,7 +62,8 @@ a
 .vid 
 	opacity: 0
 	pointer-events: none
-
+	transform: translateX(-100%)
+	transition: 1s
 
 .hidden 
 	display: none
