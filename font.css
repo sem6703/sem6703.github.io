@@ -1,12 +1,12 @@
 	@font-face {
-	  font-family: 'Rob';
+	  font-family: 'Roboto';
 	  src: local("rob400"), local("rob400"), 
 	  url("font/Roboto-Regular.ttf") format("truetype");
 	  font-weight: 400;
 	  font-style: normal; }
 
 	@font-face {
-	  font-family: 'Rob700';
+	  font-family: 'Roboto700';
 	  src: local("rob700"), local("rob700"), 
 	  url("font/Roboto-Bold.ttf") format("truetype");
 	  font-weight: 700;
