@@ -693,10 +693,10 @@ a {
 }
 
 @media screen and (max-width: 590px) {
-  .instruction __box {
+  .instruction__box {
     padding-left: 0;
   }
-  .instruction __wrap {
+  .instruction__wrap {
     width: 100%;
     padding-left: 43px;
     margin: 0 auto;
