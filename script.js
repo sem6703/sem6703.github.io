@@ -1,3 +1,17 @@
+(function () {// bax rate
+	const i=document.querySelector('.in_js');	
+	const o=document.querySelector('.out_js');
+	i.addEventListener('submit',(e)=>{
+		e.preventDefault();
+		void (async()=>{
+			const u=await fetch('https://www.cbr-xml-daily.ru/daily_json.js');
+			const t=await u.json();
+			o.value='1$ = '+t.Valute['USD'].Value+' rub';
+			})();			
+		});
+})();
+
+
 (function () {//моб меню
 const mobs=document.querySelectorAll('.mobile li, .mmm');
 const mob=document.querySelector('.mobile');
@@ -32,7 +46,6 @@ mobs.forEach(x=>x.addEventListener('click',mmm));
 
 (function (){// смена языка 
 const lng=document.querySelectorAll('.lng');
-//console.log(lng);
 lng.forEach(x=>{x.addEventListener('click',
 	(e)=>{
 		e.stopPropagation();
@@ -77,8 +90,7 @@ const slider=(x)=>{
 	x.style.justifyContent='space-between';
 	x.style.alignItems='center';
 	x.style.width = '100%';
-	//x.style.border = '5px solid blue';
-
+	
 	const tape=x.querySelector('.brands__tape');
 	const pred=x.querySelector('.brands__prev');
 	const next=x.querySelector('.brands__next');
@@ -112,7 +124,7 @@ const slider=(x)=>{
 }
 
 slider(megaslider);
-})()
+})();
 
 
 
