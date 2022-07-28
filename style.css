@@ -1,0 +1,143 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.vacation-ideas{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ecf0f1;
+	margin: 0 auto;
+    padding: 80px 0 80px;
+}
+
+.wrapper_title {
+	padding: 100px 0 30px;
+    font-size: calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1366));
+    line-height: 1.2;
+    font-weight: 700;
+    color: #171d1c;
+}
+
+.wrapper_title::after {
+    content: url(img/title_separator.png);
+    display: none;/*block;*/
+    text-align: center;
+}
+
+.idea__variants {
+    display: flex;
+	gap: 30px 30px;
+    width: 83.45%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.idea__item {
+    display: flex;
+    width: 360px;
+    height: 300px;
+}
+
+.idea__item:nth-child(1) {
+    background-image: url(img/i1.jpg);
+}
+
+.idea__item:nth-child(2) {
+    background-image: url(img/i2.jpg);
+}
+
+.idea__item:nth-child(3) {
+    background-image: url(img/i3.jpg);
+}
+
+.idea__padding {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background-color: #ffffff;
+    margin-top: 170px;
+}
+
+.idea__button {
+    display: block;
+    width: 270px;
+    height: 70px;
+    border: 1px solid #cccccc;
+    
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 2.6;
+    font-weight: 700;
+    color: #454851;
+    text-align: center;
+}
+
+footer {
+	margin: 0 auto; 
+	padding: 44px 0;
+	width: fit-content; 
+	}
+
+
+
+/*Мадиа запросы*/
+@media screen and (max-width:1350px) {
+    .idea__variants, .locations__variants {
+        width: 90%;
+    }
+}
+@media screen and (max-width:1240px) {
+    .idea__variants, .locations__variants {
+        width: 98%;
+    }
+}
+@media screen and (max-width:1140px) {
+    .idea__variants, .locations__variants {
+        width: 98%;
+        justify-content: space-around;
+    }
+    .booking{
+        width: 98%;
+    }
+}
+@media (max-width:860px) {
+    .idea__variants, .locations__variants, .advantages__block {
+        width: 98%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }   
+}
+
+
+@media (max-width:560px) {
+    .idea__item {
+        width: 270px;
+        height: 230px;
+    }
+    
+    .idea__padding {
+    width: 83.33%;
+    height: 33.33%;
+    margin-top: 45%;
+	}
+}
+
