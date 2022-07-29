@@ -20,7 +20,7 @@ a {
 
 .container {
   max-width: 1200px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -233,6 +233,8 @@ a {
   padding: 24px 24px 0;
   top: 166px;
   position: absolute;
+  width: 100%;
+  max-width: 1200px;
   border-radius: 6px;
   background: white;
   box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
@@ -272,11 +274,13 @@ a {
   }
   .main {
     background-position: left 44% top;
+    background-size: auto 100%;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .main__form {
     width: 97%;
+    margin: 0 auto;
   }
   .main__input {
     width: 70%;
@@ -429,7 +433,7 @@ a {
 }
 
 @media screen and (max-width: 999px) {
-  .presentation__2 {
+  .presentation__box {
     width: 100%;
     padding-left: 0;
   }
@@ -438,6 +442,9 @@ a {
   }
   .presentation__graph {
     gap: 5px;
+  }
+  .presentation__text {
+    max-width: 200px;
   }
 }
 .flyer {
@@ -514,10 +521,12 @@ a {
     justify-content: center;
   }
   .flyer__main {
+    padding-left: 5%;
+    padding-right: 5%;
     width: 100%;
   }
   .flyer__side {
-    width: 100%;
+    width: 90%;
   }
 }
 .health {
@@ -760,6 +769,7 @@ a {
 }
 .brands {
   padding: 116px 0 223px;
+  width: 100%;
 }
 .brands__main {
   font-family: "Roboto700";
@@ -802,6 +812,7 @@ a {
 
 .bank {
   padding: 2px 0 105px;
+  width: 100%;
 }
 .bank__list {
   gap: 40px 39px;
@@ -889,7 +900,7 @@ a {
     height: fit-content;
   }
   .about__wrap {
-    padding-left: 0;
+    padding-left: 5%;
   }
   .about__photo {
     width: 100%;
