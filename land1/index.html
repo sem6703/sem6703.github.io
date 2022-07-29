@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="common.css">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <meta name="description"
+        content="On this site, I will tell you about myself, my professional skills, and show you a portfolio of developed projects. Here you will find the contact information for contacting me.">
+    <title>My project Antonina </title>
+</head>
+
+<body>
+<header class="header container">
+    <nav class="header__nav" aria-label="Main menu">
+        <ul class="header__ul">
+            <li class="header__li"><a class="header__item header__active-link" href="#">Home</a></li>             
+            <li class="header__li"><a class="header__item " href="pages/blog/index.html">My blog</a></li>
+        </ul>
+    </nav>
+
+    <button type="button" class="mm-open-btn x_js"><span class="mm-btn-content"></span></button>
+   <div class="mm-wrapper mm-hidden mm-wrapper_js"></div> 
+    <div class="mm mm-hidden mm_js">
+        <button type="button" class="mm__close-btn y_js">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+				<style>
+					.rect1 {x:-3; y:11; rx:2; fill:#070707}
+				</style>
+                <rect class="rect1" width="32" height="4" transform="rotate(45 13 13)" />
+                <rect class="rect1" width="32" height="4" transform="rotate(-45 13 13)" />
+            </svg>
+        </button>
+        <ul class="mm__list">
+            <li class="mm__items"><a class="mm__item header__active-link" href="#">Home</a></li>
+            <li class="mm__items"><a class="mm__item " href="pages/blog/index.html">My blog</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<section class="sli container sli_js">
+	<div class="sli__con">
+		<h1 class="sli__h1">Antonina Antoninovna</h1>
+		<p class="sli__text">Future front-end developer 23 years old, Tolyatti</p>
+	</div> 
+</section>
+	
+	
+	
+<section class="main-slider container main-slider_js">
+	<div class="main-slider__wrapper slider-wrapper_js">
+		<div class="main-slider__inner-wrapper slider-inner-wrapper_js">
+			<div class="main-slider__item slider-slide_js">
+				<picture class="main-slider__img-box">
+					<source
+						srcset="static/images/m-slider-image-mobile-1.jpg, static/images/m-slider-image-mobile-1@2x.jpg 2x"
+						media="(max-width: 375px)">
+					<source
+						srcset="static/images/m-slider-image-tablet-1.jpg, static/images/m-slider-image-tablet-1@2x.jpg 2x"
+						media="(max-width: 768px)">
+					<source
+						srcset="static/images/m-slider-image-1.jpg, static/images/m-slider-image-1@2x.jpg 2x">
+					<img class="main-slider__img" src="static/images/m-slider-image-1.jpg" alt="Woman foto" />
+				</picture>
+			</div>
+			<div class="main-slider__item slider-slide_js">
+				<picture class="main-slider__img-box">
+					<source
+							srcset="static/images/m-slider-image-mobile-1.jpg, static/images/m-slider-image-mobile-1@2x.jpg 2x"
+							media="(max-width: 375px)">
+					<source
+							srcset="static/images/m-slider-image-tablet-1.jpg, static/images/m-slider-image-tablet-1@2x.jpg 2x"
+							media="(max-width: 768px)">
+					<source
+							srcset="static/images/m-slider-image-1.jpg, static/images/m-slider-image-1@2x.jpg 2x">
+					<img class="main-slider__img" src="static/images/m-slider-image-1.jpg" alt="Woman foto" />
+				</picture>
+			</div>
+			<div class="main-slider__item slider-slide_js">
+				<picture class="main-slider__img-box">
+					<source
+							srcset="static/images/m-slider-image-mobile-1.jpg, static/images/m-slider-image-mobile-1@2x.jpg 2x"
+							media="(max-width: 375px)">
+					<source
+							srcset="static/images/m-slider-image-tablet-1.jpg, static/images/m-slider-image-tablet-1@2x.jpg 2x"
+							media="(max-width: 768px)">
+					<source
+							srcset="static/images/m-slider-image-1.jpg, static/images/m-slider-image-1@2x.jpg 2x">
+					<img class="main-slider__img" src="static/images/m-slider-image-1.jpg" alt="Woman foto" />
+				</picture>
+			</div>
+			<div class="main-slider__item slider-slide_js">
+				<picture class="main-slider__img-box">
+					<source
+							srcset="static/images/m-slider-image-mobile-1.jpg, static/images/m-slider-image-mobile-1@2x.jpg 2x"
+							media="(max-width: 375px)">
+					<source
+							srcset="static/images/m-slider-image-tablet-1.jpg, static/images/m-slider-image-tablet-1@2x.jpg 2x"
+							media="(max-width: 768px)">
+					<source
+							srcset="static/images/m-slider-image-1.jpg, static/images/m-slider-image-1@2x.jpg 2x">
+					<img class="main-slider__img" src="static/images/m-slider-image-1.jpg" alt="Woman foto" />
+				</picture>
+			</div>
+		</div>
+	</div>
+	<div class="main-slider__control">
+		<button class="main-slider__prev-btn slider-btn-prev_js" type="button">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+			<path d="M2.4 15.8L12.0 6.2 21.6 15.8" stroke="#070707" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-90 12 12)"/>
+			</svg>
+		</button>
+		<ul class="main-slider__pagination slider-pagination_js">
+		</ul>
+		<button class="main-slider__next-btn slider-btn-next_js" type="button">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+			<path d="M2.4 15.8L12.0 6.2 21.6 15.8" stroke="#070707" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="rotate(90 12 12)"/>
+			</svg>
+		</button>
+	</div>
+</section> 
+	
+	
+	
+<section class="grey">
+    <div class="container about">
+		<h2 class="about__title">About&nbsp;me</h2>
+		<ul class="about__ul">
+			<li>Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</li>
+			<li>Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</li>
+			<li>Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</li>
+			<li>Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.</li>
+		</ul>
+	</div>
+</section>	
+	
+<section class="container skill">
+	<h2 class="skill__title">Skills</h2>
+	<p class="skill__text">I work in such programs as</p>
+	<div class="skill__cards">
+		<div class="skill__card">
+		<img src="static/images/skill/sk1.svg" alt="">  
+		<h3 class="skill__name">HTML 5</h3>
+		<div class="skill__bar">
+			<span>80%</span>
+			<progress value="80" max="100"></progress>
+		</div>
+		</div>  
+
+	
+		<div class="skill__card">
+		<img src="static/images/skill/sk2.svg" alt="">  
+		<h3 class="skill__name">CSS/SCSS</h3>
+		<div class="skill__bar">
+			<span>44%</span>
+			<progress value="44" max="100"></progress>
+		</div>
+		</div> 
+ 
+		<div class="skill__card">
+		<img src="static/images/skill/sk3.svg" alt="">  
+		<h3 class="skill__name">JavaScript</h3>
+		<div class="skill__bar">
+			<span>73%</span>
+			<progress value="73" max="100"></progress>
+		</div>
+		</div> 
+ 
+		<div class="skill__card">
+		<img src="static/images/skill/sk4.svg" alt="">  
+		<h3 class="skill__name">Git/GitHub</h3>
+		<div class="skill__bar">
+			<span>52%</span>
+			<progress value="52" max="100"></progress>
+		</div>
+		</div> 
+ 
+		<div class="skill__card">
+		<img src="static/images/skill/sk5.svg" alt="">  
+		<h3 class="skill__name">Figma</h3>
+		<div class="skill__bar">
+			<span>45%</span>
+			<progress value="45" max="100"></progress>
+		</div>
+		</div> 
+	</div>
+  </section>	
+
+<footer class="grey">
+    <div class="foot container2">
+        <h2 class="foot__title">Contacts</h2>
+        <p class="foot__text">Want to know more or just chat? You&nbsp;are welcome!</p>
+
+        <ul class="foot__soc">
+			<li class="foot__soc_1"><a href="#">Send Message</a></li>
+            <li class="foot__soc_2"><a href="#">Instagram</a></li>
+            <li class="foot__soc_2"><a href="#">Vk</a></li>
+            <li class="foot__soc_2"><a href="#">Telegram</a></li>
+            <li class="foot__soc_2"><a href="#">Mail</a></li>
+            <li class="foot__soc_2"><a href="#">GitHub</a></li>
+            <li class="foot__soc_2"><a href="#">Phone</a></li>
+        </ul>
+		<div class="container3">
+        Design by <a href="https://dlacademy.ru/">DL&nbsp;Academy</a>
+        Program code from Antonina
+		</div>
+    </div>
+</footer>  	
+	
+<button class="to-up-btn hidden to-up-btn_js" type="button">	
+	<svg width="24" height="15" viewBox="0 0 24 15" fill="none">
+		<rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"></rect>
+		<rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"></rect>
+	</svg>	
+</button>	
+
+<script src="script.js"></script>
+</body>
+
+</html> 

@@ -34,13 +34,13 @@ body {
 
 .wrapper_title::after {
     content: url(img/title_separator.png);
-    display: none;/*block;*/
+    display: none;
     text-align: center;
 }
 
 .idea__variants {
     display: flex;
-	gap: 30px 30px;
+	gap: 75px 30px;
     width: 83.45%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -65,6 +65,10 @@ body {
 
 .idea__item:nth-child(3) {
     background-image: url(img/i3.jpg);
+}
+
+.idea__item:nth-child(4) {
+    background-image: url(img/i4.jpg);
 }
 
 .idea__padding {
@@ -141,7 +145,9 @@ footer {
     margin-top: 45%;
 	}
 	.idea__button {
-		display: flex;justify-content: center;align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-size: 20px;
 		line-height: 1.1;
 	}	
