@@ -94,12 +94,15 @@ const slider=(x)=>{
 	const tape=x.querySelector('.brands__tape');
 	const pred=x.querySelector('.brands__prev');
 	const next=x.querySelector('.brands__next');
-	let step=146+((3273-146*15)/14);
-	let ip='translateX(-'+step * 5+'px)';
+	let step=146+((tape.offsetWidth-146*15)/14);
+	let ip='translateX(-'+step * 5+'px)';	
+	
 	tape.style.transform = ip; // ip
 	let a=0;
 
 	const f=(e)=>{ // slowly move
+		step=146+((tape.offsetWidth-146*15)/14);
+		ip='translateX(-'+step * 5+'px)';	
 		tape.style.transition = 'transform 500ms';
 		tape.style.transform = 'translateX(-'+step * (5+e)+'px)';
 		a=e;
