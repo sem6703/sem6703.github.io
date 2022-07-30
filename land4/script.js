@@ -94,8 +94,8 @@ const slider=(x)=>{
 	const tape=x.querySelector('.brands__tape');
 	const pred=x.querySelector('.brands__prev');
 	const next=x.querySelector('.brands__next');
-	const step=146+((3273-146*15)/14);
-	const ip='translateX(-'+step * 5+'px)';
+	let step=146+((3273-146*15)/14);
+	let ip='translateX(-'+step * 5+'px)';
 	tape.style.transform = ip; // ip
 	let a=0;
 
