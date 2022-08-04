@@ -1,0 +1,131 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: s;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px; 
+  line-height: 32px;
+  color: white;
+  background-color: transparent;/*#0d0d0e;*/
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {background:#0d0d0e;}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-wide {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mobile {
+  color: #ffffff;
+  width: 150vw;
+  height: 150vh;
+  background: rgba(5, 114, 114, 0.9607843137);
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  transform: translateX(0);
+  transition: 2s;
+  pointer-events: auto;
+  z-index: 10;
+  font-family: s;
+  font-size: 26px;
+}
+.mobile button {
+  font-family: sans-serif;
+  font-size: 26px;
+}
+.mobile__close {
+  font-size: 80px;
+  line-height: 81px;
+}
+.mobile__menu {
+  margin: 2px 37px;
+}
+.mobile__menu li {
+  margin: 14px 0;
+}
+.mobile__menu li:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.vid {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
+  transition: 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+.weld {
+  white-space: nowrap;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.header {
+	
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: p;
+  font-size: 14px;
+  line-height: 20px;
+
+  line-height: 20px;
+  color: #214E41;
+}
+.header ul {
+  display: flex;
+}
+.header ol {
+  display: none;
+  margin-right: 0px;
+}
+.header li:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+  .header ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .header ol {
+    display: flex;
+  }
+}

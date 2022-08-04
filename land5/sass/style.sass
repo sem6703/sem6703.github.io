@@ -1,0 +1,543 @@
+
+.btn 
+	padding: 7px 37px
+	display: inline-block
+	font-family: p
+	font-size: 18px
+	line-height: 20px
+	background: #d400b3 
+  
+.logo ul 
+	display: flex
+.logo li 
+	padding-left: 55px
+@media screen and (max-width: 700px) 
+	.logo ul 
+		display: none 
+
+
+
+
+
+h1 
+	font-family: p
+	font-size: 84px
+	line-height: 100px
+	width: 100%
+	max-width: 658px
+	background: none
+   
+@media screen and (max-width: 400px) 
+	h1 
+		font-size: 52px
+		line-height: 64px   
+@media screen and (max-width: 350px) 
+	h1 
+		font-size: 40px
+		line-height: 50px  
+h2 
+	font-family: p
+	font-size: 52px
+	line-height: 64px
+	text-align: center
+@media screen and (max-width: 350px)
+	h2 
+		font-size: 32px
+		line-height: 44px
+h3 
+	padding: 4px 0 7px
+	font-family: p
+	font-size: 32px
+	line-height: 44px
+h4 
+	padding: 4px 0 7px
+	font-family: p
+	font-size: 23px
+	line-height: 32px
+
+  
+
+
+.header
+	position: relative
+
+	&__ball
+		display: block
+		width: 100%
+	&__nav
+		z-index: 14
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__box
+		display: flex
+		align-items: center
+		width: fit-content
+		background: none
+	&__img
+		display: block 
+	  
+	  
+	&__ballwr 
+		position: absolute
+		background: green
+		top: 0
+		right: 0
+		width: 100%
+		max-width: 811px
+	
+	&__ballwr:after 
+		position: absolute
+		content: ''
+		display: block
+		width: 139px
+		height: 334px
+		background: #0d0d0e
+		bottom: 0 
+		left: 0 
+		border-top: 153px solid  black
+		 
+  
+  
+
+.discover
+	padding: 73px 0 120px
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	&__box
+		z-index: 3
+		background: none 
+	&__text   
+		width: 100%
+		max-width: 641px
+
+ 
+ 
+
+
+
+
+  
+.slider
+	background: #0d0d0e
+	&__viewer 
+		overflow: hidden
+	&__inner 
+		overflow: hidden
+		padding-top: 56px
+	&__gallery
+		padding: 192px 0 180px
+		background: #262627
+	&__tape
+		display: flex
+		justify-content: flex-start
+		gap: 56px
+	&__video
+		width: 100%
+		max-width: 700px
+		background: #262627
+	&__title
+		margin: 0 auto
+		display: flex
+		align-items: center
+		width: fit-content
+		gap: 13px
+		height: 120px
+		font-family: p
+		font-size: 32px
+		line-height: 44px 
+	&__widget
+		gap: 20px
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		gap: 30px 50px
+		& fieldset 
+			padding: 4px 0 7px
+			border: none
+			width: fit-content
+			text-align: center
+			font-family: s
+			font-size: 16px
+			line-height: 20px
+		& legend 
+			padding: 4px 0 7px
+			text-align: center
+			font-family: p
+			font-size: 56px
+			line-height: 56px
+	&__info
+		padding: 113px 0 0
+		background: #262627	
+	&__wrap 
+		background: #262627
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__text	
+		width: 90%
+		max-width: 395px		
+@media screen and (max-width: 830px) 
+	.slider__wrap
+		display: block
+		text-align: center
+	.slider__text
+		margin: 0 auto
+
+	
+	
+	
+ 
+
+.cardbar
+	padding: 177px 0 0
+	background: #0d0d0e
+	&__userpic
+		width: 59px
+		height: 59px
+		background: white
+		border-radius: 50%
+	&__caption
+		padding: 7px 0 8px
+	&__text 
+		padding: 4px 0 7px
+		font-family: s
+		font-size: 16px
+		line-height: 26px
+		max-width: 222px
+	&__list 
+		margin-top: 35px
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		row-gap: 60px 
+		& li 
+			padding: 20px 0 0 20px
+			position: relative
+			display: block
+			width: 388px
+			height: 225px
+			border: 1px solid white
+			background: grey
+			overflow: hidden			 
+		& li::after 
+			content: ''
+			position: absolute
+			display: block
+			width: 50px
+			height: 1px 
+			top: 0 
+			right: 0
+			background: white		 
+			transform: translate(8px,16px) rotate(45deg)
+		 
+
+@media screen and (max-width: 1305px) 
+	.cardbar__list 
+		justify-content: center
+		gap: 20px 
+ 
+
+
+
+.sale
+	padding: 185px 0 52px
+	&__title
+		text-align: left
+	&__main
+		padding: 1px 0 60px
+	&__article
+		margin-bottom: 93px
+	&__header
+		display: flex
+		justify-content: space-between
+		font-family: s
+		font-size: 16px
+		line-height: 20px
+	&__caption
+		color: white
+	&__price
+		color: #d400b4
+	&__img
+		display: block
+		width:100%
+	&__link
+		padding: 13px 0 70px
+		display: flex
+		justify-content: flex-end
+	&__arrow
+		font-family: p
+		font-size: 18px
+		line-height: 20px
+		color: #d400b3
+	&__box 
+		margin-top: 27px
+		column-count: 2
+		gap: 10%
+@media screen and (max-width: 550px) 
+	.sale__box 
+		column-count: 1
+
+.artists 
+	&__gradient
+		background: linear-gradient(to right, #262627 50%, #0d0d0e 50%, #0d0d0e 100%)
+	&__cards 
+		padding: 40px 0 
+		display: flex
+		justify-content: space-between
+		row-gap: 30px
+		b0ackground: olive
+		flex-wrap: wrap
+		background: #262627
+		& li 
+			padding: 0px 0 4px
+			position: relative
+			width: 100%
+			max-width: 369px
+			text-align: center
+			overflow: hidden
+		& img 
+			margin-bottom: 44px
+		& a 
+			margin: 11px 0 16px
+	&__tabs
+		display: grid
+		grid-template-columns: 1fr 1fr
+	&__tab1
+		margin: 0 auto
+		padding: 44px 0 4px
+		width: fit-content
+		background: #262627
+	&__arrow
+		font-family: p 
+		font-size: 18px 
+		line-height: 20px
+		color: #d400b3
+	&__link
+		padding: 0px 0 0px
+	&__tab2
+		background: none
+		display: flex
+		justify-content: center
+		align-items: center
+	&__gallery
+		padding: 0px 0px 82px
+		background: #262627
+	&__userpic_1
+		position: absolute
+		width: 100px
+		height: 100px
+		top: 148px
+		left: 50%
+		transform: translateX(-50%)
+		background: url(../img/pic17.png)  
+	&__userpic_2
+		position: absolute
+		width: 100px
+		height: 100px
+		top: 148px
+		left: 50%
+		transform: translateX(-50%)
+		background: url(../img/pic18.png) 
+	&__userpic_3
+		position: absolute
+		width: 100px
+		height: 100px
+		top: 148px
+		left: 50%
+		transform: translateX(-50%)
+		background: url(../img/pic19.png) 
+
+  
+@media screen and (max-width: 837px) 
+	.artists__cards 
+		display: flex
+		justify-content: center  
+@media screen and (max-width: 912px) 
+	.artists__gradient 
+		background: linear-gradient(to top, #262627 50%, #0d0d0e 50%, #0d0d0e 100%)
+	.artists__tabs
+		display: grid 
+		grid-template-columns: 1fr
+		grid-template-rows: 1fr 1fr
+		& div:nth-child(1)
+			order: 2
+		& div:nth-child(2)
+			order: 1
+	
+  
+  
+
+
+
+
+
+ 
+#backdoor__mainForm
+	margin:22px auto 4px
+	display: flex
+	width: 90%
+#backdoor__edit
+	padding: 3px 13px
+	color: #000
+	border: none
+	background-color: #ffffff70
+	width: 456px
+	height: 50px
+	f0lex-shrink: 2
+#backdoor__button
+	border: none
+	background: #d400b3
+	width: 144px
+	min-width: 44px
+	height: 50px
+	f0lex-shrink: 0
+@media screen and (max-width: 756px) 
+	#backdoor__edit
+		width:70%
+	#backdoor__button
+		width:30%
+	
+ 
+ 
+.backdoor
+	padding: 121px 0px 2px
+	position: relative
+	&__text
+		margin: 0 auto
+		text-align: center
+		width: 100% 
+		max-width: 444px
+		overflow: hidden  
+	&__narrow 
+		margin: 45px auto 330px
+		position: relative
+		max-width: 878px
+		width: 90%
+		height: 300px
+		b0order: 2px solid cyan   
+		& li 
+			padding-bottom: 5px
+			display: flex
+			justify-content: center
+			align-items: center
+			background: #ffffff77
+			width: 314px 
+			height: 118px
+			position: absolute
+			b0order: 1px dotted red
+		& li:nth-child(5) 
+			top:0
+			right: 0 
+		& li:nth-child(4) 
+			top: 0
+			left: 0
+		& li:nth-child(3) 
+			bottom: 0
+			right: 0
+		& li:nth-child(2) 
+			bottom: 0
+			left: 0
+		& li:nth-child(1) 
+			top: 50%
+			right: 50%
+			transform: translate(50%,-50%) 
+		& li img 
+			display: block
+			background: none
+
+
+
+  
+  
+	&__formwr
+		padding: 135px 0 71px
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center 
+		flex-direction: column 
+		background: #262627
+		border-bottom: 5px solid #d400b3
+		& > * 
+			width: 90%
+			max-width: 528px
+			text-align: center
+			background: none	
+	
+	&__hand
+		background-color: transparent
+		position: absolute
+		top: -630px
+		width: 100%
+		height: 733px
+		background-image: url(../img/pic20.png)
+		background-position: center
+		background-size: auto 100%
+		background-repeat: no-repeat
+	
+@media screen and (max-width: 680px) 
+	.backdoor__narrow
+		height: calc( 5 * 118px )
+		& li
+			width:100%
+		& li:nth-child(1) 
+			top: calc(0 * 100px)
+			left: 0
+			transform: none 
+		& li:nth-child(2) 
+			top: calc(1 * 100px)
+			left: 0 
+		& li:nth-child(3) 
+			top: calc(2 * 100px)
+			left: 0
+		& li:nth-child(4) 
+			top: calc(3 * 100px)
+			left: 0 
+		& li:nth-child(5)
+			top: calc(4 * 100px)
+			left: 0
+	
+footer ul 
+	display: flex
+footer li 
+	cursor: pointer
+
+  
+.footer
+	padding: 68px 0 29px
+	display: flex
+	justify-content: space-between
+	align-items: center 
+	border-bottom: 1px solid white
+	&__logo
+		display: flex
+		align-items: center
+		width: fit-content
+		background: none
+	&__img
+		display: block
+	&__soc
+		gap: 12px
+		& img 
+			background: none
+		& li 
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 46px
+			height: 46px
+			background: #C4C4C477
+			border: 1px solid #E5E5E5
+			border-opacity: 1
+		& li:hover 
+			background: #d400b3	
+
+.footee 
+	padding: 25px 0 25px
+	text-align: center
+	font-size: 16pz 
+	line-height: 20px

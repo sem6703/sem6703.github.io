@@ -55,22 +55,25 @@ body {
     height: 300px;
 }
 
-.idea__item:nth-child(1) {
+.idea__item:nth-child(2) {
     background-image: url(img/i1.jpg);
 }
 
-.idea__item:nth-child(2) {
+.idea__item:nth-child(3) {
     background-image: url(img/i2.jpg);
 }
 
-.idea__item:nth-child(3) {
+.idea__item:nth-child(4) {
     background-image: url(img/i3.jpg);
 }
 
-.idea__item:nth-child(4) {
+.idea__item:nth-child(5) {
     background-image: url(img/i4.jpg);
 }
 
+.idea__item:nth-child(1) {
+    background-image: url(img/i5.png);
+}
 .idea__padding {
     display: flex;
     align-items: center;

@@ -1,0 +1,15 @@
+	@font-face {
+	  font-family: 's';
+	  src: local("s"), local("s"), 
+	  url("font/SourceSansPro-Regular.ttf") format("truetype");
+	  font-weight: 400;
+	  font-style: normal; }
+
+	@font-face {
+	  font-family: 'p';
+	  src: local("p"), local("p"), 
+	  url("font/PaytoneOne-Regular.ttf") format("truetype");
+	  font-weight: 400;
+	  font-style: normal; }	  
+	 
+
