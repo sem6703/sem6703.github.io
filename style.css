@@ -71,6 +71,9 @@ body {
     background-image: url(img/i4.jpg);
 }
 
+.idea__item:nth-child(6) {
+    background-image: url(img/i6.png);
+}
 .idea__item:nth-child(1) {
     background-image: url(img/i5.png);
 }
