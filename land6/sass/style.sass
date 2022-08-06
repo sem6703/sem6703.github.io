@@ -1,0 +1,432 @@
+html
+	scroll-behavior: smooth
+
+
+body 
+	background: #2b2b2b
+	color: white
+	font-family: a
+	font-size: 18px
+	line-height: 21px
+a 
+	text-decoration: none
+h1
+	font-family: n7
+	font-size: 72px
+	line-height: 81px
+h2
+	font-family: n6
+	font-size: 48px
+	line-height: 54px
+h3
+	font-family: n4
+	font-size: 48px
+	line-height: 54px
+	text-transform: uppercase
+@media screen and (max-width: 303px) 
+	h3
+		font-size: 24px
+		line-height: 28px
+h4
+	font-family: m
+	font-size: 18px
+	line-height: 18px
+@media screen and (max-width: 260px) 
+	h4
+		display: none
+
+
+.wide
+	margin: 0 auto
+	width: 100%
+	max-width: 1920px
+
+/***************************************************/
+.hd
+	padding: 0px 0 0px
+	position: relative
+	&__1
+		padding: 30px 0 0px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: absolute
+		width: 100%
+	&__2
+
+		display: flex
+		justify-content: space-between 
+		align-items: center
+		gap: 15px		
+	&__3
+		width: calc(100% - 205px)
+		display: flex
+		justify-content: space-between 
+		align-items: center	
+	& ul 
+		display: flex
+
+	& ol 
+		display: none
+		margin-right: 0px
+
+@media only screen and (max-width: 622px) 
+	.hd ul 
+		display: none
+  
+
+@media only screen and (max-width: 622px) 
+	.hd ol 
+		display: flex
+  
+
+
+/********************************/
+
+.hi
+	padding: 188px 0 0
+	flex-wrap: wrap
+	overflow: hidden
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	&__1
+		align-self: stretch
+		width: 100%
+		max-width: 449px
+		overflow: hidden
+	&__2
+		padding: 2px 0 18px
+		width: 90%
+		max-width: 406px
+	&__3
+		padding: 10px 30px
+		display: inline-block
+		background: #e29e00
+		color: black
+		font-family: n7
+		font-size: 18px
+		line-height: 20px
+		border-radius: 6px
+	&__ring
+		border-radius: 50%
+		position: relative
+		align-self: end
+		filter: drop-shadow(0px 0px 152px rgba(0, 196, 240, 0.42))
+		width: 100%
+		max-width: 575px
+		height: 575px
+		border: 67px solid #00c4f0
+	&__pic1
+		position: absolute
+		bottom: -74px
+		left: 0
+	&__pic2
+		position: absolute
+		bottom: 275px
+		left: -11px
+	&__uix
+		border-radius: 50%
+		position: absolute
+		display: flex
+		top: calc(50% - 45px)
+		left: calc(50% - 45px)	
+		width: 90px
+		height: 90px
+		background: #353535
+		color: #00c4f0
+		font-family: n7
+		font-size: 36px
+		line-height: 41px
+	&__ui1
+		transform: rotate(105deg) translatey(300px)
+	&__p1
+		margin: auto
+		transform: rotate(-105deg)
+	&__ui2
+		transform: rotate(140deg) translatey(300px)
+	&__p2
+		margin: auto
+		transform: rotate(-140deg)
+	&__ui3
+		transform: rotate(217deg) translatey(300px)
+	&__p3
+		margin: auto
+		transform: rotate(-217deg)
+	&__ui4
+		transform: rotate(66deg) translatey(300px)
+	&__p4
+		margin: auto
+		transform: rotate(-66deg)	
+@media screen and (max-width: 1155px) 
+	.hi
+		flex-direction: column
+
+
+/****************************************************/
+.ab
+	padding: 50px 0 82px
+	background: #3d3d3d
+	overflow: hidden
+	&_1
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&_kbd
+		font-family: a
+		font-size: 24px
+		line-height: 28px
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		gap: 15px 15px
+		flex-wrap: wrap
+	&_kbd li 
+		padding-top: 29px
+		display: block
+		width: 270px
+		height: 270px
+		border-radius: 29px
+		text-align: center
+		background: #2a2a2a
+		b0order:1px solid 
+
+	&_kbd li div
+		margin: 0 auto
+		b0ackground: black
+		width: 250px
+		height: 138px
+		display: grid
+		place-items: center
+	&_kbd li p
+		padding-top: 21px
+		
+	&_2
+		margin-top: 147px
+		width: 100%
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&_3
+		width: 5px
+		height: 5px
+		b0ackground: lime
+	&_ring1
+		margin-top: 143px
+		width: 792px
+		height: 792px
+		position: absolute
+		top: 0
+		left: 0
+		border-radius: 50%
+		border: 89px solid #E4E4E4
+		filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.25))
+	&_ring2
+		margin-bottom: 34px
+		width: 356px
+		height: 356px
+		border-radius: 50%
+		border: 34px solid #E2A200
+		filter: drop-shadow(0px 4px 70px rgba(226, 162, 0, 0.25))
+	&_ring3
+		width: 486px
+		height: 486px
+		border-radius: 50%
+		border: 55px solid #00C4F0
+		filter: drop-shadow(0px 4px 40px rgba(0, 193, 236, 0.25))	
+	&_4
+		width: 5px
+		height: 5px
+		b0ackground: yellow
+	&_5
+		padding-top: 86px
+		padding-right: 56px
+		b0ackground: pink 
+		position: absolute
+		top: 0
+		right: 0
+		display: flex
+		justify-content: flex-end
+		align-items: flex-end
+		flex-direction: column
+		d0isplay: none
+	&_about_8
+		display: flex
+		justify-content: space-between
+		align-items: center
+		justify-content: flex-end
+		width: 100%
+		position: relative
+		b0ackground: b0lue
+
+	&_6
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: flex-end
+		height: 1013px
+		b0ackground: navy
+	&_pic3
+		position: relative
+		border-radius: 14px 14px 0 14px
+		padding: 33px
+		background: #2C2C2C
+	&_pic4
+		position: absolute
+		top: 0px
+		left: 1px	
+	&_pic6
+		z-index: 4
+		position: relative
+		border-radius: 14px 0 14px 14px
+		padding: 33px
+		background: #2C2C2C	
+	&_pic9
+		position: absolute
+		top: 112px
+		left: 100px
+	&_bio
+		z-index: 45
+		h0eight: 696px
+		background: #2C2C2C
+		padding: 33px 33px 10px 33px
+		border-radius: 0px 6px 6px 0
+	&_7
+		margin-top: -59px
+	&_8
+		padding: 40px 0 45px
+		width: 90%
+		max-width: 370px
+		font-family: a
+		font-size: 20px
+		line-height: 23px
+	&_pic5
+		position: relative
+		border-radius: 0 14px 14px 0
+		padding: 33px 33px 33px 0
+		background: #2C2C2C	
+	
+@media screen and (max-width: 795px) 
+	.ab_about_8
+		display: block
+
+	
+/*********************************************************/
+.pf
+	padding: 99px 0 141px	
+	&_pof_1
+		text-align: center
+		padding-bottom: 45px
+	&_1
+		background: none
+		gap: 40px
+		display: flex
+		justify-content: center
+		align-items: center
+
+	&_toleft
+		padding: 18px 0px 0px 18px
+		cursor: pointer
+		transform: rotate(-90deg)
+		width: 60px
+		height: 60px
+		background: url(../img/pic8.png)
+	&_toright
+		padding: 18px 0px 0px 18px
+		cursor: pointer
+		transform: rotate(90deg)
+		width: 60px
+		height: 60px
+		background: url(../img/pic8.png)
+	&_mat
+		padding: 50px
+		width: calc(100% - 120px)
+		max-width: 970px 
+		h0eight: 600px
+		border-radius: 29px 
+		background: #323232	
+		
+	&_deep
+		display: flex
+		justify-content: space-between
+		align-items: center
+		gap: 30px
+
+	&_pof_2
+		border-radius: 29px
+		background: navy
+	&_pof_3
+		max-width: 296px
+		text-align: center
+	&_pof_4
+		width: 100%
+		border-radius: 29px
+	&_pof_5
+		font-family: a
+		font-size: 24px
+		line-height: 28px
+		padding-bottom: 26px
+	&_pof_6
+		margin: 28px auto 0
+		border: none
+		background: none
+		color: #e29e00
+		width: fit-content
+
+@media screen and (max-width: 1350px) 
+	.pf_1
+		gap: 5px	
+@media screen and (max-width: 800px) 
+	.pf_deep
+		flex-direction: column
+@media screen and (max-width: 580px) 
+	.pf_mat
+		padding: 0 0 50px
+
+/****************************************************/
+.ft
+	padding: 54px 0px 54px
+	background: #323232	
+	&_dno
+		margin:0 auto
+		width:90%
+		max-width: 800px
+		display: flex
+		justify-content: space-between
+		align-items: flex-start 
+		flex-wrap: wrap
+		b0ackground: teal
+
+
+	&_u 
+		padding-bottom: 32px
+		b0ackground: olive
+	&_u li
+		padding-right: 20px
+		b0ackground: red
+		padding-bottom: 12px	
+	&_1
+		padding-bottom: calc(12px)
+		height: 133px
+		flex-direction: column
+		background: #323232
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&_2
+		gap: 15px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&_3
+		padding: 18px 0px 0px 18px
+		cursor: pointer
+		width: 60px
+		height: 60px
+		background: url(../img/pic8.png)
+				
+@media screen and (max-width: 720px) 
+	.ft_dno
+		justify-content: center				
