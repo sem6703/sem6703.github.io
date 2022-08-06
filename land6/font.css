@@ -1,0 +1,44 @@
+	@font-face {
+	  font-family: 'm';
+	  src: local("Moji"), local("Moji"), 
+	  url("font/NicoMoji-Regular.ttf") format("truetype");
+	  font-weight: 400;
+	  font-style: normal; }
+
+	@font-face {
+	  font-family: 'a';
+	  src: local("Arodora Pro"), local("Arodora Pro"), 
+	  url("font/ArodoraPro-Light.otf") format("opentype");
+	  font-weight: 300;
+	  font-style: normal; }	
+
+	@font-face {
+	  font-family: 'n4';
+	  src: local("next art"), local("next art"), 
+	  url("font/NEXT ART_Regular.otf") format("opentype");
+	  font-weight: 400;
+	  font-style: normal; }	
+
+	@font-face {
+	  font-family: 'n6';
+	  src: local("next art"), local("next art"), 
+	  url("font/NEXT ART_SemiBold.otf") format("opentype");
+	  font-weight: 600;
+	  font-style: normal; }	
+
+	@font-face {
+	  font-family: 'n7';
+	  src: local("next art"), local("next art"), 
+	  url("font/NEXT ART_Bold.otf") format("opentype");
+	  font-weight: 700;
+	  font-style: normal; }		  
+
+	@font-face {
+	 font-family: MyriadPro;
+	 src: url(MyriadPro-BlackSemiExtIt.woff2) format(woff2),
+		  url(MyriadPro-BlackSemiExtIt.otf) format(opentype);
+	 font-weight: 900;
+	 font-style: italic;
+	 font-stretch: semi-extended;
+	 font-variant: normal;
+	}
