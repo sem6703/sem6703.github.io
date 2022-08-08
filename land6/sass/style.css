@@ -164,6 +164,16 @@ h4 {
   text-decoration: underline;
 }
 
+.mob__2 {
+  position: absolute;
+  left: 45px;
+  bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
 .vid {
   opacity: 0;
   pointer-events: none;
