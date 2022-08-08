@@ -11,6 +11,27 @@ body
 a 
 	text-decoration: none
 	color: inherit
+	
+.bok
+	appearance: none
+	border-radius: 50%
+	border:1px solid #e29e00
+	cursor: pointer
+	width: 60px
+	height: 60px
+	transition: background 300ms ease-in-out
+	background-color: transparent
+	background-size: 400%  
+	background-image: linear-gradient(45deg, transparent 50%, #e29e00 50%)
+	background-position: 100%  
+
+	&:hover
+		background-position: 0
+		outline: 0
+
+	&:hover svg path
+		stroke: white	
+
 h1
 	font-family: n7
 	font-size: 72px
@@ -79,8 +100,50 @@ h4
 @media only screen and (max-width: 622px) 
 	.hd ol 
 		display: flex
-  
+/***********************************/  
+.mob 
+	display: flex
+	justify-content: flex-end
+	color: white
+	width: 100vw
+	height: 100vh
+	font-family: a
+	font-size: 26px  
+	background: rgba(5, 4, 2, 1)
+	position: fixed
+	right: 0
+	top: 0
+	transform: translateX(0)
+	transition: .2s
+	pointer-events: auto
+	z-index: 10
 
+.mob__close 
+	font-size: 70px
+	line-height: 81px
+
+.mob__menu
+	margin: 2px 37px
+
+.mob__menu li 
+	margin: 14px 0
+
+.mob__menu li:hover 
+	opacity: 0.7
+	cursor: pointer
+
+.mob__menu li:hover:not(:first-child) 
+	text-decoration: underline
+
+
+.vid 
+	opacity: 0
+	pointer-events: none
+	transform: translateX(-100%)
+
+
+.mjs
+	cursor: pointer
 
 /********************************/
 
@@ -325,6 +388,10 @@ h4
 		border-radius: 0 14px 14px 0
 		padding: 33px 33px 33px 0
 		background: #2C2C2C	
+	&_bok1
+		transform: rotate(-90deg)
+	&_bok2
+		transform: rotate(90deg)
 	
 @media screen and (max-width: 795px) 
 	.ab_about_8
