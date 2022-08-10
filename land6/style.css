@@ -17,11 +17,7 @@ ul, ol {
   margin: 0 auto;
 }
 
-.container-wide {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 .mob, .mob button {
   font-family: sans-serif;
@@ -48,10 +44,3 @@ ul, ol {
   pointer-events: none;
 }
 
-.hidden {
-  display: none;
-}
-
-.weld {
-  white-space: nowrap;
-}

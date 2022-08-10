@@ -80,6 +80,27 @@ h4 {
   max-width: 1920px;
 }
 
+.hidden {
+  display: none;
+}
+
+.sbm {
+  padding: 8px 16px;
+  margin-top: 15px;
+  font-family: n7;
+  font-size: 18px;
+  line-height: 20px;
+  color: #1d1d1d;
+  border: 2px solid #1d1d1d;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.sbm:hover, .sbm:active {
+  background: #1d1d1d;
+  color: white;
+}
+
 /***************************************************/
 .hd {
   padding: 0px 0 0px;
@@ -615,5 +636,93 @@ h4 {
 @media screen and (max-width: 720px) {
   .ft_dno {
     justify-content: center;
+  }
+}
+/**********************************************/
+label + input:hover,
+textarea:hover {
+  cursor: pointer;
+  border: 2px solid #828282;
+}
+
+.a {
+  padding: 33px 38px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  f0ont-family: a;
+  max-width: 680px;
+  max-height: 100vh;
+  background: #cccccc;
+  border: 2px solid #1d1d1d;
+  border-radius: 29px;
+  z-index: 12;
+}
+.a__wrap {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: calc(100vh - 117px);
+  overflow-y: auto;
+  border: none;
+}
+.a__block {
+  padding-bottom: 16px;
+  width: 100%;
+}
+.a__form label {
+  padding-bottom: 8px;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2b2b2b;
+}
+.a__txt, .a__form input {
+  padding: 12px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid #E5E5E5;
+  resize: none;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(43, 43, 43, 0.9725490196);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+#hr {
+  height: 3px;
+  background: white;
+}
+
+.cr {
+  position: absolute;
+  top: 21px;
+  right: -44px;
+  font-size: 45px;
+  line-height: 25px;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+  .a {
+    padding: 55px 15px 30px;
+  }
+  .cr {
+    right: 11px;
+    color: black;
   }
 }/*# sourceMappingURL=style.css.map */
