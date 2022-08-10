@@ -205,10 +205,12 @@ h4
 		position: absolute
 		bottom: -74px
 		left: 0
+		pointer-events: none
 	&__pic2
 		position: absolute
 		bottom: 275px
 		left: -11px
+		pointer-events: none
 	&__uix
 		border-radius: 50%
 		position: absolute
@@ -469,6 +471,7 @@ h4
 
 	&_pof_2
 		border-radius: 29px
+		overflow: hidden
 		background: navy
 	&_pof_3
 		max-width: 296px
@@ -487,6 +490,10 @@ h4
 		background: none
 		color: #e29e00
 		width: fit-content
+	&_tape	
+		display: flex
+		transition: .5s
+		transform: translateX(0)	
 
 @media screen and (max-width: 1350px) 
 	.pf_1

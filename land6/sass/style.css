@@ -239,11 +239,13 @@ h4 {
   position: absolute;
   bottom: -74px;
   left: 0;
+  pointer-events: none;
 }
 .hi__pic2 {
   position: absolute;
   bottom: 275px;
   left: -11px;
+  pointer-events: none;
 }
 .hi__uix {
   border-radius: 50%;
@@ -545,6 +547,7 @@ h4 {
 }
 .pf_pof_2 {
   border-radius: 29px;
+  overflow: hidden;
   background: navy;
 }
 .pf_pof_3 {
@@ -569,6 +572,11 @@ h4 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.pf_tape {
+  display: flex;
+  transition: 0.5s;
+  transform: translateX(0);
 }
 
 @media screen and (max-width: 1350px) {
