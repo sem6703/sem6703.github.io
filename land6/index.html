@@ -118,13 +118,14 @@
 <section class="container pf" id="portfolio">
 	<h3 class="pf_pof_1">Portfolio</h3>
 	<div class="pf_1">
+	<table><tr><td id="ljs">
 		<button class="bok ab_bok1">
 			<svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M22.5 11.5L12 1L1.5 11.5" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 			<path d="M12 1L12 25" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 			</svg>						
 		</button>		
-		
+		</td><td>
 		
 		<div class="pf_mat">
 			<div class="pf_deep">
@@ -148,13 +149,15 @@
 			</div>
 		</div>
 		<!--<div class="pf_toright"><img src="img/arrow.svg"></div>	-->
+		</td><td id="rjs">
 		<button class="bok ab_bok2">
 			<svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M22.5 11.5L12 1L1.5 11.5" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 			<path d="M12 1L12 25" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 			</svg>						
 		</button>			
-		
+		</td></tr>
+	</table>
 	</div>	
 </section>
 
@@ -243,7 +246,7 @@
 		mn.style.transform = `rotateZ(${mm}deg)`; 
 		sc.style.transform = `rotateZ(${ss}deg)`; 
 	} 
-)})();//часы	
+,1000)})();//часы	
 
 function sendrequest(x) {// отправка запроса
 	const SERVER_URL = 'https://academy.directlinedev.com';
@@ -308,8 +311,8 @@ function sendrequest(x) {// отправка запроса
 (function (){//slider
 	let cur=0;
 	const tape=document.querySelector('.pf_tape');	
-	const toleft=document.querySelector('.ab_bok1');
-	const toright=document.querySelector('.ab_bok2');
+	const toleft=document.querySelector('#ljs');//('.ab_bok1');
+	const toright=document.querySelector('#rjs');//('.ab_bok2');
 	const foo=()=>{tape.style.transform= `translateX(-${cur}%)`}	
 	toleft.addEventListener('click',()=>{cur=(cur<=200)?cur+100:cur; foo()});
 	toright.addEventListener('click',()=>{cur=(cur>=100)?cur-100:cur; foo()});
