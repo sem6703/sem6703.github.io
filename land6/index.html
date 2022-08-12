@@ -10,7 +10,95 @@
   <link rel="shortcut icon" href="img/my.ico">
   <title>landing-6</title>
   <style>
+.tdon {
+	padding: 5px 22px;
+	border:2px solid black; background: #ffffff21;
+	display: block; 
+	border-radius:11px;
+	width: 98%
+	max-width: 1000px;
+	margin: 11px auto; 		
+	counter-increment:x;
+	}
+.th5{padding-bottom: 11px; font-size: 18px;line-height: 20px;text-transform: none;color: navy;}	
+	
+.th5::before {content: counter(x)'. ';color: grey;}	
+	
+	
+.tlb {display: block; margin: 3px;}
 
+
+	
+.tbt {
+	padding: 5px;
+	border:2px solid black;
+	border-radius:11px;
+	cursor: pointer;
+	font-size:24px;
+	}
+.a3,.a4,.a5,.a6,.a7,.a8,	
+.a2{	
+	padding: 33px 38px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 1171px;
+	max-height: 100vh;
+	background: #cccccc;
+	border: 2px solid #1d1d1d;
+	border-radius: 29px;
+	z-index: 12;
+	font-family: sans-serif;
+	font-size: 18px;
+	}
+.cr3,.cr4,.cr5,.cr6,.cr7,.cr8,
+.cr2{
+	position: absolute;
+	top: 21px;
+	right: -44px;
+	font-size: 45px;
+	line-height: 25px;
+	color: white;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	transition: .4s;
+}	
+.twr{
+	overflow-y:auto;
+	border-radius:9px 0 0 9px;
+	border:3px solid #888;
+	max-height:calc(100vh - 100px);
+	}
+.tsp{padding-left: 14px;color:black;}	
+.trd {position: relative}
+.trd::after {
+	content:''; 
+	position: absolute;
+	display: block; top:-1.5px; left:-1.5px; width: 16px; height: 16px;
+	border:3px solid blue;
+	border-radius: 50%;
+	}
+.tch {position: relative}
+.tch::after {
+	content:''; 
+	position: absolute;
+	display: block; top:-1.5px; left:-1.5px; width: 16px; height: 16px;
+	border:3px solid blue;
+	border-radius: 0%;
+	}		
+@media screen and (max-width: 1266px){ 
+	.a3,.a4,.a5,.a6,.a7,.a8,
+	.a2 {
+		padding: 55px 15px 30px}
+		
+	.cr3,.cr4,.cr5,.cr6,.cr7,.cr8,	
+	.cr2{
+		right: 11px;
+		color: black;}
+	}
   </style>  
 </head>
 <body id="sky">
@@ -73,14 +161,14 @@
 
 <section class="wide ab">
 	<div class="container ab_1">
-		<ul class="ab_kbd">
-			<li><a href="#"><div><img src="img/k1.png"></div><p>Product Design</p></a></li>
-			<li><div><img src="img/k2.png"></div><p>UX/UI Design</p></li>
-			<li><div><img src="img/k3.png"></div><p>Icon Design</p></li>
-			<li><div><img src="img/k4.png"></div><p>Logo Design</p></li>
-			<li><div><img src="img/k5.png"></div><p>Backend</p></li>
-			<li><div><img src="img/k6.png"></div><p>Frontend</p></li>
-			<li><div><img src="img/k7.png"></div><p>Motion</p></li>
+		<ul class="ab_kbd"><!--<a href="#"></a>-->
+			<li id="k1"><div><img src="img/k1.png"></div><p>Product Design</p></li>
+			<li id="k2"><div><img src="img/k2.png"></div><p>UX/UI Design</p></li>
+			<li id="k4"><div><img src="img/k3.png"></div><p>Icon Design</p></li>
+			<li id="k5"><div><img src="img/k4.png"></div><p>Logo Design</p></li>
+			<li id="k6"><div><img src="img/k5.png"></div><p>Backend</p></li>
+			<li id="k7"><div><img src="img/k6.png"></div><p>Frontend</p></li>
+			<li id="k8"><div><img src="img/k7.png"></div><p>Motion</p></li>
 		</ul>
 	</div>
 	<div class="container ab_2">
@@ -213,7 +301,55 @@
     </form>
     <button class="cr crjs" type="button">&times;</button>
 </div>	
+<!-- тесты -->
+<div class="a2 hidden">	
+	<div class="twr">
+		<div class="tst"></div>
+		<button class="cr2 cr2js" type="button">&times;</button>
+	</div>
+</div>	
 
+<div class="a3 hidden">	
+	<div class="twr">
+		<div class="tst"></div>
+		<button class="cr3 cr3js" type="button">&times;</button>
+	</div>
+</div>	
+
+<div class="a4 hidden">	
+	<div class="twr">
+		<div class="tst"></div>
+		<button class="cr4 cr4js" type="button">&times;</button>
+	</div>
+</div>	
+
+<div class="a5 hidden">	
+	<div class="twr">
+		<div class="tst"></div>
+		<button class="cr5 cr5js" type="button">&times;</button>
+	</div>
+</div>
+
+<div class="a6 hidden">	
+	<div class="twr">
+		<div class="tst"></div>
+		<button class="cr6 cr6js" type="button">&times;</button>
+	</div>
+</div>
+
+<div class="a7 hidden">	
+	<div class="twr">
+		<div class="tst"></div>
+		<button class="cr7 cr7js" type="button">&times;</button>
+	</div>
+</div>
+
+<div class="a8 hidden">	
+	<div class="twr">
+		<div class="tst"></div>
+		<button class="cr8 cr8js" type="button">&times;</button>
+	</div>
+</div>
 <script>
 (function(){
 	window.addEventListener('resize',()=>{console.log(window.innerWidth)});
@@ -318,8 +454,313 @@ function sendrequest(x) {// отправка запроса
 	toright.addEventListener('click',()=>{cur=(cur>=100)?cur-100:cur; foo()});
 })();//slider
 
+(function (){//test № 1
 
+	
+const a=[
+{ask:'Что будет выведено в консоль?<div style="text-align:left"> var a=null;<br> console.log(!a && typeof a === "object");</div>',
+o:[
+'false',
+'*true',
+]},
+
+{ask:'Что будет выведено в консоль?<div style="text-align:left"> const x=function(){};<br>x.length;<br>const y=function(a,b,c){};<br>y.length;</div>',
+o:[
+'*0, 3',
+'3',
+'undefined',
+]},
+
+{ask:'NaN===NaN',
+o:[
+'*false. NaN никогда не равен сам себе',
+'true',
+]},
+
+{ask:'typeof NaN',
+o:[
+'*-object',
+'*number',
+'symbol',
+]},
+
+{ask:'typeof null',
+o:[
+'*object',
+'number',
+'symbol',
+]},
+
+{ask:'window.isNaN(2/"foo")',
+o:[
+'false',
+'*true. вернет true только для фактических значений NaN, когда результат просто не число',
+]},
+
+{ask:'window.isNaN("foo")',
+o:[
+'false',
+'*true',
+]},
+
+{ask:'Number.isNaN(2/"foo")// не делает приведения',
+o:[
+'false',
+'*true',
+]},
+
+{ask:'Number.isNaN("foo")',
+o:[
+'*false',
+'true',
+]}
+];	
+	const a2=document.querySelector('.a2');	
+	const k1=document.querySelector('#k1');	
+	const tst=document.querySelector('.tst');
+	const scat=document.querySelectorAll('.a2, .overlay');
+	const cr2js=document.querySelector('.cr2js');
+	cr2js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k1.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+const w=a2.querySelector('.tst');	//document
+const wins=[];// выигрышная комбинация
+a.forEach((xx,ii)=>{
+	wins.push([]);
+	xx.o.forEach((x,i)=>{
+		if (x[0]==='*'){wins[ii].push(i)}
+		});
+	xx.o=xx.o.map(x=>(x[0]==='*')?x.slice(1):x);// звездочку стираю
+	});
+
+let n=0;
+a.forEach(xx=>{
+	n++;
+	let d='', k=0;
+	xx.o.forEach((x,i)=>{
+	d+=`<label class="tlb"><input class="${(wins[n-1].length === 1)?'trd':'tch'}" type="${(wins[n-1].length === 1)?'radio':'checkbox'}" name="${n}"><span class="tsp">${x}</span></label>\n`;
+});
+w.innerHTML+=
+`
+<div class="tdon">
+<h5 class="th5">
+${xx.ask} 
+</h5>
+${d}
+<button class="tbt" type="button"
+onclick="let s=this.parentNode;
+let e=s.querySelectorAll('input');
+let e2=[...e].map((x,i)=>(x.checked)?i:-1).filter(x=>x>-1);
+s.style.background =
+				(JSON.stringify(e2)===JSON.stringify([${wins[n-1]}]))?
+				'#00ff0064':'#ff000042'
+">Принять</button>
+</div>  
+`;
+});	
+const alli=w.querySelectorAll('.trd,.tch');// нахожу чеки и радио
+alli.forEach(x=>x.addEventListener('change',(e)=>{ // нейтральный цвет
+	e.target.parentNode.parentNode.style.background='#ffffff42'
+	}));	
+})();
  	
+	
+	
+(function (){//test № 2
+let a=[
+
+{ask:'Какая буква? — *  ',
+o:[
+'а',
+'*н',
+'ц',
+]},
+
+{ask:'Какая буква? — **  ',
+o:[
+'г',
+'*д',
+'у',
+]},
+
+{ask:'Какая буква? — ***  ',
+o:[
+'ж',
+'*б',
+'г',
+'д',
+]},
+
+{ask:'Какая буква? — — — ',
+o:[
+'*о',
+'с',
+'ш',
+]},
+
+
+{ask:'Какой будет результат сортировки? [1,2,3].sort((a,b)=>1)',
+o:[
+'*[1,2,3]',
+'[3,2,1]',
+'Maximum call stack size exceeded',
+]},
+
+
+ 
+
+{ask:'Цикл событий (Event Loop) — это ....',
+o:[
+'неведомая хуйня',
+'*то, что позволяет Node.js выполнять неблокирующие операции ввода/вывода (несмотря на то, что JavaScript является однопоточным) путём выгрузки операций в ядро системы, когда это возможно.',
+]},
+
+
+{ask:'[pascal]Что выведет код? <div style="text-align:left">a=&apos;abc&apos;;<br>b=&apos;abbc&apos;;<br>print(a&gt;b);</div>',
+o:[
+'false, length(b)&gt;length(a)',
+'*true, &apos;c&apos;&gt;&apos;b&apos;',
+]},
+
+
+
+
+
+{ask:'<div style="text-align:left">async function fn(){ <br><span style="padding-left:20px"></span>return await Promise.resolve("mad");<br>} <br>const d=fn(); <br>console.log(d);</div><br>',
+o:[
+'*Promise {&lt;pending&gt;}',
+'mad',
+]},
+
+
+
+{ask:'console.log(decodeURI("%D1%81%D0%BD%D1%83%D0%BB%D1%8F"))',
+o:[
+'piggy',
+'*снуля',
+]},
+
+{ask:'Как называется срез в массиве?',
+o:[
+'*slice',
+'store',
+'scale',
+'state',
+'score',
+]},
+
+{ask:'Что возвращает асинхронная функция?',
+o:[
+'ничего',
+'*promise',
+'по усмотрению программиста',
+]},
+
+{ask:'Что такое &apos;??&apos;',
+o:[
+'*Оператор нулевого слияния. это логический оператор, возвращающий значение правого операнда, если значение левого операнда содержит null или undefined, в противном случае возвращается значение левого операнда.',
+'в ES6 знак удивления или сомнения',
+]},
+];
+
+	const a3=document.querySelector('.a3');	
+	const k2=document.querySelector('#k2');	
+	const tst=a3.querySelector('.tst');
+	const scat=document.querySelectorAll('.a3, .overlay');
+	const cr3js=document.querySelector('.cr3js');
+	cr3js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k2.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+const w=a3.querySelector('.tst');	
+const wins=[];// выигрышная комбинация
+a.forEach((xx,ii)=>{
+	wins.push([]);
+	xx.o.forEach((x,i)=>{
+		if (x[0]==='*'){wins[ii].push(i)}
+		});
+	xx.o=xx.o.map(x=>(x[0]==='*')?x.slice(1):x);// звездочку стираю
+	});
+
+let n=0;
+a.forEach(xx=>{
+	n++;
+	let d='', k=0;
+	xx.o.forEach((x,i)=>{
+	d+=`<label class="tlb"><input class="${(wins[n-1].length === 1)?'trd':'tch'}" type="${(wins[n-1].length === 1)?'radio':'checkbox'}" name="${n}"><span class="tsp">${x}</span></label>\n`;
+});
+w.innerHTML+=
+`
+<div class="tdon">
+<h5 class="th5">
+${xx.ask} 
+</h5>
+${d}
+<button class="tbt" type="button"
+onclick="let s=this.parentNode;
+let e=s.querySelectorAll('input');
+let e2=[...e].map((x,i)=>(x.checked)?i:-1).filter(x=>x>-1);
+s.style.background =
+				(JSON.stringify(e2)===JSON.stringify([${wins[n-1]}]))?
+				'#00ff0064':'#ff000042'
+">Принять</button>
+</div>  
+`;
+});	
+const alli=w.querySelectorAll('.trd,.tch');// нахожу чеки и радио
+alli.forEach(x=>x.addEventListener('change',(e)=>{ // нейтральный цвет
+	e.target.parentNode.parentNode.style.background='#ffffff42'
+	}));	
+})();	
+
+
+(function (){//test № 4
+	const a4=document.querySelector('.a4');	
+	const k4=document.querySelector('#k4');	
+	const tst=a4.querySelector('.tst');
+	const scat=document.querySelectorAll('.a4, .overlay');
+	const cr4js=document.querySelector('.cr4js');
+	cr4js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k4.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});		
+})();	
+
+
+(function (){//test № 5
+	const a5=document.querySelector('.a5');	
+	const k5=document.querySelector('#k5');	
+	const tst=a5.querySelector('.tst');
+	const scat=document.querySelectorAll('.a5, .overlay');
+	const cr5js=document.querySelector('.cr5js');
+	cr5js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k5.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});		
+})();
+
+(function (){//test № 6
+	const a6=document.querySelector('.a6');	
+	const k6=document.querySelector('#k6');	
+	const tst=a6.querySelector('.tst');
+	const scat=document.querySelectorAll('.a6, .overlay');
+	const cr6js=document.querySelector('.cr6js');
+	cr6js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k6.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});		
+})();
+
+(function (){//test № 7
+	const a7=document.querySelector('.a7');	
+	const k7=document.querySelector('#k7');	
+	const tst=a7.querySelector('.tst');
+	const scat=document.querySelectorAll('.a7, .overlay');
+	const cr7js=document.querySelector('.cr7js');
+	cr7js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k7.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});		
+})();
+
+(function (){//test № 8
+	const a8=document.querySelector('.a8');	
+	const k8=document.querySelector('#k8');	
+	const tst=a8.querySelector('.tst');
+	const scat=document.querySelectorAll('.a8, .overlay');
+	const cr8js=document.querySelector('.cr8js');
+	cr8js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k8.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});		
+})();
 </script>   
 </body>
 </html>

@@ -351,6 +351,7 @@ h4 {
   text-align: center;
   background: #2a2a2a;
   b0order: 1px solid;
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -465,7 +466,7 @@ h4 {
   left: 100px;
 }
 .ab_bio {
-  z-index: 45;
+  z-index: 5;
   h0eight: 696px;
   background: #2C2C2C;
   padding: 33px 33px 10px 33px;
@@ -730,6 +731,44 @@ textarea:hover {
     padding: 55px 15px 30px;
   }
   .cr {
+    right: 11px;
+    color: black;
+  }
+}
+/*************************************************/	
+.a2 {
+  padding: 33px 38px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1171px;
+  max-height: 100vh;
+  background: #cccccc;
+  border: 2px solid #1d1d1d;
+  border-radius: 29px;
+  z-index: 12;
+}
+
+.cr2 {
+  position: absolute;
+  top: 21px;
+  right: -44px;
+  font-size: 45px;
+  line-height: 25px;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 1266px) {
+  .a2 {
+    padding: 55px 15px 30px;
+  }
+  .cr2 {
     right: 11px;
     color: black;
   }
