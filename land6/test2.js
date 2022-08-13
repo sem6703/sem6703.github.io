@@ -2268,12 +2268,12 @@ o:[
 
 ];	
 	const au=document.querySelector('.a2');	
-	const k1=document.querySelector('#k1');	
+	const k2=document.querySelector('#k2');	
 	const tst=au.querySelector('.tst');
 	const scat=document.querySelectorAll('.a2, .overlay');
 	const cr2js=document.querySelector('.cr2js');
 	cr2js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
-	k1.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k2.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
 	fn(au,a);
 	
 })();

@@ -96,12 +96,12 @@ o:[
 ];
 
 	const au=document.querySelector('.a3');	
-	const k2=document.querySelector('#k2');	
+	const k3=document.querySelector('#k3');	
 	const tst=au.querySelector('.tst');
 	const scat=document.querySelectorAll('.a3, .overlay');
 	const cr3js=document.querySelector('.cr3js');
 	cr3js.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
-	k2.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	k3.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
 	fn(au,a);
 
 })();	
