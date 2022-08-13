@@ -428,7 +428,38 @@ h4
 @media screen and (max-width: 795px) 
 	.ab_about_8
 		display: block
+	.ab_kbd
+		font-family: a
+		font-size: 12px
+		line-height: 14px
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		gap: 8px 8px
+		flex-wrap: wrap
+		
+	.ab_kbd li 
+		padding-top: 15px
+		display: block
+		width: 135px
+		height: 135px
+		border-radius: 15px
+		text-align: center
+		background: #2a2a2a
+		cursor: pointer
+		user-select: none
 
+	.ab_kbd li div
+		margin: 0 auto
+		width: 125px
+		height: 70px
+		display: grid
+		place-items: center
+	.ab_kbd li p
+		padding-top: 10px
+	.ab_kbd img
+		background: none
+		transform: scale(0.5, 0.5)
 	
 /*********************************************************/
 .pf
@@ -639,7 +670,79 @@ textarea:hover
 		right: 11px
 		color: black	  
 /*************************************************/	
-.a2 
+
+.tdon 
+	padding: 5px 22px
+	border: 2px solid black
+	background: #ffffff21
+	display: block
+	border-radius: 11px
+	width: 98%
+	max-width: 1000px
+	margin: 11px auto 		
+	counter-increment: x
+	
+.th5
+	padding-bottom: 11px
+	font-size: 18px
+	line-height: 20px
+	text-transform: none
+	color: navy
+	
+.th5::before 
+	content: counter(x)'. '
+	color: grey
+	
+	
+.tlb 
+	display: block
+	margin: 3px
+
+
+	
+.tbt 
+	padding: 5px
+	border: 2px solid black
+	border-radius: 11px
+	cursor: pointer
+	font-size: 24px
+	
+.twr
+	overflow-y: auto
+	border-radius: 9px 0 0 9px
+	border: 3px solid #888
+	max-height: calc(100vh - 100px)
+	
+.tsp
+	padding-left: 14px
+	color: black	
+.trd 
+	position: relative
+.trd::after 
+	content:''
+	position: absolute
+	display: block
+	top: -1.5px
+	left: -1.5px
+	width: 16px
+	height: 16px
+	border: 3px solid blue
+	border-radius: 50%
+	
+.tch 
+	position: relative
+.tch::after 
+	content: '' 
+	position: absolute
+	display: block
+	top: -1.5px
+	left: -1.5px
+	width: 16px
+	height: 16px
+	border: 3px solid blue
+	border-radius: 0%
+			
+.a2,.a3,.a4,.a5,.a6,.a7,.a8 
 	padding: 33px 38px
 	position: fixed
 	top: 50%
@@ -652,7 +755,7 @@ textarea:hover
 	border: 2px solid #1d1d1d
 	border-radius: 29px
 	z-index: 12
-.cr2
+.cr2,.cr3,.cr4,.cr5,.cr6,.cr7,.cr8
 	position: absolute
 	top: 21px
 	right: -44px
@@ -665,9 +768,9 @@ textarea:hover
 	transition: .4s 
 	
 @media screen and (max-width: 1266px) 
-	.a2 
+	.a2,.a3,.a4,.a5,.a6,.a7,.a8
 		padding: 55px 15px 30px
-	.cr2
+	.cr2,.cr3,.cr4,.cr5,.cr6,.cr7,.cr8
 		right: 11px
 		color: black
 
