@@ -44,14 +44,17 @@
   .t_2 + label div .v{left:100px;}
   .t_3 + label div .v{left:150px;}  
   
-  .gr{font-size:1px;}
+  .gr{font-size:1px; display:grid;}
   .v{background: gold;}
   
   .ula{display:flex;justify-content: flex-end;align-items: center;
   font-size: 16px;gap:30px;
   }
   li{cursor:pointer; text-decoration:underline;}
-  .footer{}
+	.caption{text-align: center}
+	textarea{margin:0 auto;font-family: sans-serif;font-size:16px;}
+	#d{padding-bottom:15px; position: relative}
+	.footer{margin:10px auto;width:80%;max-width:555px;text-align: center;}
   </style>  
 </head>
 <body>
@@ -114,12 +117,15 @@ _ЧИЫЕМГБЕЗЛШФЦУЧАЮЛЙ_ЪИЫЯНХКВЗ НЛЧНФЭВНВ`;n
 ">exm2
 <li onclick="edit.value=
 `ТЯЫИМРК_ЧЬУДНЫШБ_ТЛ_ЪОСЛКТРЛХН ЧАМЮХБТЫЪОЩНЪОЯЬ_ЫЦНЯРТР_АЕОХТ МЩШСЯИПКНЮБОЪОПВМШЮСЩЦЖЕЮШШЙМШ ЮРНПЫЬМОПЦПУБНЗЪШ_ЩУЫКНЪШ_ЭЦАУ Т_ППНЫХЛИНАОПЮХМТЫЭЫБНЯРХПЮРЫР ПИШЦПСШИЗАШЦПКНШПДТ_Ш_ХХЮБЭУБА К_ПСПЬШ_ЬЮРВХЩР_ЧЮРСЪИХ_ЩОЗИЪИ ПМЫСВТМЮРСЯОЫКХРРТИНЮСЯОЫЬЪИД_ ЯЬПЗЪОХТТНЖТЫНЦЕШОЭИТНАДТЩРТИН ШЗМЦУР_ЕЪИМЫХЧЯЬПБЫЩЛШТУПЛТФШТ МРПОЮЫЮВТНЫЮОИД_ЬЬЧННРРТТЩЛНЗВ ПИРЮПЭЯЬПС__Л_ЯРЮРГУАТПОПКЫЫХЧ ЪЬПТЫСФАМЪК_ЬЮЮСЯЬПУОЦТАШЦПВЭУ ЬЯМАПКЫЪЯЬК_ХРННШЛХНЯОМШ_АЦЫХЙ МЪХРТНБАЧНФУЩОЫИМЫЮ_ХС_УДШР_ЧЬ БОЭОО_ЬЬЯАШОПННЪПВМЮВКХНЖТЫНЦ_ ЫЫР_ЫШРЗНЩРСИНЭЕЬЮЮСЯЬЩ_ЩОЫОМШ БОМРПЛТЧЪСНЧФЕМЬБКНХРЛЮМПБЗНА_ ЪУЩ_ЬЬШГЭОБЬМЭЮСЯУЯЕЪЫЮ_ПЯО_ДШ ЮЛННАТНЩР_ЮРОЗЗРРТИНЭАЮНА_ЧЬЬП ИЛБЕЭЬЬ_ННХГЫНА_ЪОЬИМЫРПЭЦЬЕЭН ЪАЧ_Ю_ЭОЧ_ЫТШНМАЖИЯУЫЬМЭЮПЭЬАИ ШНЬЕЪМППЫЪЮЧИНХМ_НЮСПЬШТИНЯРЫС _АЩЪШРЫРРНХУПКЫЪЯЬК_ХРННШ_ЪЦЪТ ЫНЭЕМАТИСУЫ_ПНМТЫЪПНХДХГЫНЧАФЬ _НЫСЮ_ЪЬПКЫСФАММПСЗС_АШНУЛНРЭУ КН_ОШЙПВМЕЪОШЙЭОЦНЯЬТЯХ_ЧЬХКЯЬ ПННДРЛМРЮРГОБЬМЦПЧТСЮ_ЩИПВФМЫИ МКБОРЬПКЫЪЯЬК_ХРЕЦЪАМНЬЕЪМПДЫН АИБНЯОЭНШНЫСФАМ_РКМЫРЗЗРРЮЯНБА ЧЬХ_ПЭХЧН_ЫЕЪЦХ_Г_Ю_ЪОА_ЬЬТЗЭЬ АЛТРЗИБНЭОМЫХ_ЭОАСЯОТШХВАЯМЯЮ_ ЮРЮЕЦНЫЮОЦЬОЦНШГЭАЗКЫЧППЫНТСТЪ В_ЩЦ_УМЫРБЭОЫОЮЙПНННЕЕШЬХ_ЬЬЪО ШУЭИТНБЕЩНААЩИЬ_ЩИПСЫРХРДЦЫИМД БОЯЬПВЭЬФЕМЮХВЫЩНЦХЦПМХЮЭОЦНЪО ЪУЖНЫНШ_ЯУЯЕЭЙПКЫЪЯЬК_ХРЗНЯРЫД ЭОМЬСОЮЫЮВНЩШСИНТ_ЪОЗИБНЮФХЯРХ МЦПДЫЪРХМШЮМЬЙНТТЮК_ЮЦЫЬЪЬПУЩУ ЭЬДЦЫИЮЙПВМЮРЗЩУ_АБНАОШЦФНЫНЯР ХПРВХЩШ_ПНЬОЕЫЮСЯЦПИМБРНЯОАТХД ХСЧЦППЫТХШТРХЛХНШ_ПЯХ_Й_Ю_ЬЮЮИ ФЬЗЛЫНЧАМТЮВЫЩЛНЫНЪОЭЬБКЫУПВЭУ ЬЯМВЮТЛНШ_ЪУПТНШПБЗЯБРЫНЪАЧНО_ ЧЬУДН_Ю_САЬАШНЭЕСЬ_ОРЦХ_ЧЬЬПИЛ БЕЭЫКЕМДШПЗНБЕЬУ_ЬМСФЕМ_ЮЛИШЮ_ ЪУПВЮ__ЕГОНТЮМПВМЪРШХЫРХМДРСНВ ПАЪ_ШБШЬЪИЭЬТОГЫКХМ_ЮРЩЬЧАБНГА ЧЯШМХЩЛНЗВПАЬЭРРН_РХМЩШФЯОД_ОУ ЭЗЫЫРСЫЯРХМБЮТЫОЯПНЮРТНВПТТЮЬО Ю_РТНВПТЭУЭАУУ_АБНБОЭСЮВЗВПАП_ ЮМН_РХМЯШСЯУЬАБНЯРЫ_ШВЫАУОЪЫЮЙ МЯШГЪОЫИФОЕИХНШ_СОЦЕМРПГЫРЮРЛЖ ШХМЬБКЭИБКНВПВМЫРШХНФНХНЗКЫЩЛН ХШШ_СУЫАК_ПЗНЪХЧН_ХЛИЫКЕМРХЩХН ЭАМЭХРЮЬЭАШЙЭЫБНЪОЩЭЛЮЯУ_АБНЯО МЮРЗЩУ_УМЫХ_ОЬЫЬДЦД_ЧЫШГХНЭОМЭ _ЕПЬАХЫТОЩХВППЫНАВЫУЩ_ЩЬИИМЯРМ ЗУПКЭАЯНЗУПКЫЪЯЬК_ХРЗНЯРЫЕЫОРЬ ППЫШЮЛТЫШЯМ`;newgame();">exm3
+<li onclick="edit.value=
+`БФҒТІӨЬЫРВС_ЖЛФІТӨШУЫЬТТЫЬСБӨЫ ЮЕГФСКІАҺІ_ӨАЛ_ӘДДЫӨЬОСҚБ_БФҒІ НӨШУДҚС_ОЫСҚЫАННУҮТ_ААЯАЛҮТН_Щ ВЕМҰҢ_АЫҺЫ_ӨАЛ_ӘТУСПХЫМФЯ_ШПЮА ЛҚСКРФЮ_АЫҺЫ_ӨАЛ_ЩВЕМҰҢ_БГІІЛӨ ҮЕТЛСМЕЬСМОШЯЫНПСЖАЪҒЫ_ӨАЛ_ҒГТ ААТНЫӨТЛДҚС_ОЫСБЕБҢНІЭСЕКЛСЖАҮ НН_ҰТ_ҚҚВЫПӨҚЫҚБН__ӘАСЫЬСОЛӨЕС ТЛ_ГІӨЦРІЬЯІҢӨЕСТЛЯ_ҚҚВДЫӨССОӘ НН_ЮЭ_ИФФІНӨЬЫРҰН__ӘАСЫЬСОЛӨЮО ЙЬНН_ЪНРДҚС_ОЫСМОШЯЫНӨТСТҚЯАНӨ ЕСТЛФЕ_ЪТРАШСҚЫАҺЫ_ӨАЛ_ІАЙНҚЯД АҮН_ЖҒҒҚЫЬҚАҚБНҢ_ІТҢЫЬСАБПЫЛА_ СҚЫАНП_ИНҚТҚС_ОЫСҰСБТРАЬН_ТПЩА ЛПБ_ЖВҺЫ_ӨАЛ_СЦТІЬЦН_ЪНРЫЬДҒАӨ ТРНПЭҒАЬСКРФЮНІЭСҚАЫҺЫҚБТРЫЬСЖ УҚБ_ТПГТАҰН__ЮЭ_БФҒІНӨГҮЛУҢМЕЬ ССҮАҒІПӨТЙНПХА_ЪТРАҰН__ЮЯЫҢӨҮЕ ТЛЯДЕӨЬЫРҚЯУ_ЩВЕМЛСҚАЫЮАҒПЯ_ЕҰ Ң__ЪНРЫЬД_АОЬТАЫҺЫ`;newgame();">kz
 </ul>
 </header>
-<p style="text-align: center">Шифр Виженера с известной длиной ключа</p>
+<p class="caption" style="">Шифр Виженера с известной длиной ключа</p>
 
 <div class="container">
-<textarea class="container100" id="edit" rows="10" cols="45" style="margin:0 auto;font-family: sans-serif;font-size:16px;">
+
+<textarea class="container100" id="edit" rows="10" cols="45" style="">
 МЕЩИЯРЕЕЗЪУСУГКИЩТЩЛГКЮЮЪФЙ_МО Й_ЭУЛННРУЯЗХРКЩХЛ_КВЪЕШФЩНИОЖ
 НВШККЦПЪЬЕХРРИШКМЫКЕКРВШАЗНЩМЧ ГХТМЛЬКИШКИЗЗРННЖКВЗФРТРВМАХН
 ЩВЩНУХЗГНТЦПЛТЦЕКПШИСДНВБЕФВЩТ ЧУЛВРХЖ_РРЯОШПЛЦРАКВЗНЩМЧЯИТН
@@ -162,21 +168,19 @@ _ЧИЫЕМГБЕЗЛШФЦУЧАЮЛЙ_ЪИЫЯНХКВЗ НЛЧНФЭВНВ</t
 
 <!--    ---- column -->
 <!--<div class="gr" style="display:grid;grid-template-rows: repeat(34, 1fr);"></div>-->
-<div id="d" class="container" style="padding-bottom:15px; position: relative">
+<div id="d" class="container" style="">
 <input type="radio" class="t t_0" name="ki" value="0" checked> 
-<label><div class="container gr" style="display:grid;"></div></label>
+<label><div class="container gr"></div></label>
 <input type="radio" class="t t_1" name="ki" value="1"> 
-<label><div class="container gr" style="display:grid;"></div></label>
+<label><div class="container gr" ></div></label>
 <input type="radio" class="t t_2" name="ki" value="2"> 
-<label><div class="container gr" style="display:grid;"></div></label>
+<label><div class="container gr" ></div></label>
 <input type="radio" class="t t_3" name="ki" value="3"> 
-<label><div class="container gr" style="display:grid;"></div></label>
+<label><div class="container gr" ></div></label>
 
 <svg class="container100"
-onclick="
-if(event.clientX>(d.offsetWidth/2)){move('x',-1)}else{move('x',+1)}
-
-"
+onclick="if(event.clientX>(d.offsetWidth/2))
+{move('x',-1)}else{move('x',+1)}"
 style="margin-top:61px;" viewBox="0 0 15 4" fill="none">
 <rect x="0" y="0" width="15" height="4" fill="#fed"/>
 <polygon id="eva0" points="0 4 7 1 15 4" 
@@ -192,24 +196,27 @@ stroke="teal" stroke-width="0.06" fill="teal"/>
 stroke="maroon" opacity="0.5"
 stroke-width="0.06" 
 fill="purple"/>
-
 </svg>
-
-
 </div>
 
 <!--  width="15" height="15"
 <div class="container"></div>-->
-<p class="footer" style="margin:10px auto;width:80%;max-width:555px;text-align: center;b0ackground: red;">
+
+<p class="footer">
 Для расшифровки совмести самые длинные сосульки. Управление: нажимай желтые кнопки и правую, левую сторону картинки. <br>(На ПК ←↑↓→)
 <br><br>
 Since 2022 &copy;
 </p>
 
-<script>
-const asse=[21,7,14,4,9,34,4,12,21,11,11,12,16,35,38,8,12,
+<script>// добавлен казахский язык 1.09.2022
+const kaza=[135,10,27,2,11,19,50,75,0,15,17,20,17,23,25,52,28,72,13,22,8,16,56,42,48,16,8,9,1,4,1,0,0,11,0,0,70,56,1,0,0,3,140];
+const rush=[21,7,14,4,9,34,4,12,21,11,11,12,16,35,38,8,12,
    18,19,8,2,5,1,4,3,2,0,13,3,0,0,11,45];
-const ac="АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_";//Ё
+let asse=[21,7,14,4,9,34,4,12,21,11,11,12,16,35,38,8,12,
+   18,19,8,2,5,1,4,3,2,0,13,3,0,0,11,45];
+const kz="АӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҮҰФХҺЦЧШЩЪЫІЬЭЮЯ_"; 
+const ru="АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_";//Ё  
+let ac="АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_";//Ё
 const r=document.querySelectorAll('.gr');
 const rad=document.querySelectorAll('.t');
 
@@ -287,15 +294,19 @@ function rey(y){
 
 
 function parse(x){
+	if(x.indexOf('Қ')>-1){ac=kz; asse=kaza;}else{ac=ru;asse=rush}
 	tt=Array(4).fill().map(x=>Array(ac.length).fill(0));//правильно
 	let isp='';
-	let m=0;
+	let m=0;//alert('kz')
+	
+	
 	x=x.split('').forEach(x=>{
 		if(ac.indexOf(x)>-1){
 		if(isp.indexOf(x)<0){isp+=x;}
 		tt[m%4][ac.indexOf(x)]++;
 		m++;
 		}});
+	
 	aaa=[// гребенки юзерские
 		rey(tt[0]),
 		rey(tt[1]),
@@ -312,13 +323,14 @@ function parse(x){
 
 function newgame(){
 	curx=0;
-	cury=[0,0,0,0];
-
-	ass7=rey(asse);
-	poul.setAttribute('points','0 0  '+//мастер сталактиты
-		ass7.reduce((a,b)=>{a.push(b.d); return a},[]).join(' ')+'  ');
+	cury=[0,0,0,0];	
+	
 	txt=edit.value.toUpperCase();
 	parse(txt);	
+	ass7=rey(asse);
+	poul.setAttribute('points','0 0  '+//мастер сталактиты
+		ass7.reduce((a,b)=>{a.push(b.d); return a},[]).join(' ')+'  ');	
+	
 	for(let j=0; j<4;j++){
 		let s=''
 		for(let i=0; i<ac.length;i++){s+=`<div class="d${(i)?'':' v'}" `
