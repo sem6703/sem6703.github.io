@@ -78,8 +78,12 @@ body {
     background-image: url(img/i5.png);
 }
 .idea__item:nth-child(7) {
-    background-image: url(img/i7.png);
+    background-image: url(img/i7.png);	
 }
+.idea__item:nth-child(7) {
+    background-image: url(img/i9.jpg);	
+}
+
 .idea__padding {
     display: flex;
     align-items: center;
