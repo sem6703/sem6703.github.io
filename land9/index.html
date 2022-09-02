@@ -54,7 +54,14 @@
 	.caption{text-align: center}
 	textarea{margin:0 auto;font-family: sans-serif;font-size:16px;}
 	#d{padding-bottom:15px; position: relative}
-	.footer{margin:10px auto;width:80%;max-width:555px;text-align: center;}
+
+	.footer2{margin: 0 auto;padding:10px 0;text-align: center;}
+  .footer::after{content:'';position: absolute;width:15px; 
+  height:calc(100% + 10px);
+  top:-5px;left:-5px;background:violet;}
+  .footer::before{content:'';position: absolute;width:15px;
+  height:calc(100% + 10px);
+  top:-5px;right:-5px;background:violet;}  	
   </style>  
 </head>
 <body>
@@ -203,13 +210,32 @@ fill="purple"/>
 <!--  width="15" height="15"
 <div class="container"></div>-->
 
-<p class="footer">
+<div class="footer" style="margin:10px auto;width:80%;max-width:555px;
+position: relative;">
+<p id="vt" style="padding: 20px 0;position: absolute; width:100%;m0ax-width:555px;
+text-align: center;
+background: #fff;z-index:2;">
 Для расшифровки совмести самые длинные сосульки. Управление: нажимай желтые кнопки и правую, левую сторону картинки. <br>(На ПК ←↑↓→)
-<br><font color="red" id="fe"></font><br>
+</p>
+</div>
+
+
+<p class="footer2">
+<font color="red" id="fe"></font>
+<br>
 Since 2022 &copy;
 </p>
 
 <script>// добавлен казахский язык 1.09.2022
+// добавлен английский язык 2.09.2022
+const vt=document.querySelector('#vt');
+vt.parentNode.style.height=vt.clientHeight+'px';
+window.addEventListener('resize',()=>{
+	//vt.parentNode.style.width=vt.clientWidth+'px';
+	vt.parentNode.style.height=vt.clientHeight+'px';
+	});
+
+/***************************************/
 const engl=[796,160,284,401,1286,262,199,539,777,16,41,351,243,751,662,181,17,683,662,972,248,115,180,17,152,5,2400];
 const kaza=[135,10,27,2,11,19,50,75,0,15,17,20,17,23,25,52,28,72,13,22,8,16,56,42,48,16,8,9,1,4,1,0,0,11,0,0,70,56,1,0,0,3,140];
 const rush=[21,7,14,4,9,34,4,12,21,11,11,12,16,35,38,8,12,
