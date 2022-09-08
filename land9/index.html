@@ -11,9 +11,9 @@
   *::before {box-sizing: border-box;margin:0;padding:0;border:0; 
   font-family: sans-serif;}
   ul {list-style-type: none}
-  body{margin-top:10px;}
-  .container{margin:10px auto;width: 90%; max-width:1040px;}
-  .container100{margin:10px auto;width: 100%; max-width:1040px;}
+  body{}
+  .container{margin:0px auto;width: 90%; max-width:1040px;}
+  .container100{margin:0px auto;width: 100%; max-width:1040px;}
   .d{ margin:2px;background: silver;text-align: center;}
   .t{display: none;}
   .t:checked + label > div{background:none;}
@@ -52,8 +52,9 @@
   font-size: 16px;gap:10px 30px;b0ackground: #fed;
   }
   li{cursor:pointer; text-decoration:underline;}
-	.caption{text-align: center}
-	textarea{margin:0 auto;font-family: sans-serif;font-size:16px;}
+	.caption{padding:15px 0;text-align: center}
+	
+	textarea{margin:100px auto;font-family: sans-serif;font-size:16px;}
 	#d{padding-bottom:15px; position: relative}
 
 	.footer2{margin: 0 auto;padding:10px 0;text-align: center;}
@@ -73,6 +74,8 @@
 Метки криптография, шифры (Все метки)<br>
 Здравствуйте. Вот текст, известна длина ключа: 4 Алфавит АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭ ЮЯ_
 https://www.cyberforum.ru/cryptography/thread2973628.html еще один
+https://otvet.mail.ru/question/211116951
+https://otvet.mail.ru/question/228847861
 
 -->
 <div class="container100" style="background:#def;">
@@ -134,7 +137,7 @@ _ЧИЫЕМГБЕЗЛШФЦУЧАЮЛЙ_ЪИЫЯНХКВЗ НЛЧНФЭВНВ`;n
 </div>
 <header class="container">
 <div class="container">
-<p class="caption c0ontainer" style="">Шифр Виженера с известной длиной ключа</p>
+<p class="caption" style="">Шифр Виженера с известной длиной ключа</p>
 <textarea class="container100" id="edit" rows="10" cols="45" style="">
 МЕЩИЯРЕЕЗЪУСУГКИЩТЩЛГКЮЮЪФЙ_МО Й_ЭУЛННРУЯЗХРКЩХЛ_КВЪЕШФЩНИОЖ
 НВШККЦПЪЬЕХРРИШКМЫКЕКРВШАЗНЩМЧ ГХТМЛЬКИШКИЗЗРННЖКВЗФРТРВМАХН
@@ -230,6 +233,7 @@ Since 2022 &copy;
 
 <script>// добавлен казахский язык 1.09.2022
 // добавлен английский язык 2.09.2022
+// добавлен кастомный текст
 const vt=document.querySelector('#vt');
 vt.parentNode.style.height=vt.clientHeight+'px';
 window.addEventListener('resize',()=>{
