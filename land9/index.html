@@ -47,8 +47,9 @@
   .gr{font-size:1px; display:grid;}
   .v{background: gold;}
   
-  .ula{display:flex;justify-content: flex-end;align-items: center;
-  font-size: 16px;gap:30px;
+  .ula{padding:13px 0;display:flex;justify-content: flex-end;align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;gap:10px 30px;b0ackground: #fed;
   }
   li{cursor:pointer; text-decoration:underline;}
 	.caption{text-align: center}
@@ -73,11 +74,11 @@
 Здравствуйте. Вот текст, известна длина ключа: 4 Алфавит АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭ ЮЯ_
 https://www.cyberforum.ru/cryptography/thread2973628.html еще один
 
-
-
 -->
-<header class="container">
-<ul class="ula">
+<div class="container100" style="background:#def;">
+<ul class="ula container">
+<li onclick="edit.value='';">clear
+<li onclick="newgame();">start
 <li onclick="edit.value=
 `МЕЩИЯРЕЕЗЪУСУГКИЩТЩЛГКЮЮЪФЙ_МО Й_ЭУЛННРУЯЗХРКЩХЛ_КВЪЕШФЩНИОЖ
 НВШККЦПЪЬЕХРРИШКМЫКЕКРВШАЗНЩМЧ ГХТМЛЬКИШКИЗЗРННЖКВЗФРТРВМАХН
@@ -129,10 +130,11 @@ _ЧИЫЕМГБЕЗЛШФЦУЧАЮЛЙ_ЪИЫЯНХКВЗ НЛЧНФЭВНВ`;n
 `IPCXMIBWVTNBMJQBMFQYMITIMHEVVMFDFPGDZQNPRZBDVHTINTNBMLQRMABO_WYDIPCXMQUDFPGDG_GDANBWRVFM_OBBABBXAHUGUWQPMH_SGHUIRUBRAABXAHNINZPDNV_XUQPKMHYLKHKJMTKXFTGDUIPWMKCQRHWTMPGVRHCRQHUEIHQYDHYEDUBJVZGDNVFDABTDTWQHM_WTBMTDNVFDABTDTZGEFHEEESBSSHTIQHYM_MBLRHOMTPVDTMVDRVXMABUDNVFDRVXBMQUDNHOSEABXRZTMOTGDFPKRTHCRQHYSGTFDEXQMYHCRKJQHKHUD_IVYDMBDVHEIDACM_T_DIQNPMVQXMINPADBLNVUD_IVYDMBXAHDIM_RSVTGHMHKDNUBLV_BFR_VDSZKI_LBE_LBMMDKPYHCPII_WMDCXPPBSHMTDUQODNVFDEMGDFPCXMPGDV_BRAABPRLBM_AQDNV_DFMOTFIVMAVUDMJGWVLGWMQHDUIPWMKCQRHJIDMBLRHOMTPVDN_MDZMBXAHNIFHJMZHJEHMBWAUGDSTQYDHQRMKTIQQVDNVFDFPCXMQBGABNHMVQXMLQDMNNSGZBMEHQRRHVLVVIDNVFDSZKI_LULVXBMEHCRAAJIDHCRQHVLRFBWUWWPQHPSFHDIMKQRSBUIQHB_UFBXUMB_AZFWMITIM_RIYABHVNHIDMPXYFBE_LBQRIPDCBKXRHFMSNGVRVVDFPKRT_BDRCGVKJQHKHEE_HUIRHVLNA`;newgame();">en
 </ul>
 </header>
-<p class="caption" style="">Шифр Виженера с известной длиной ключа</p>
 
+</div>
+<header class="container">
 <div class="container">
-
+<p class="caption c0ontainer" style="">Шифр Виженера с известной длиной ключа</p>
 <textarea class="container100" id="edit" rows="10" cols="45" style="">
 МЕЩИЯРЕЕЗЪУСУГКИЩТЩЛГКЮЮЪФЙ_МО Й_ЭУЛННРУЯЗХРКЩХЛ_КВЪЕШФЩНИОЖ
 НВШККЦПЪЬЕХРРИШКМЫКЕКРВШАЗНЩМЧ ГХТМЛЬКИШКИЗЗРННЖКВЗФРТРВМАХН
@@ -231,7 +233,6 @@ Since 2022 &copy;
 const vt=document.querySelector('#vt');
 vt.parentNode.style.height=vt.clientHeight+'px';
 window.addEventListener('resize',()=>{
-	//vt.parentNode.style.width=vt.clientWidth+'px';
 	vt.parentNode.style.height=vt.clientHeight+'px';
 	});
 
