@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./font.css" rel="stylesheet">  
+  <link href="./style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/my.ico">
+
+  <title>Cristal Studio</title>
+  <style>
+  :root {
+	--nice: #8800ae;
+  }
+/*********form*******/  
+label + input:hover,
+textarea:hover {
+	cursor: pointer;
+	border: 2px solid #828282;
+}
+
+.a {
+	padding: 33px 38px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	max-width: 680px;
+	max-height: 100vh;
+	background: #e1eea7;
+	border: 2px solid #1d1d1d;
+	border-radius: 29px;
+	z-index: 12;
+}
+.a__3 {
+	color: #000;
+	text-align: center; 
+	font-size: 30px;
+}
+.a__6 {
+	color: #000;
+	text-align: center; 
+	font-size:24px;
+}
+.a__wrap {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	max-height: calc(100vh - 117px);
+	overflow-y: auto;
+	border: none;
+}
+.a__block {
+	padding-bottom: 16px;
+	width: 100%;
+}
+.a__form label {
+	padding-bottom: 8px;
+	position: relative;
+	display: inline-block;
+	font-size: 24px;
+	line-height: 28px;
+	color: #2b2b2b;
+}
+.a__txt, .a__form input {
+	padding: 12px;
+	width: 100%;
+	font-size: 18px;
+	line-height: 21px;
+	border: 2px solid #E5E5E5;
+	resize: none;
+}
+.sbm {
+	padding: 8px 32px; 
+	background: none;
+	border:2px solid black;
+	font-family: inherit;
+	font-size: 24px;
+	border-radius: 22px;
+}
+.sbm:hover {
+	background: #ae009e; 
+	color: white;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	b0ackground: rgba(43, 43, 43, 0.9725490196);
+	background: #ae009e99;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11;
+}
+
+#hr {
+	height: 3px;
+	background: white;
+}
+
+.cr {
+	position: absolute;
+	top: 21px;
+	right: -44px;
+	font-size: 45px;
+	line-height: 25px;
+	color: white;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	transition: 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+  .a {
+    padding: 55px 15px 30px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  .cr {
+    right: 11px;
+    color: black;
+  }
+}
+.zebu{
+	padding: 11px 11px 3px 11px; 
+	background-image: url(img/zeb.svg);
+	background-repeat: no-repeat;
+}
+/************************1hd*/
+.hd{ 
+	background: var(--nice);
+	padding-top: 44px;
+}
+.hd_h1{font-family:r5;font-size:40px;}
+.hd_h3{padding: 34px 0 19px;font-family:r4;font-size:25px;}
+.hd__1f img{width:100%}
+
+.girl {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	overflow: hidden;
+}
+.hd_man {
+	padding-left: 10px;
+	}
+@media screen and (max-width: 767px) {
+	 .girl {flex-direction:column;} 
+	 .hd_man{padding-left: 0px;}
+	 }
+/************************2vam*/
+
+.mma{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-bottom: 11px;
+}
+
+.mma .fa{
+	margin-right: 12px;
+	display: block;
+	width: 63px; 
+	height: 88px;
+	flex-shrink: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.mma:nth-child(2) .fa{
+	background-image: url(img/m1.png);
+	background-repeat: no-repeat;
+}
+.mma:nth-child(3) .fa{background-image:url(img/m2.png)}
+.mma:nth-child(4) .fa{background-image:url(img/m3.png)}
+/**********************/
+.vam{
+	width:100%; 
+	overflow: hidden;
+}
+.vam_h2{
+	color:#ae009e;
+	padding-bottom:11px;
+}
+.vam_img{width:100%}
+.vam1{
+	display: flex; 
+	justify-content: space-between; 
+	align-items: flex-start;
+	flex-direction: row;
+	color:#000;
+}
+.face{width:50%}
+@media screen and (max-width: 767px) {
+	.vam1{flex-direction: column; align-items: center;}
+	.face{width:100%}
+	}
+/****************************3gal*/
+.gal{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.gal img{display: block;}
+.gal img{padding: 11px 0;}
+@media screen and (max-width: 350px) {
+	.gal{justify-content: center}
+	}
+/*****************************4plan*/
+.plan{
+	padding:21px 0 0px; 
+	background: #fee600;
+	color: black;
+}
+.plan_h{
+	text-align: center; 
+	color: #000;
+}
+.noli{list-items-style: none;}
+.mod{
+	border-bottom: 2px solid grey;
+	column-count: 2; 
+	gap: 15px;
+}
+.plan_ola{padding-left: 35px;}
+/*********************************5dix*/
+.dix{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	color: #000;
+}
+.dix_ph img{width:100%}
+.dix_ol{list-style-type: none}
+.dix_ph{width:50%}
+.dix_6{
+	padding-bottom: 25px;
+	font-family: r7; 
+	font-size: 30px;
+}
+@media screen and (max-width: 990px) {
+	.dix{justify-content: center;}
+	.dix_ph{margin:0 auto;width:100%;}}
+/*****************************/
+.ft{
+	padding-bottom: 39px;
+	background: var(--nice);
+}
+
+.z1{display: none;} 
+.z2{display: block}
+.ab{
+	padding-bottom: 55px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.ab_1{flex-shrink: 0;}
+.ab_2{width:100%;}
+.ab_3{padding:0px 17px;}
+.ab_4{padding: 51px 0 15px}
+@media screen and (max-width: 767px) {
+	.ab{flex-direction: column}
+	.z1{margin:0 auto; display: block;}
+	.z2{display: none;}
+}
+/**************************************/
+.catz{
+	margin: 0 auto; 
+	padding: 20px;
+	position: relative;
+	width: 90%; 
+	max-width:500px;
+	text-align: center;
+	background: var(--nice);
+	color: white;
+	}
+/***********************************/
+.soc li{
+	display: grid;
+	place-items: center;
+	border-radius: 50%; 
+	border: 3px solid white;
+	padding: 10px;
+	cursor: pointer;
+}
+.soc li:hover{opacity: .8;}
+.soc li img{display: block}
+.soc{
+	margin: 0 auto;
+	padding: 96px 0 55px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 196px;
+	list-style-type: none;
+	}	
+@media screen and (max-width: 767px) {
+	.soc{max-width:187px;}}	
+/***************************************/
+.feet{padding: 20px 0 20px;}
+.feet_1{
+	margin:0 auto;
+	text-align: center;
+	max-width: 500px;
+	overflow: hidden
+	}
+.feet_2{width:100%}	
+
+
+/************************************/	
+#info {	
+	padding: 6px;
+	position: fixed; 
+	transform: translate(-50%,-50%);
+	width: 300px;
+	height: 150px;
+	font-size: 18px;
+	background: #056d0c;
+	z-index: 12;
+	}
+.info_1{
+	display: -ms-grid;
+	display: grid;
+	place-items: center;
+	height: 100%; 
+	background: transparent; 
+	border:3px solid white;			
+	color: white;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0,255,0,0.5);
+}	
+/**********************buttons*/
+.nemo {
+	font-family: r4;
+	font-size: 18px;
+	padding: 4px;
+	border-radius: 3px;
+	background-size: 400%;
+	background-color: transparent;
+	background-position: 0%;
+	transition: background 300ms ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.nemo:hover{
+	background-color: transparent;
+	background-position: 100%;
+}
+
+.hd_btn{
+	color: var(--nice);
+	border: 1px solid white;
+	background-image: linear-gradient(45deg, gold  50%, transparent 50%);
+}
+.hd_btn:hover{color: white;}
+
+
+
+.pln_btn{
+	margin: 0 auto;
+	display: block;
+	color: gold;
+	border: 1px solid #8800ae;
+	background-image: linear-gradient(45deg, #8800ae  50%, transparent 50%);
+}
+.pln_btn:hover{color: #8800ae;}
+
+
+
+.lak_btn{
+	margin: 50px auto 30px;
+	display: block;
+	color: white;
+	border: 1px solid black;
+	background-image: linear-gradient(45deg, black  50%, transparent 50%);
+}
+.lak_btn:hover{color: black;}
+
+.ft_btn{
+	margin: 0 auto 30px;
+	display: block;
+	color: #8800ae;
+	border: 1px solid white;
+	background-image: linear-gradient(45deg, gold  50%, transparent 50%);
+}
+.ft_btn:hover{color: white;}
+
+/********slider*begin****/
+.s1{
+	margin: auto;
+	position: relative;
+	max-width: 322px;
+}  
+.s2 img{
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.s3{
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	color: #f2f2f2;
+	font-size: 12px;
+}
+.s4{text-align: center}
+.prev,.next{
+	margin-top: -22px;
+	padding: 16px;
+	cursor: pointer;
+	position: absolute; top:50%; 
+	width: auto;
+	color: black; 
+	transition: 0.6s ease;
+	font-weight: bold;
+	border-radius: 0 3px 3px 0;
+	background-color: rgba(0,0,0,0.3);
+}
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+.s5{
+	margin: 0 2px;
+	display: inline-block;
+	width: 13px; 
+	height: 13px; 
+	border-radius: 50%;
+	background-color: #bbb;
+	transition: background-color 0.6 ease;
+	cursor: pointer;
+}
+.active, s5:hover{background-color: #717171;}
+.fade{
+	-webkit-animation-name:fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+@keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+
+.klin {fill: var(--nice);}	
+  </style>  
+</head>
+<body>
+<header class="wide hd">
+	<div class="container girl">		
+		<div class="hd__1f">
+			<img src="img/pic10.png" alt="o">
+		</div>
+		<div class="hd_man">
+			<div class="zebu">
+				<h1 class="hd_h1">МАНИКЮР ОТ А ДО Я</h1>
+			</div>
+			<h3 class="hd_h3">Старт онлайн-курса 26.09</h3>
+			<button class="hd_btn nemo">ЗАБРОНИРОВАТЬ МЕСТО</button>
+		</div>
+	</div>	
+</header>	
+
+<div class="wide">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+		<path class="klin" d="M0,6V0h1000v100L0,6z"></path>
+	</svg>
+</div>
+
+
+<section class="vam">	
+	<div class="container">
+		<div class="container vam1">
+			<div class="hd_vam face">
+				<div class="zebu">
+					<h2 class="vam_h2">
+					ВАМ ТОЧНО НУЖНО<br>НА ЭТОТ КУРС, ЕСЛИ ВЫ:</h2>	
+				</div>
+				<div class="mma">
+					<div class="fa"></div>
+					<p>Мастер, который хотел бы зарабатывать больше.<br>
+					Результат после обучения: Увеличите свой доход минимум в 1,5 раза<p>
+				</div>
+				<div class="mma">
+					<div class="fa"></div>	
+					Мастер, выполняющий прекрасные работы, но не умеющий себя продавать<br>
+					Результат после обучения: Научитесь продавать свои услуги дорого, привлекать платежеспособных клиентов
+				</div>
+				<div class="mma">
+					<div class="fa"></div>	
+					Мастер, у которого с продажами и клиентами вроде бы все ок, но заработанное быстро улетучивается и денег постоянно не хватает.<br>
+					Результат после обучения: Увеличите свой доход, научитесь грамотно планировать финансовую деятельность.
+				</div>
+			</div>			
+			<div>
+				<img class="vam_img" src="img/pic2.png" alt="o">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="container gal">
+	<img src="img/pic3.jpg" alt="">
+	<img src="img/pic4.jpg" alt="">
+	<img src="img/pic5.jpg" alt="">
+	<img src="img/pic6.jpg" alt="">
+</section>
+
+
+<section class="wide plan">
+	<h2 class="plan_h">ПРОГРАММА КУРСА</h2>
+	<div class="container plan_mod">
+		<h4>Модуль 0. Вводный</h4>
+		<h4>Модуль 1. </h4>
+		<ol class="plan_ola">
+			<li>Мышление и установки мастера маникюра
+			<li>Работа со страхами в начале пути (автор и жертва)
+			<li>Выбор и подготовка рабочего места.
+			<li>Поиск моделей.
+			<li>Как мастеру оформить свои соц. сети.
+		</ol>
+		<h4>Бонусы:</h4>
+		<ol class="plan_ola">
+			<li>Коучинговая практика “Как побороть страх повышения цен”
+			<li>Перечень необходимого оборудования.
+			<li>Планировщик контента для мастера маникюра.
+			<li>Бонусный курс по съемке фото и видео.
+		</ol>
+	</div>
+	<div class="container plan_mod">
+		<h4>Модуль 2. Материаловедение.</h4>
+		<ol class="plan_ola">
+			<li>Как грамотно выбрать и использовать материалы и инструменты для маникюра. 
+			<li>Строение ногтя и кожи
+			<li>Инструменты
+			<li>Материалы
+		</ol>
+		<h4>Модуль 3. Алгоритм безупречного маникюра.</h4>
+		<ol class="plan_ola">
+			<li>Безопасное снятие материала
+			<li>Опил 5 форм.
+			<li>Маникюр поэтапно. 
+		</ol>
+		<h4>Бонус:</h4> 
+		<ol class="plan_ola noli">
+			<li>3 вида ремонта ногтевой пластины.
+		</ol>
+	</div>
+	<button class="pln_btn nemo"> ЗАБРОНИРОВАТЬ МЕСТО </button>
+</section>
+
+
+<div class="wide">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+		<path style="fill:#fee600;" d="M0,6V0h1000v100L0,6z"></path>
+	</svg>
+</div>
+
+
+<section class="container dix">
+	<div class="dix_ph">
+		<img src="img/pic7.png">
+	</div>
+	<div>
+		<h6 class="dix_6">Что входит в мини NAIL-БОКС:</h6>
+		<ol class="dix_ol">
+			<li>1) База Rubber
+			<li>2) Топ Brilliant без липкого слоя
+			<li>3) Бескислотный Bond Primer
+			<li>4) 2 цвета гель-лака Lunail,
+			<li>5) Кисть тонкая,
+			<li>6) Дизайн 2 шт.
+		</ol>
+	</div>
+</section>
+
+
+
+<section class="container dix">
+	<div class="dix_ph">
+		<img src="img/pic8.png">
+	</div>
+	<div>
+		<h6 class="dix_6">Что входит в большой NAIL-БОКС:</h6>
+		<ol class="dix_ol">
+			<li>1) База Rubber
+			<li>2) Камуфлирующая база с блестками
+			<li>3) Топ Brilliant без липкого слоя
+			<li>4) Nail Prep
+			<li>5) Бескислотный Bond Primer
+			<li>6) 3 цвета гель-лака Lunail
+			<li>7) Кисть тонкая
+			<li>8) масло монарды
+			<li>9) Дизайн 3 шт.
+		</ol>
+	</div>
+</section>
+
+<button class="lak_btn nemo">ЗАБРОНИРОВАТЬ МЕСТО</button>
+
+<div class="s1">
+	<div class="s2 fade">
+		<div class="s3"></div>
+		<img src="img/p2.png">
+		<div class="text"></div>
+	</div>
+
+	<div class="s2 fade">
+		<div class="s3"></div><img src="img/p2.png"><div class="t"></div>
+	</div>
+	<div class="s2 fade">
+		<div class="s3"></div><img src="img/p3.png"><div class="t"></div>
+	</div>	
+	<div class="s2 fade">
+		<div class="s3"></div><img src="img/p4.png"><div class="t"></div>
+	</div>	
+	<div class="s2 fade">
+		<div class="s3"></div><img src="img/p5.png"><div class="t"></div>
+	</div>	
+	<div class="s2 fade">
+		<div class="s3"></div><img src="img/p6.png"><div class="t"></div>
+	</div>	
+	<div class="s2 fade">
+		<div class="s3"></div><img src="img/p7.png"><div class="t"></div>
+	</div>	
+	<div class="s2 fade">
+		<div class="s3"></div><img src="img/p8.png"><div class="t"></div>
+	</div>		
+
+	<a class="prev" onclick="pluse(-1)">&#10094;</a>
+	<a class="next" onclick="pluse(1)">&#10095;</a>
+</div>
+<br>
+<div class="s4">
+	<span class="s5" onclick="sli(1);"></span>
+	<span class="s5" onclick="sli(2);"></span>
+	<span class="s5" onclick="sli(3);"></span>
+	<span class="s5" onclick="sli(4);"></span>
+	<span class="s5" onclick="sli(5);"></span>
+	<span class="s5" onclick="sli(6);"></span>
+	<span class="s5" onclick="sli(7);"></span>
+	<span class="s5" onclick="sli(8);"></span>
+</div>
+
+<div class="wide">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
+	style="display: block">
+		<path class="klin" d="M0,0 v100	h1000 z"></path>
+	</svg>
+</div>
+
+<footer class="wide ft">
+	<div class="container ab">
+		<div class="zebu z1">
+			<h2>ОБ АВТОРЕ КУРСА</h2>
+		</div>
+		<div class="ab_1">
+			<img class="ab_2" src="img/pic9.png" alt="">
+		</div>
+		<div class="ab_3">
+			<div class="zebu z2">
+				<h2>ОБ АВТОРЕ КУРСА</h2>
+			</div>
+			<p class="ab_4">Анна D</p>
+			<p>
+			За 16 лет создала ногтевую
+			империю на любимом деле,
+			пройдя путь от мастера-
+			надомника до:
+			</p>
+			<p>
+			Инструктора по маникюру
+			и моделированию ногтей
+			Основательницы офлайн
+			и онлайн-школы «Luzan School»
+			Создательницы производства
+			двух брендов гель-лаков
+			«Lunail» и «Next»
+			Автора техник “текстуры
+			гель-лаками” и
+			“моделирование в 1 каплю”
+			</p>
+		</div>
+	</div>
+	<button class="ft_btn nemo">ЗАБРОНИРОВАТЬ МЕСТО</button>
+
+	<p class="catz">
+		«Я обучила сотни тысяч учениц, и я точно
+		знаю ЧТО нужно, для достижения результата.
+		Все техники, которые я создала направлены
+		на то, чтобы облегчить жизнь каждому
+		мастеру и увеличить их заработок.»
+		
+		<svg width="55" height="55" viewBox="0 0 55 55" fill="none"
+		style="position: absolute;top:0; left:0;">
+		<line x1="0" y1="0" x2="0" y2="55" stroke-width="10" stroke="yellow" stroke-linecap="square"/>
+		<line x1="0" y1="0" x2="55" y2="0" stroke-width="10" stroke="yellow" stroke-linecap="square"/>
+		</svg>
+			
+		<svg width="55" height="55" viewBox="0 0 55 55" fill="none"
+		style="position: absolute;bottom:0; right:0;">
+		<line x1="55" y1="55" x2="55" y2="0" stroke-width="10" stroke="gold" stroke-linecap="square"/>
+		<line x1="55" y1="55" x2="0" y2="55" stroke-width="10" stroke="gold" stroke-linecap="square"/>
+		</svg>
+	</p>
+	<div class="container feet">
+		<div class="feet_1">
+		<img class="feet_2" src="img/logo.png" alt="">		
+		<ul class="soc">
+			<li><a href="https://www.linkedin.com/"><img src="img/soc1.svg" alt=""></a>
+			<li><a href="https://twitter.com/"><img src="img/soc2.svg" alt=""></a>
+			<li><a href="https://www.youtube.com"><img src="img/soc3.svg" alt=""></a>
+		</ul>	
+		<h5>ИП</h5>
+		<h5>ОГРНИП 314760429300017 г.</h5>
+		<h5><a href="police.html">Соглашение об обработке персональных данных</a></h5>
+		<h5><a href="offerta.html">Договор оферты</a></h5>
+		<h5></h5>	
+		</div>
+	</div>	
+</footer>
+
+<!-- формы -->
+<div class="overlay hidden">
+	<hr id="hr"><hr id="mn"><hr id="sc">
+</div>
+<div class="a hidden">	
+    <form action="#" class="a__form" method="POST">
+		<h3 class="a__3">Запись на курс</h3>
+		<h6 class="a__6">Супер скорость</h6>	
+        <fieldset class="a__wrap">
+            <div class="a__block">
+                <label class="a__email" for="a__name">Имя <sup>*</sup></label>
+                <input type="text" id="a__name" name="ename" value="" required>
+            </div>			
+            <div class="a__block">
+                <label class="a__email" for="a__email">Email <sup>*</sup></label>
+                <input type="email" id="a__email" name="email" value="" required>
+            </div>			
+			<div class="a__block">
+				<label for="a__phone">Номер телефона <sup>*</sup></label>
+				<input type="text" id="a__phone" name="phone" value="" required>
+			</div>
+        </fieldset>
+        <button class="sbm" type="submit">Send</button>
+    </form>
+    <button class="cr crjs" type="button">&times;</button>
+</div>	
+
+<div class="hidden" id="info">
+	<div class="info_1">
+		Информация отправлена
+	</div>
+</div>
+
+<script>
+(function (){
+	const fm=document.querySelector('.a__form');
+	const s=document.querySelectorAll('.hd_btn,.pln_btn,.lak_btn,.ft_btn');
+	const scat=document.querySelectorAll('.a, .overlay');//
+	const crjs=document.querySelector('.crjs');
+	crjs.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});	
+	s.forEach(i=>{i.addEventListener('click',()=>{[...scat].forEach(x=>x.classList.toggle('hidden'))});});
+})();// отправка запроса сообщение
+
+/*************slider***********************/
+var slideindex=1;
+const pluse=x=>{
+	showslides(slideindex+=x);
+	}
+const sli=x=>{
+	showslides(slideindex=x);
+	}
+const showslides=x=>{
+	var i;
+	var slides=document.getElementsByClassName('s2');
+	var dots=document.getElementsByClassName('s5');
+	if(x>slides.length){slideindex=1}
+	if(x<1){slideindex=slides.length}
+	for (i=0;i<slides.length;i++){
+		slides[i].style.display='none';
+		}
+	for(i=0;i<dots.length;i++){
+		dots[i].className=dots[i].className.replace('active','');
+		}
+	slides[slideindex-1].style.display='block';
+	dots[slideindex-1].className+=' active';//важный пробел
+	}
+showslides(slideindex);
+</script>   
+</body>
+</html>

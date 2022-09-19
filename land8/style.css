@@ -1,0 +1,35 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+body {
+	font-family: r4;
+	color: white;
+}
+
+a {color: inherit;}
+
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wide {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.weld {
+  white-space: nowrap;
+}

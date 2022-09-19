@@ -83,6 +83,9 @@ body {
 .idea__item:nth-child(7) {
     background-image: url(img/i9.jpg);	
 }
+.idea__item:nth-child(8) {
+    background-image: url(img/i8.png);	
+}
 
 .idea__padding {
     display: flex;
