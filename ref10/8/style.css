@@ -1,0 +1,13 @@
+
+
+.hidden {
+  display: none;
+}
+
+.weld {
+  white-space: nowrap;
+}
+
+.pr {margin:0 auto;display: block;width: 80%;b0ackground: silver;}
+
+li{o0verflow: hidden;overflow-wrap:break-word;word-break: break-all; }
