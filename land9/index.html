@@ -5,320 +5,584 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico">
-  <title>Vigener 4</title>
+  <title>Шифр Виженера</title>
   <style>
-  *:not(hr), *::after, 
-  *::before {box-sizing: border-box;margin:0;padding:0;border:0; 
-  font-family: sans-serif;}
-  ul {list-style-type: none}
-  body{}
-  .container{margin:0px auto;width: 90%; max-width:1040px;}
-  .container100{margin:0px auto;width: 100%; max-width:1040px;}
-  .d{ margin:2px;background: silver;text-align: center;}
-  .t{display: none;}
-  .t:checked + label > div{background:none;}
-  .t:checked + label > div>div{background:none;}  
-  .t:checked + label > div>div.v{background:gold;text-decoration:underline;} 
-  .t_0:checked ~svg #eva0{display: block}
-  .t_0:checked ~svg #eva1{display: none}
-  .t_0:checked ~svg #eva2{display: none}
-  .t_0:checked ~svg #eva3{display: none}  
-  .t_1:checked ~svg #eva0{display: none}
-  .t_1:checked ~svg #eva1{display: block}
-  .t_1:checked ~svg #eva2{display: none}
-  .t_1:checked ~svg #eva3{display: none}     
-  .t_2:checked ~svg #eva0{display: none}
-  .t_2:checked ~svg #eva1{display: none}
-  .t_2:checked ~svg #eva2{display: block}
-  .t_2:checked ~svg #eva3{display: none}   
-  .t_3:checked ~svg #eva0{display: none}
-  .t_3:checked ~svg #eva1{display: none}
-  .t_3:checked ~svg #eva2{display: none}
-  .t_3:checked ~svg #eva3{display: block}  
-  
-  /**/
-  label{position: absolute}
-  input + label div .v{font-family: sans-serif;font-size: 30px;position: absolute;}
-  .t_0 + label div .v{left:0px;}  
-  .t_1 + label div .v{left:50px;}
-  .t_2 + label div .v{left:100px;}
-  .t_3 + label div .v{left:150px;}  
-  
-  .gr{font-size:1px; display:grid;}
-  .v{background: gold;}
-  
-  .ula{padding:13px 0;display:flex;justify-content: flex-end;align-items: center;
-  flex-wrap: wrap;
-  font-size: 16px;g0ap:10px 30px;b0ackground: #fed;
-  }
-  li{
-	  padding:15px 10px;
-	  display: inline-block;  
-	  cursor:pointer; text-decoration:underline;}
-	.caption{padding:15px 0;text-align: center}
-	
-	textarea{margin:100px auto;font-family: sans-serif;font-size:16px;}
-	#d{padding-bottom:15px; position: relative}
+*:not(hr), *::after, 
+*::before {
+	margin:0;
+	padding:0;
+	border:0;
+	box-sizing: border-box;   
+	font-family: sans-serif;
+}
 
-	.footer2{margin: 0 auto;padding:10px 0;text-align: center;}
-  .footer::after{content:'';position: absolute;width:15px; 
-  height:calc(100% + 10px);
-  top:-5px;left:-5px;background:violet;}
-  .footer::before{content:'';position: absolute;width:15px;
-  height:calc(100% + 10px);
-  top:-5px;right:-5px;background:violet;}  	
+
+.container{
+	margin: 0px auto;
+	width: 97%; 
+	max-width: 1040px;
+}
+.container100{
+	margin: 0px auto;
+	width: 100%; 
+	max-width: 1040px;
+}
+  
+.m{display: none;}    
+.m + *{
+margin:2px;
+	font-family: sans-serif;
+	font-size: 30px;
+	background: gold;
+	text-align: center;
+	user-select:none;
+}
+.m:checked + *{text-decoration: underline;} 
+
+
+[id^='eva']{display: none}
+
+
+.m_0:checked ~svg #eva0{display: block !important}
+.m_1:checked ~svg #eva1{display: block}  
+.m_2:checked ~svg #eva2{display: block}   
+.m_3:checked ~svg #eva3{display: block}  
+.m_4:checked ~svg #eva4{display: block}
+.m_5:checked ~svg #eva5{display: block} 
+.m_6:checked ~svg #eva6{display: block}
+.m_7:checked ~svg #eva7{display: block}
+.m_8:checked ~svg #eva8{display: block}
+.m_9:checked ~svg #eva9{display: block}
+.m_10:checked ~svg #eva10{display: block}
+.m_11:checked ~svg #eva11{display: block}
+.m_12:checked ~svg #eva12{display: block}
+.m_13:checked ~svg #eva13{display: block}
+.m_14:checked ~svg #eva14{display: block}
+.m_15:checked ~svg #eva13{display: block}
+
+
+.ula2{
+	padding:13px 0;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 16px;
+	list-style-type: none;
+}
+li{
+	display: inline-block;
+	cursor:pointer; 
+}
+.ula2 li.daa{
+	padding:15px 10px;
+	text-decoration:underline;
+}
+.u_clr{
+	font-size: 35px;
+	border:3px solid black; 
+	border-radius:7px;
+	text-decoration:none !important;
+	font-weight:800;
+	background:#b0bdcb;
+}
+.u_run{
+	font-size: 35px;
+	border:3px solid black; 
+	border-radius:7px;
+	text-decoration:none !important;
+	font-weight:800;
+	background:#b0bdcb;
+}  
+  
+.caption{
+	padding:15px 0;
+	text-align: center;
+}
+
+textarea{
+	margin:100px auto;
+	padding:3px;
+	font-size:16px;	
+	border:2px solid maroon;
+	font-family: monospace;
+	text-transform: uppercase;
+	resize: none;
+}
+#edit2{
+	position:absolute; 
+	color: red;
+	left:0;
+	top: 0px;
+	background: transparent;
+}
+#edit3{
+	position:absolute; 
+	color: white;
+	left:0;
+	top: 0px;
+	background: transparent;
+}
+#fog{
+	padding: 5px; 
+	display: flex; 
+	justify-content: space-between;
+	text-align: center; 
+	background:#D9E4F1;
+}
+#dva{
+	display: grid; 
+	place-items: center;
+}
+.footer2{
+	display: none;
+	margin: 0 auto;
+	padding:10px 0;
+	text-align: center;
+}
+.footer::after{
+	content:'';
+	position: absolute;
+	width:15px; 
+	height:calc(100% + 10px);
+	top:-5px;
+	left:-5px;
+	background:violet;
+}
+.footer::before{
+	content:'';
+	position: absolute;
+	width:15px;
+	height:calc(100% + 10px);
+	top:-5px;
+	right:-5px;
+	background:violet;
+}  
+
+.footer{
+	margin:10px auto;
+	position: relative;
+	display: none;
+	width:80%;
+	max-width:555px;
+}
+#vt{
+	padding: 20px 0;
+	position: absolute; 
+	display: none;
+	width:100%;
+	text-align: center;
+	background: #fff;
+	z-index:2;
+}	
+
+
+
+
+	
+[id^='sam'],[id^='saw']{display: none}
+[id^='sam'] + label,[id^='saw'] + label{
+	position: relative;
+	display:inline-block;
+	cursor: pointer;
+	padding-left:18px;
+	width:34px;
+	text-align: left;
+}
+[id^='sam'] + label:after,[id^='saw'] + label:after{
+	content:'';
+	position: absolute;
+	display:inline-block;
+	cursor: pointer;
+	width:15px; aspect-ratio:1/1;
+	border:2px solid #9c9595;
+	border-radius:4px;
+	left:0px;top:8px;
+}
+[id^='saw'] + label:after{top:4px;}
+
+[id^='sam']:checked + label:before,[id^='saw']:checked + label:before{
+	position: absolute;
+	content:'×';
+	left:3px;top:4px;
+}
+[id^='saw']:checked + label:before{font-weight:bold;}
+.act,.acg{
+	padding:4px;
+	font-size:16px;
+}	
+
+.wrot{
+	display:flex;
+	justify-content: center;
+}
+.krot{
+	display: grid; 
+	place-items: center;
+	border: 3px solid #bdd5e5;
+	font-size: 17px;
+	height: 45px;
+	border-radius:4px;
+	user-select: none;
+	cursor:pointer;
+	background: linear-gradient(#e5eeeb, #83b0c4);
+}
+.rott1, .rott2{
+	width: 60px;
+	height: 45px;
+}
+.rott2{}
+
+.rott3{
+	overflow: hidden;
+	width:80px;
+}
+
+
+#ul1 li label{
+	margin:2px 7px;
+	padding:4px;
+	display: block;
+	background: cyan;
+	text-align: center;
+}
+#ul1 li label div{font-size:8px}
+
+#pane td{border:2px solid gray;}
+#pane{display:table;}
+#nos1{display:none;width:100%;background: linear-gradient(#e5eeeb, #83b0c4);}
+#nos2{display:none;flex-wrap: wrap;}
+#nos3{display:none;flex-wrap: wrap;}
+@media screen and (max-width: 800px) {
+		#pane{display:none;}
+		#nos1{display:table;}
+		#nos2,#nos3{display:flex;}
+		}
+#fe1{
+	padding-left: 10px;	
+	display: flex;
+	align-items: center;
+	height: 32px;
+	border: 1px solid gray;
+}		
+#pane{
+	width:100%;
+	height:40px;
+	text-align:center;
+}
+#tre1{background: linear-gradient(#e5eeeb, #83b0c4);}
+#tre2{width:150px;}
+#tre3{
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	padding:0 10px;
+}
+.def{background:#def;}	
+.h0dd{padding: 2px 0 22px;}
+.hd50{
+	display: flex; 
+	justify-content:space-between;
+	align-items: center;
+}
+.hd51{width:100px}
+.hd52{position: relative;}
+#hobs{
+	padding:9px;display:inline-block;
+	width:fit-content;height:45px;
+	border:1px solid gray;
+	border-radius:4px;
+	background: linear-gradient(#e5eeeb, #83b0c4);
+}
+.tube1{width:150px}
+.tube2{
+	display: flex; 
+	justify-content:space-between;
+	align-items: center;
+	height:32px;
+	padding-left:10px; 
+	border:1px solid gray;
+	border-radius:4px;
+}
+.tube3{
+	padding:9px;
+	width:fit-content;
+	height:45px;
+	border:1px solid gray;
+	border-radius:4px;
+	background: linear-gradient(#e5eeeb, #83b0c4)
+}
+#lik{
+	width:60px;
+	border:1px solid cyan;
+}
+.ww24{width:24px;}
+.ww80{width:80px;}
+.ww70{width:70px;}
+#lee{
+	display:flex;
+	justify-content:center;
+	height:100%;
+}
+#lyk{
+	width:60px;
+	border:1px solid cyan;
+}
+.ww60{width:60px;}
+.ww90{width:90px;}
+
   </style>  
 </head>
-<body>
+<body> 
+<div class="container100 def">
+	<div class="container">
+		<div class="hd52">
+			<textarea class="container100" id="edit1" rows="10" cols="45">
+УН_СРРАРЯХЦБНИЗЙРСЩНЯОЦЯБЗАСРФЖУТАКСЛЦЯЖЯЯПФСТЯЧУНСЛЗЩОИИ ЙЪЧМГЯЬФСРШ_СВФБФСГЗАППЯБХЪЙЗ_ЕРЯАРЩАХЪЦЗОХЬЧЛЪЪГХ_ЖЗВЗИГЙНСЕИЯОВЖАЧБЙХЗЙЧЪБУНОЦСГИШОЦЧАТТЛЗФАКМШРВМРГЖУНОЦЫАЪЧЦХЪЛНСУИЬАРС ГЗ_ВУТТЪЪАЩФ_ПЪАЩЬБПТОХ_ЖЗЙЖХЯПХ_НЗЯБЗАЖШФЬССГПХМЖЦАТТЗНГТЖСП 
+			</textarea>
 
-<!--<p>K:\!\projAll\d7_vij</p>
-<a href="https://www.cyberforum.ru/cryptography/thread3016624.html">https://www.cyberforum.ru/cryptography/thread3016624.html</a><br>
-27.08.2022, 18:35. Показов 107. Ответов 0<br>
-Метки криптография, шифры (Все метки)<br>
-Здравствуйте. Вот текст, известна длина ключа: 4 Алфавит АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭ ЮЯ_
-https://www.cyberforum.ru/cryptography/thread2973628.html еще один
-https://otvet.mail.ru/question/211116951
-https://otvet.mail.ru/question/228847861
+			<textarea class="container100" id="edit2" rows="10" cols="45">
+			</textarea>
 
--->
-<div class="container100" style="background:#def;">
-<ul class="ula container">
-<li onclick="edit.value='';">clear
-<li onclick="newgame();">start
-<li onclick="edit.value=
-`МЕЩИЯРЕЕЗЪУСУГКИЩТЩЛГКЮЮЪФЙ_МО Й_ЭУЛННРУЯЗХРКЩХЛ_КВЪЕШФЩНИОЖ
-НВШККЦПЪЬЕХРРИШКМЫКЕКРВШАЗНЩМЧ ГХТМЛЬКИШКИЗЗРННЖКВЗФРТРВМАХН
-ЩВЩНУХЗГНТЦПЛТЦЕКПШИСДНВБЕФВЩТ ЧУЛВРХЖ_РРЯОШПЛЦРАКВЗНЩМЧЯИТН
-УКЕНВШАМСКПШИЩБШГТОКГЭЬЗЕКДКСУ ЧХЮФ_КЛП_ИВЧА_ЛШЫЗЩУФШСНЫНВЮС
-ЪУЩЙЩХНАЗЕЩЗКУЛЩИАЭ_РРЯОШПЛЦРЛ КЕНВЪЕШЕЩНИЪЛЛГРЮЮЗЧЩРФЦККИЙП
-ОНВЭАТСР_ЫФЭРЦМЬТКСКМЦЙШОЗТЫЕМ ФЭАКЛЭЬЗНЛКЗРЛБЦУКПНУРКУАБАЪИ
-ЦЕСВЮПШГНЛЖАГИЭВЪОЪСХОФВЗЛННЭР ЦРЩВЗ_ЭИЗТРРННЦЮЯГЭЕУЛКОЙЮБНЦ
-ВУЗЛСЭАКОУВИИЧЫНВУЗЗНЫЕФРУЯЗНЫ АСРР_ФГЦЫЗЛКСШГМАЪЮНАЕХКПЦЗКД
-НМЬТКЛРМЗ_ЦЕТХЫИЯИЬКРШКЗИУЙДЦЕ КЧШИТВВЪЛЙХСКБВФЭРЦВЭЕФВЬАФЮЧ
-_КСЬПШСУЗКСПЯЗХРКЩХКНИВЗКШГШЕЗ ТРРЩСШАУЯШОЛСККЦПЪЬЕХРРИВЧУПЮ
-ХУЗРЛ_ЧУЩИЛУЕВИХРЛНВХОФТЛКЪЗУС ТСН_РВХОФГШДВВМАХНЩВЩНЩМЫВЛВЪ
-СЧАЪЦККЦХЩРВМКВВЗЛЕЪВНАФВШАУЛБ НЦФЭЬЗОРГТСКПШСЬЛНЗУТГВХАТВЬТ
-ШСХАЗХРКЩХЛ_ЧУРВШГЭИУГЬЬЗЕКНИД ЩРЗЗНОРЪШЫЭВБИЩИЦ_ЯХЩБВВЪОХБЭ
-ЬЗНЛКЗТЫЕЦДЫАПЦИТЗЗЫУЛЛР_КЛПЫЗ ЗЛНХЮ__КВПВЦЛБНЫАКФЦУЧУЗУЛЗЙИ
-ЫЕФВРЩНВЩДРРКПШЛЧЕШВТАЧЛЬЬЗРЛ_ КЛШИУСНОСВЪЛИФЭИХНР_ДХЩ_ИРЛЛЦ
-ЖЩВЦИКПШИПСЪГНЛНРУЕЗКНУТСНЫЭВХ ОУИМАХЛФ_ИЦПИЦЛШФЦУЧАЮЛЙ_ЭУЛН
-РХЬЯЗРЛ_ХИФ_КВНИМИКМРНЫОЩНЩПРЪ РСТЛ__ЙЦООШНЩВЗУЛСЧСЦООИШНВШК
-ВЗЗЦИХРЕХЗФЪИШГЦЬХЮ__ТГШАКНЛХЗ ИЬЛРВН_ТГХОФХЩ_ФИЬТНВЧУПЮХАЗК
-НУЯЛЭ_ЛУЩМЯИКБЫЖЩРТЛКГУЦМЖНВНР НКЛЮЪФЙ_КВХАХГНКЫВЛ_ЧУУ_КЮЬОТ
-СФ_ХСЭЕЗДЮГЦУХИЗУЛСЧСЦАЛГИТЩБК ТНФШЕНВЗТРВМУЛСЫКРВЙВУБИТЩБКА
-ХГЦОЛГЧИЗЛЬХЦЗШЫЭВХОУИМАХЛФ_ПЕ ЮКЦЕЕХЗЕЩЛХВЮЛИЕЦИКГРМВШКМРНЫ
-ОЬСШОФВПВРЖЛЯЩЯКПЦВХАХГНКНВУГЦ ОХАЗТЫОРЖЫЫКГЭЕУБКПЦТЛДИИЭ_ХГ
-КБЫЖЩРТЛКИЗЕУБШЛЫУНХКЕНВНИЙУЛЦ РБКВЩИКТЦВСЕЗГШАУСООКСР_ЧУРДЩ
-ХЛВУИШИНВУСЭСПНЦЖЩ_ПЕЮКИВЮСРОУ ВИИЭСЖВУ_ПЕЮЧРХКИПВПИХГЧИТСН_
-ТГХ_ФЦТЫТГКВРРУЛЦЕЩЙЗТЦАЩХУНТИ КПЦЗЩБХСКВЩБХОФЦКАХГЦОЛСНОФЦК
-УЩХЫОСФЭВЫВ_РИРРНРБКИХЧЩРФГАИР ВЬВЦМЬТКИШ_ШБП_ХИПОЩХЛТТСН_ЧЮ
-ЦЬЗФЦЕМЮКПИОЖЦНЕКИУЛКЦИУЛПРРЕ_ ХГКПЦЕРРЭРЩСЪЛКПУГЬТРРХИЗПЩГЫ
-ХКПШЛНОМЛЭЬЗНКННГПЕТЕЛТХЮЧ_ТСЦ ЕЙГШИЖПКИЛОЕ_КЮТЫКГЙ_КВПИХГЧИ
-ТГ__ЧСЭРНФХИКГШИНВУ_МУЮГРИКШЫП Е_НФЦИЗФХОШСЬТГВНРИЬРНРБКПУГЬ
-ТРРХИЗШЩТЖВМЫЗРРМХСООЗСЭКУСШЯН ХЬЯЗСЭ_ПГПАХРЩЙЗЕЕСЦХЛ_ПЕЮКИВ
-ЬРИКЮ_ОИКМНРЙЕЪФЙ_ЧУУ_ТГСДЦПКП ШСУГШЮНАХЛУ_ЧОЛСЪЛШКРВУГУГКПЦ
-ФЭЕЧИШНЦВЬНИЫУВИЕЛЕЪВМУЛСЫКРВН _ТГШАКНР_РВХАЯИЬТКСКЗКЦБАХЛЙ_
-ЩСЩТКИЭСЪЕРНХСКУЭЦПШИИЭСЖВРСУЛ КЖНВХАТЦИНРДЮДГВЪЕЩРИ_ПГЪИЩГЭ
-ЬЗФКВРРУЛЦЕЩЙЗТЦАЩХУНТЛКНИВХАЩ ФРТХЮФ_ФГОНРХЩФЦРКТЦВНСНВВЕШС
-_ОКГЭОЩХУ_ЧИЫЕХСЬЯЪФЙ_ХГКПУИШК ЫВЛ_ЩСКВШИЧЕХИЧ_ТВШИФВПОЙГНЯЪ
-ФЙ_ХСНЫНВЪОЪСЧУЗЪЭОЗСМЫЯРЕЕЗПЛ ГХЛЭОЬСШЫЗФЛМРВЙВУБИТЩБКАХГЦО
-ЛСНЫФЛКУЩХЫОСФЭВИПУ_ЪГХИФВЩБШГ ТОФВЪРРВХАОЗЩЙЗТРРНКЛПРФУ_РОУ
-_ЧИЫЕМГБЕЗЛШФЦУЧАЮЛЙ_ЪИЫЯНХКВЗ НЛЧНФЭВНВ`;newgame();
-">exm1
-<li onclick="edit.value=
-`ОЦЛЛШЬЖЛУНОГЛ_ХЖЪНЮХЪНШЕЪЦУВЬЬ НЗСЫПИШНПРЮУЧРС_ЖСНМОГЩНССШЭВА ЮУЧРЪЧЖРМАСИЛЬФВОЯМЖРОЖНМШЖПМС ФЛЮНЦУФ_ЕЖФРЗОЛШЖФСПМВАОСИЬЬЙВ ЮОТГЩ_ТЛОИЬВЫЮХЖЬОУПФЯЩСОНССЮЬ ЧЮСНЦСЛЮЗКЩИУВЫЮПЪФЫЗПЛШЩСЛЮЗЗ ФНШТЪЮЩЛОЫХЖЪНПРЮУЧИЭОЖНЮЬЖЕЛШ ЧЛШЦФГЧЙФЮАНЭИЧМЬВОХТГШИЙГЙ_ЖЪ ЯФПИЛШХПЫЙДХСЮФЮСНШЛЭ_МПЖНЩГЦН ЙХЪЮХЖЪНФСКПЧБЛРХФСЪВЗСЯЕХЛРХФ ЗЪХЖЪНКСРОЖХЖЯЕЪФНССШЭВАЮУЧСОН ХДЕУЛЛЩУФРЖВЖЕЛКЩСХНШИЮЦЖЕРЮЪЖ ЛЮМКЦЬЖКМЪМЗЧЦТЛЛЯССЬЬШХЗНЧГНЬ ЩЮЛЪФСПЦМВФХЖРФВЖЗМФМВЩУФГРЬТЖ ЪНХФЮОФСОЦТЛЭЙЖЕЭУЖЗМЫФЮСНСВЭД ЗФЮЙДВЭЬЬУМЫПОФЯВВЩЬЖТЪШЗВМТУЛ ЩЦШХЬОЩСЬИЖНЪЪЦЯЙ_МУЩИЬВЭЦШХСЪ ЖТЖ_ЗОФЯВВОЬШФЮОФСОЦЩЯЛШХРЮЮХО ЗНФГРНШЕЪЦУЛЛЪЗЫФЫЗПФНССШЭВАЮУ ЧРЪУЖЕЬУУБЛЯЩСФЪХФЮЙДВОНУЛЧЩПС ЩИЖЗЪЩТГЬЬЙВНИТСЛЮЗФЮЮЗЪСЫХВОЭ ЪФЮАДВФЪМРЩЬЖЕЛЯЙБУЦЖФЛКЩСХНПФ ЮЬЧЛСЧЖЫФЮХНММЖТЯПТЛЦОЖЕЫУЧЕЖУ ЖЛЛАШОЖЕЗОМНХДЛЦФХСЮФИЮНСГЦНЦС ЮЬУВОИЕФЩЦТСЭЙЖТЬЦЮЛЩЬРВОЯМПЯН ИЮЧОЖЕЬУЛРММЖНЪЪЦЯЙ_МУЩОЕВЫЮХЖ ЬОУПМНФГУРЗРЩОЕВВУЧЕКШХПЛЬФГЛЭ МУСТЗЕМЩЗФЗНЦСЛЯМХФНШВЪТФСПЬЖН ЪЪЦЯЙ_МУМНФГЛТЧЦПЬРВФНЦСЫАЩРЪН ЧГУЪФСТОТГЭЙЖНЪЭПУЯМЖФМЪЗВЭУИБ ЛДМУОМССШНЗВЩУЖЕФЮЪФЪЪЖИСНФГУР ЗОФНЦСЮЬУЦЛДЩСЛЬФГЛЫМВФЫЫЛБЦЧС ООТГЛТЧЦПЦМВЫЮХЖЬОУПЖНХРМНЦСЧЙ ОСООТГЭЙЖРСХЗПСДМРЩЬРВДУТНЪЧЖЕ ЛЯПФЮУУРЪЪЖТЬЬКУМЪУРЪЪЖСНУШТСД МРФЦЖЛЛЭХОЯДЗОМНЦУКЪХМЛТХФЮАЦВ ЦНЦГШМЩЛЛОЩГЦАМПЖВЖИЙНССШЭВАЮУ ЧСОНЩГШНХРМНЦУК_ЗОМЯВВФНЦСРЯХЕ ЖРЗОМНФИОУЧРЖУЖЗМЫФЮСНЮХЪНОГЮЮ ЪЗЩМТСЛУМВОИЕЕЧУФЛСНПВЯЫПЪЮЬНИ ЩЦМВВУЧИУНФИЭШХОЗШХВРЫММЛСЗКС_ ЗВЮОРПЭНЙЮКРПОМНЬГЦУЧГЛОЙХЪЮЗВ И_ХМЛЭЧСПЮЗПШИЖУЪПМУЮНУСЬЮПФЛЪ ТГРЕПМЛТЙГРГЗХФ_ЧИАЩМХЩЦРВЭ_ЪЗ СЫЩВЫЬШОСТФИПЬЖНЯЮШГЛШХУЩУТОЗЯ ССПЬЖЦЩЦЙИЬЯПХС_ЗВЩОЦЛЭОТВИ_ХЖ ЪНЮИЬРЕНМНЗВЫЬЩСШНЙЮЫАШХФЩЖИПЬ ЖРМНШЕЪПХЗЯНЮХЪПБВЫЬШПЪ_ЧИЮЙЖЗ ЪНШНЪЩВНФВЖНЪЪЦЯЙ_МУЪРЖСЩНШЦШУ МХЛТХДЬОЩЯЭМЖСРЫЗНЪНЙВЫЮХЖЬОУП ЯНЙНЬОТГЭЙЖСГЦИНМНПКЛХЗВВУКСЛД МУОМСВЭ_ЗОЛЮЗКШЫХЙМ_ВФКНКСЬООЗ ЪНИЮЭ_ЧИСНЮИШНЦУСТЦСЧОКГЧЬШЯЛШ ЖПЪЮЧЛЭАЖТЬЦУИЩЦТЛЛХЗНЪЫЖСЛШХП ЫЙДХСЮФСШНУСГУФРФДМФЮРМВФНФГШУ ЧИЩЫХПЛЫЗРСЯМРФЦЖЕЬУЛГЛЦЖТЬЦКС ОЬЧЛЧЦЖНЛ_ЧИШНКСРОУВЯЯТСОЫХЖЪН ОГЦЩДЪСЫПБЛЕЩУМБЪВОНЛИЭМЩЯЛ_БФ КДЖЗЪЩТГЬЬЙВФНЮИЮИЧИШЯЩГШНЮГЭО УВЪП_ИЭ_ЙИЩЫБШЛЮЗДЪ_ЖЛЛЭХКТУЖЕ ЛЦФХСЮФИЮНШОЯДЗОФЯВВЬООРЪСХВЬЬ ЛГЛОЙГЬЦПВНИЙГЧЦЖТЬЬИОСЪБВОНОГ ДЦЩИЛЫХВЩУЖХМШЖЪЮЬИЮЛАНВЪДМРЗН ЮГЭ_ХВОНПХЪСМВФЫЩИЬЫМХЛЯЩГЧНЙТ ЪЩФИЛЫЗЗСФФЮШНССШЪЪРФШЗЩФЬФРЖЪ ЖНМЫЗОЪЪЖЗЧМЖПФЩТЛЪЫХЕЛЩДЗСЧЖФ ОМОЮООЕВЬОШТЪЩХЙСЫФЮСНЦСЛРШИША ЖПФЮЪВЭУЧЕСЮБВЪЫЖСНУШТСДПЕМУЩВ ЪПУИЩНГОСШЩУЪЫФСХНЦСВ_ХМЛЯХСНЖ МРФМУЛЛТТБЛКТИЦ_ЧСЩЫБШЛТХФЪШЖЛ ЛТЧЦПЦУЛЛТЗРЩИУЛЛРЖТЪ_ХНСНПР_Ь ЧПМГПЛЛДМЖЪНЩСЧЙССЛЫМХЛЬЩВЦЬЧС ЮУФЯЦЦЬВЭЬХДДУФЛХНЙВРУШБЮЬСВНА СЕЛТХВЪСЧСШЫБШЛБЗМЧЬЙВЭНЫСЮЬШР ФЪСГШЦЖЛЛЭЧСПЮЗПШЫБШЛЭЗНС_ХЕЛЭ ЧЛЛКЩСШНШХЪЦУСЭ_ВВЯЯТЦПНШИЬРМУ МНЪЗМЩМРЩЬКСЛЫЗВЮИШБВЦЖНФЩХПС_ ЧСОНФЛВАЩЯЛЫМВОИЯИЛЬЦОМ_БВЯЯТЦ НЩСПЬЖЪЮЬЖРМВХЗФ_ШБЛРЖНМШХПЛЫ ПДЯТВВЦЦТСШУЩУСНХХЛРЗФ`;newgame();
-">exm2
-<li onclick="edit.value=
-`ТЯЫИМРК_ЧЬУДНЫШБ_ТЛ_ЪОСЛКТРЛХН ЧАМЮХБТЫЪОЩНЪОЯЬ_ЫЦНЯРТР_АЕОХТ МЩШСЯИПКНЮБОЪОПВМШЮСЩЦЖЕЮШШЙМШ ЮРНПЫЬМОПЦПУБНЗЪШ_ЩУЫКНЪШ_ЭЦАУ Т_ППНЫХЛИНАОПЮХМТЫЭЫБНЯРХПЮРЫР ПИШЦПСШИЗАШЦПКНШПДТ_Ш_ХХЮБЭУБА К_ПСПЬШ_ЬЮРВХЩР_ЧЮРСЪИХ_ЩОЗИЪИ ПМЫСВТМЮРСЯОЫКХРРТИНЮСЯОЫЬЪИД_ ЯЬПЗЪОХТТНЖТЫНЦЕШОЭИТНАДТЩРТИН ШЗМЦУР_ЕЪИМЫХЧЯЬПБЫЩЛШТУПЛТФШТ МРПОЮЫЮВТНЫЮОИД_ЬЬЧННРРТТЩЛНЗВ ПИРЮПЭЯЬПС__Л_ЯРЮРГУАТПОПКЫЫХЧ ЪЬПТЫСФАМЪК_ЬЮЮСЯЬПУОЦТАШЦПВЭУ ЬЯМАПКЫЪЯЬК_ХРННШЛХНЯОМШ_АЦЫХЙ МЪХРТНБАЧНФУЩОЫИМЫЮ_ХС_УДШР_ЧЬ БОЭОО_ЬЬЯАШОПННЪПВМЮВКХНЖТЫНЦ_ ЫЫР_ЫШРЗНЩРСИНЭЕЬЮЮСЯЬЩ_ЩОЫОМШ БОМРПЛТЧЪСНЧФЕМЬБКНХРЛЮМПБЗНА_ ЪУЩ_ЬЬШГЭОБЬМЭЮСЯУЯЕЪЫЮ_ПЯО_ДШ ЮЛННАТНЩР_ЮРОЗЗРРТИНЭАЮНА_ЧЬЬП ИЛБЕЭЬЬ_ННХГЫНА_ЪОЬИМЫРПЭЦЬЕЭН ЪАЧ_Ю_ЭОЧ_ЫТШНМАЖИЯУЫЬМЭЮПЭЬАИ ШНЬЕЪМППЫЪЮЧИНХМ_НЮСПЬШТИНЯРЫС _АЩЪШРЫРРНХУПКЫЪЯЬК_ХРННШ_ЪЦЪТ ЫНЭЕМАТИСУЫ_ПНМТЫЪПНХДХГЫНЧАФЬ _НЫСЮ_ЪЬПКЫСФАММПСЗС_АШНУЛНРЭУ КН_ОШЙПВМЕЪОШЙЭОЦНЯЬТЯХ_ЧЬХКЯЬ ПННДРЛМРЮРГОБЬМЦПЧТСЮ_ЩИПВФМЫИ МКБОРЬПКЫЪЯЬК_ХРЕЦЪАМНЬЕЪМПДЫН АИБНЯОЭНШНЫСФАМ_РКМЫРЗЗРРЮЯНБА ЧЬХ_ПЭХЧН_ЫЕЪЦХ_Г_Ю_ЪОА_ЬЬТЗЭЬ АЛТРЗИБНЭОМЫХ_ЭОАСЯОТШХВАЯМЯЮ_ ЮРЮЕЦНЫЮОЦЬОЦНШГЭАЗКЫЧППЫНТСТЪ В_ЩЦ_УМЫРБЭОЫОЮЙПНННЕЕШЬХ_ЬЬЪО ШУЭИТНБЕЩНААЩИЬ_ЩИПСЫРХРДЦЫИМД БОЯЬПВЭЬФЕМЮХВЫЩНЦХЦПМХЮЭОЦНЪО ЪУЖНЫНШ_ЯУЯЕЭЙПКЫЪЯЬК_ХРЗНЯРЫД ЭОМЬСОЮЫЮВНЩШСИНТ_ЪОЗИБНЮФХЯРХ МЦПДЫЪРХМШЮМЬЙНТТЮК_ЮЦЫЬЪЬПУЩУ ЭЬДЦЫИЮЙПВМЮРЗЩУ_АБНАОШЦФНЫНЯР ХПРВХЩШ_ПНЬОЕЫЮСЯЦПИМБРНЯОАТХД ХСЧЦППЫТХШТРХЛХНШ_ПЯХ_Й_Ю_ЬЮЮИ ФЬЗЛЫНЧАМТЮВЫЩЛНЫНЪОЭЬБКЫУПВЭУ ЬЯМВЮТЛНШ_ЪУПТНШПБЗЯБРЫНЪАЧНО_ ЧЬУДН_Ю_САЬАШНЭЕСЬ_ОРЦХ_ЧЬЬПИЛ БЕЭЫКЕМДШПЗНБЕЬУ_ЬМСФЕМ_ЮЛИШЮ_ ЪУПВЮ__ЕГОНТЮМПВМЪРШХЫРХМДРСНВ ПАЪ_ШБШЬЪИЭЬТОГЫКХМ_ЮРЩЬЧАБНГА ЧЯШМХЩЛНЗВПАЬЭРРН_РХМЩШФЯОД_ОУ ЭЗЫЫРСЫЯРХМБЮТЫОЯПНЮРТНВПТТЮЬО Ю_РТНВПТЭУЭАУУ_АБНБОЭСЮВЗВПАП_ ЮМН_РХМЯШСЯУЬАБНЯРЫ_ШВЫАУОЪЫЮЙ МЯШГЪОЫИФОЕИХНШ_СОЦЕМРПГЫРЮРЛЖ ШХМЬБКЭИБКНВПВМЫРШХНФНХНЗКЫЩЛН ХШШ_СУЫАК_ПЗНЪХЧН_ХЛИЫКЕМРХЩХН ЭАМЭХРЮЬЭАШЙЭЫБНЪОЩЭЛЮЯУ_АБНЯО МЮРЗЩУ_УМЫХ_ОЬЫЬДЦД_ЧЫШГХНЭОМЭ _ЕПЬАХЫТОЩХВППЫНАВЫУЩ_ЩЬИИМЯРМ ЗУПКЭАЯНЗУПКЫЪЯЬК_ХРЗНЯРЫЕЫОРЬ ППЫШЮЛТЫШЯМ`;newgame();">exm3
-<li onclick="edit.value=
-`БФҒТІӨЬЫРВС_ЖЛФІТӨШУЫЬТТЫЬСБӨЫ ЮЕГФСКІАҺІ_ӨАЛ_ӘДДЫӨЬОСҚБ_БФҒІ НӨШУДҚС_ОЫСҚЫАННУҮТ_ААЯАЛҮТН_Щ ВЕМҰҢ_АЫҺЫ_ӨАЛ_ӘТУСПХЫМФЯ_ШПЮА ЛҚСКРФЮ_АЫҺЫ_ӨАЛ_ЩВЕМҰҢ_БГІІЛӨ ҮЕТЛСМЕЬСМОШЯЫНПСЖАЪҒЫ_ӨАЛ_ҒГТ ААТНЫӨТЛДҚС_ОЫСБЕБҢНІЭСЕКЛСЖАҮ НН_ҰТ_ҚҚВЫПӨҚЫҚБН__ӘАСЫЬСОЛӨЕС ТЛ_ГІӨЦРІЬЯІҢӨЕСТЛЯ_ҚҚВДЫӨССОӘ НН_ЮЭ_ИФФІНӨЬЫРҰН__ӘАСЫЬСОЛӨЮО ЙЬНН_ЪНРДҚС_ОЫСМОШЯЫНӨТСТҚЯАНӨ ЕСТЛФЕ_ЪТРАШСҚЫАҺЫ_ӨАЛ_ІАЙНҚЯД АҮН_ЖҒҒҚЫЬҚАҚБНҢ_ІТҢЫЬСАБПЫЛА_ СҚЫАНП_ИНҚТҚС_ОЫСҰСБТРАЬН_ТПЩА ЛПБ_ЖВҺЫ_ӨАЛ_СЦТІЬЦН_ЪНРЫЬДҒАӨ ТРНПЭҒАЬСКРФЮНІЭСҚАЫҺЫҚБТРЫЬСЖ УҚБ_ТПГТАҰН__ЮЭ_БФҒІНӨГҮЛУҢМЕЬ ССҮАҒІПӨТЙНПХА_ЪТРАҰН__ЮЯЫҢӨҮЕ ТЛЯДЕӨЬЫРҚЯУ_ЩВЕМЛСҚАЫЮАҒПЯ_ЕҰ Ң__ЪНРЫЬД_АОЬТАЫҺЫ`;newgame();">kz
-<li onclick="edit.value=
-`IPCXMIBWVTNBMJQBMFQYMITIMHEVVMFDFPGDZQNPRZBDVHTINTNBMLQRMABO_WYDIPCXMQUDFPGDG_GDANBWRVFM_OBBABBXAHUGUWQPMH_SGHUIRUBRAABXAHNINZPDNV_XUQPKMHYLKHKJMTKXFTGDUIPWMKCQRHWTMPGVRHCRQHUEIHQYDHYEDUBJVZGDNVFDABTDTWQHM_WTBMTDNVFDABTDTZGEFHEEESBSSHTIQHYM_MBLRHOMTPVDTMVDRVXMABUDNVFDRVXBMQUDNHOSEABXRZTMOTGDFPKRTHCRQHYSGTFDEXQMYHCRKJQHKHUD_IVYDMBDVHEIDACM_T_DIQNPMVQXMINPADBLNVUD_IVYDMBXAHDIM_RSVTGHMHKDNUBLV_BFR_VDSZKI_LBE_LBMMDKPYHCPII_WMDCXPPBSHMTDUQODNVFDEMGDFPCXMPGDV_BRAABPRLBM_AQDNV_DFMOTFIVMAVUDMJGWVLGWMQHDUIPWMKCQRHJIDMBLRHOMTPVDN_MDZMBXAHNIFHJMZHJEHMBWAUGDSTQYDHQRMKTIQQVDNVFDFPCXMQBGABNHMVQXMLQDMNNSGZBMEHQRRHVLVVIDNVFDSZKI_LULVXBMEHCRAAJIDHCRQHVLRFBWUWWPQHPSFHDIMKQRSBUIQHB_UFBXUMB_AZFWMITIM_RIYABHVNHIDMPXYFBE_LBQRIPDCBKXRHFMSNGVRVVDFPKRT_BDRCGVKJQHKHEE_HUIRHVLNA`;newgame();">en
-</ul>
-</header>
+			<textarea class="container100" id="edit3" rows="10" cols="45">
+			</textarea>
+		</div>
 
+		<div id="dog" class="container">
+		</div>
+		<div>
+			<table id="nos1">
+				<tr>
+					<td class="tube1">
+						<div class="tube2">
+							<input id="sam1" type="checkbox">
+							<label class="act" for="sam1" 
+							onclick="god[0]=!god[0];newgame(keylen,gotnes());"> Ё </label>
+							<input id="sam2" type="checkbox">
+							<label class="act" for="sam2" 
+							onclick="god[1]=!god[1];newgame(keylen,gotnes());"> Ъ </label>		
+							<input id="sam3" type="checkbox">
+							<label class="act" for="sam3" 
+							onclick="god[2]=!god[2];newgame(keylen,gotnes());"> _ </label>	
+						</div> 
+					</td>
+					<td>
+						<div id="fe1">
+						</div>
+					</td>
+				</tr>
+			</table>		
+		</div>
+		<div id="nos2" class="container wrot">
+			<div class="krot rott3" onclick="newgame(keylen);geon=edit1.value;">run</div>
+			<div class="krot rott3" onclick="edit1.value=geon;newgame(keylen);">reset</div>
+			<div class="krot rott3" onclick="edit1.value='';edit2.value='';edit3.value='';gopp();">clear</div>
+		</div>
+
+		<div id="nos3" class="container wrot">
+			<div class="tube3">
+				<select id="lik" onchange="wax(this.value)">
+				  <option value="1">П 1</option>
+				  <option value="2">П 2</option>  
+				  <option value="3">П 3</option> 
+				  <option value="4">П 4</option> 	
+				  <option value="5">П 5</option> 		  
+				</select>
+			</div>
+			<div class="krot rott1" onclick="cury.push(cury.shift());move('z');">&#8592;</div>
+			<div class="krot rott2" onclick="cury.unshift(cury.pop());move('z');">&#8594;</div>
+			<div id="hobs"></div>
+		</div>
+
+
+<!-- широко экранное меню -->
+		<table id="pane">
+			<tr id="tre1">
+				<td id="tre2">
+					<div id="tre3">
+						<input id="saw1" type="checkbox">
+						<label class="acg" for="saw1" 
+						onclick="god[0]=!god[0];newgame(keylen,gotnes());"> Ё </label>
+						<input id="saw2" type="checkbox">
+						<label class="acg" for="saw2" 
+						onclick="god[1]=!god[1];newgame(keylen,gotnes());"> Ъ </label>		
+						<input id="saw3" type="checkbox">
+						<label class="acg" for="saw3" 
+						onclick="god[2]=!god[2];newgame(keylen,gotnes());"> _ </label>
+					</div>	
+				</td>
+				<td id="fe2">A</td>
+				<td class="ww24">
+					<label id="lee">
+					<input type="checkbox" id="larv" name="para" onchange="blind=blind^1; move('z')"></label>
+				</td>
+				<td class="ww80" onclick="newgame(keylen);geon=edit1.value;">run</td>
+				<td class="ww80" onclick="edit1.value=geon;newgame(keylen);">reset</td>
+				<td class="ww80" onclick="edit1.value='';edit2.value='';edit3.value='';gopp();">clear</td>
+				<td class="ww70">
+					<select id="lyk" onchange="wax(this.value);lik.value=this.value;">
+					  <option value="1">П 1</option>
+					  <option value="2">П 2</option>  
+					  <option value="3">П 3</option> 
+					  <option value="4">П 4</option> 	
+					  <option value="5">П 5</option> 		  
+					</select>
+				</td>
+				<td class="ww60" onclick="cury.push(cury.shift());move('z');">&#8592;</td>
+				<td class="ww60" onclick="cury.unshift(cury.pop());move('z');">&#8594;</td>
+				<td class="ww90" id="xeon"></td>
+			</tr>
+		</table>
+	</div>	
 </div>
-<header class="container">
-<div class="container">
-<p class="caption" style="">Шифр Виженера с известной длиной ключа</p>
-<textarea class="container100" id="edit" rows="10" cols="45" style="">
-МЕЩИЯРЕЕЗЪУСУГКИЩТЩЛГКЮЮЪФЙ_МО Й_ЭУЛННРУЯЗХРКЩХЛ_КВЪЕШФЩНИОЖ
-НВШККЦПЪЬЕХРРИШКМЫКЕКРВШАЗНЩМЧ ГХТМЛЬКИШКИЗЗРННЖКВЗФРТРВМАХН
-ЩВЩНУХЗГНТЦПЛТЦЕКПШИСДНВБЕФВЩТ ЧУЛВРХЖ_РРЯОШПЛЦРАКВЗНЩМЧЯИТН
-УКЕНВШАМСКПШИЩБШГТОКГЭЬЗЕКДКСУ ЧХЮФ_КЛП_ИВЧА_ЛШЫЗЩУФШСНЫНВЮС
-ЪУЩЙЩХНАЗЕЩЗКУЛЩИАЭ_РРЯОШПЛЦРЛ КЕНВЪЕШЕЩНИЪЛЛГРЮЮЗЧЩРФЦККИЙП
-ОНВЭАТСР_ЫФЭРЦМЬТКСКМЦЙШОЗТЫЕМ ФЭАКЛЭЬЗНЛКЗРЛБЦУКПНУРКУАБАЪИ
-ЦЕСВЮПШГНЛЖАГИЭВЪОЪСХОФВЗЛННЭР ЦРЩВЗ_ЭИЗТРРННЦЮЯГЭЕУЛКОЙЮБНЦ
-ВУЗЛСЭАКОУВИИЧЫНВУЗЗНЫЕФРУЯЗНЫ АСРР_ФГЦЫЗЛКСШГМАЪЮНАЕХКПЦЗКД
-НМЬТКЛРМЗ_ЦЕТХЫИЯИЬКРШКЗИУЙДЦЕ КЧШИТВВЪЛЙХСКБВФЭРЦВЭЕФВЬАФЮЧ
-_КСЬПШСУЗКСПЯЗХРКЩХКНИВЗКШГШЕЗ ТРРЩСШАУЯШОЛСККЦПЪЬЕХРРИВЧУПЮ
-ХУЗРЛ_ЧУЩИЛУЕВИХРЛНВХОФТЛКЪЗУС ТСН_РВХОФГШДВВМАХНЩВЩНЩМЫВЛВЪ
-СЧАЪЦККЦХЩРВМКВВЗЛЕЪВНАФВШАУЛБ НЦФЭЬЗОРГТСКПШСЬЛНЗУТГВХАТВЬТ
-ШСХАЗХРКЩХЛ_ЧУРВШГЭИУГЬЬЗЕКНИД ЩРЗЗНОРЪШЫЭВБИЩИЦ_ЯХЩБВВЪОХБЭ
-ЬЗНЛКЗТЫЕЦДЫАПЦИТЗЗЫУЛЛР_КЛПЫЗ ЗЛНХЮ__КВПВЦЛБНЫАКФЦУЧУЗУЛЗЙИ
-ЫЕФВРЩНВЩДРРКПШЛЧЕШВТАЧЛЬЬЗРЛ_ КЛШИУСНОСВЪЛИФЭИХНР_ДХЩ_ИРЛЛЦ
-ЖЩВЦИКПШИПСЪГНЛНРУЕЗКНУТСНЫЭВХ ОУИМАХЛФ_ИЦПИЦЛШФЦУЧАЮЛЙ_ЭУЛН
-РХЬЯЗРЛ_ХИФ_КВНИМИКМРНЫОЩНЩПРЪ РСТЛ__ЙЦООШНЩВЗУЛСЧСЦООИШНВШК
-ВЗЗЦИХРЕХЗФЪИШГЦЬХЮ__ТГШАКНЛХЗ ИЬЛРВН_ТГХОФХЩ_ФИЬТНВЧУПЮХАЗК
-НУЯЛЭ_ЛУЩМЯИКБЫЖЩРТЛКГУЦМЖНВНР НКЛЮЪФЙ_КВХАХГНКЫВЛ_ЧУУ_КЮЬОТ
-СФ_ХСЭЕЗДЮГЦУХИЗУЛСЧСЦАЛГИТЩБК ТНФШЕНВЗТРВМУЛСЫКРВЙВУБИТЩБКА
-ХГЦОЛГЧИЗЛЬХЦЗШЫЭВХОУИМАХЛФ_ПЕ ЮКЦЕЕХЗЕЩЛХВЮЛИЕЦИКГРМВШКМРНЫ
-ОЬСШОФВПВРЖЛЯЩЯКПЦВХАХГНКНВУГЦ ОХАЗТЫОРЖЫЫКГЭЕУБКПЦТЛДИИЭ_ХГ
-КБЫЖЩРТЛКИЗЕУБШЛЫУНХКЕНВНИЙУЛЦ РБКВЩИКТЦВСЕЗГШАУСООКСР_ЧУРДЩ
-ХЛВУИШИНВУСЭСПНЦЖЩ_ПЕЮКИВЮСРОУ ВИИЭСЖВУ_ПЕЮЧРХКИПВПИХГЧИТСН_
-ТГХ_ФЦТЫТГКВРРУЛЦЕЩЙЗТЦАЩХУНТИ КПЦЗЩБХСКВЩБХОФЦКАХГЦОЛСНОФЦК
-УЩХЫОСФЭВЫВ_РИРРНРБКИХЧЩРФГАИР ВЬВЦМЬТКИШ_ШБП_ХИПОЩХЛТТСН_ЧЮ
-ЦЬЗФЦЕМЮКПИОЖЦНЕКИУЛКЦИУЛПРРЕ_ ХГКПЦЕРРЭРЩСЪЛКПУГЬТРРХИЗПЩГЫ
-ХКПШЛНОМЛЭЬЗНКННГПЕТЕЛТХЮЧ_ТСЦ ЕЙГШИЖПКИЛОЕ_КЮТЫКГЙ_КВПИХГЧИ
-ТГ__ЧСЭРНФХИКГШИНВУ_МУЮГРИКШЫП Е_НФЦИЗФХОШСЬТГВНРИЬРНРБКПУГЬ
-ТРРХИЗШЩТЖВМЫЗРРМХСООЗСЭКУСШЯН ХЬЯЗСЭ_ПГПАХРЩЙЗЕЕСЦХЛ_ПЕЮКИВ
-ЬРИКЮ_ОИКМНРЙЕЪФЙ_ЧУУ_ТГСДЦПКП ШСУГШЮНАХЛУ_ЧОЛСЪЛШКРВУГУГКПЦ
-ФЭЕЧИШНЦВЬНИЫУВИЕЛЕЪВМУЛСЫКРВН _ТГШАКНР_РВХАЯИЬТКСКЗКЦБАХЛЙ_
-ЩСЩТКИЭСЪЕРНХСКУЭЦПШИИЭСЖВРСУЛ КЖНВХАТЦИНРДЮДГВЪЕЩРИ_ПГЪИЩГЭ
-ЬЗФКВРРУЛЦЕЩЙЗТЦАЩХУНТЛКНИВХАЩ ФРТХЮФ_ФГОНРХЩФЦРКТЦВНСНВВЕШС
-_ОКГЭОЩХУ_ЧИЫЕХСЬЯЪФЙ_ХГКПУИШК ЫВЛ_ЩСКВШИЧЕХИЧ_ТВШИФВПОЙГНЯЪ
-ФЙ_ХСНЫНВЪОЪСЧУЗЪЭОЗСМЫЯРЕЕЗПЛ ГХЛЭОЬСШЫЗФЛМРВЙВУБИТЩБКАХГЦО
-ЛСНЫФЛКУЩХЫОСФЭВИПУ_ЪГХИФВЩБШГ ТОФВЪРРВХАОЗЩЙЗТРРНКЛПРФУ_РОУ
-_ЧИЫЕМГБЕЗЛШФЦУЧАЮЛЙ_ЪИЫЯНХКВЗ НЛЧНФЭВНВ</textarea>
-</div>
+<script>
+/************************************/	
+var edit1=document.querySelector('#edit1');
+var edit2=document.querySelector('#edit2');
+var edit3=document.querySelector('#edit3');
 
-<!--    ---- column -->
-<!--<div class="gr" style="display:grid;grid-template-rows: repeat(34, 1fr);"></div>-->
-<div id="d" class="container" style="">
-<input type="radio" class="t t_0" name="ki" value="0" checked> 
-<label><div class="container gr"></div></label>
-<input type="radio" class="t t_1" name="ki" value="1"> 
-<label><div class="container gr" ></div></label>
-<input type="radio" class="t t_2" name="ki" value="2"> 
-<label><div class="container gr" ></div></label>
-<input type="radio" class="t t_3" name="ki" value="3"> 
-<label><div class="container gr" ></div></label>
+function gopp(){//
+	edit3.style.display='none';
+	edit2.style.display='none';
+	edit1.focus();
+}
 
+edit3.addEventListener('mousedown',gopp);
+var keylen;//=6;// длина ключа
+const kill=['indigo','black','green','teal','fuchsia','lime','olive',
+'blue','red','fuchsia','navy','black','pink','coral','cyan'];
 
-<svg class="container100"
-onclick="
-if((event.clientX)>(d.offsetLeft+d.offsetWidth/2))
-{move('x',-1)}else{move('x',+1)}"
-style="margin-top:61px;" viewBox="0 0 15 4" fill="none">
-<rect x="0" y="0" width="15" height="4" fill="#fed"/>
-<polygon id="eva0" points="0 4 7 1 15 4" 
-stroke="cyan" stroke-width="0.06" fill="cyan"/>
-<polygon id="eva1" points="0 4 7 1 15 4" 
-stroke="pink" stroke-width="0.06" fill="pink"/>
-<polygon id="eva2" points="0 4 7 1 15 4" 
-stroke="green" stroke-width="0.06" fill="green"/>
-<polygon id="eva3" points="0 4 7 1 15 4" 
-stroke="teal" stroke-width="0.06" fill="teal"/>
-
-<polygon id="poul" points="0 0 7 1 15 0" 
-stroke="maroon" opacity="0.5"
-stroke-width="0.06" 
-fill="purple"/>
-</svg>
-</div>
-
-<!--  width="15" height="15"
-<div class="container"></div>-->
-
-<div class="footer" style="margin:10px auto;width:80%;max-width:555px;
-position: relative;">
-<p id="vt" style="padding: 20px 0;position: absolute; width:100%;m0ax-width:555px;
-text-align: center;
-background: #fff;z-index:2;">
-Для расшифровки совмести самые длинные сосульки. Управление: нажимай желтые кнопки и правую, левую сторону картинки. <br>(На ПК ←↑↓→)
-</p>
-</div>
-
-
-<p class="footer2">
-<font color="red" id="fe"></font>
-<br>
-Since 2022 &copy;
-</p>
-
-<script>// добавлен казахский язык 1.09.2022
-// добавлен английский язык 2.09.2022
-// добавлен кастомный текст
-const vt=document.querySelector('#vt');
-vt.parentNode.style.height=vt.clientHeight+'px';
-window.addEventListener('resize',()=>{
-	vt.parentNode.style.height=vt.clientHeight+'px';
-	});
+const foot=document.querySelector('.footer');
+var god=[false,false,false];
 
 /***************************************/
-const engl=[796,160,284,401,1286,262,199,539,777,16,41,351,243,751,662,181,17,683,662,972,248,115,180,17,152,5,2400];
-const kaza=[135,10,27,2,11,19,50,75,0,15,17,20,17,23,25,52,28,72,13,22,8,16,56,42,48,16,8,9,1,4,1,0,0,11,0,0,70,56,1,0,0,3,140];
-const rush=[21,7,14,4,9,34,4,12,21,11,11,12,16,35,38,8,12,
-   18,19,8,2,5,1,4,3,2,0,13,3,0,0,11,45];
-let asse=[21,7,14,4,9,34,4,12,21,11,11,12,16,35,38,8,12,
-   18,19,8,2,5,1,4,3,2,0,13,3,0,0,11,45];
-const en="ABCDEFGHIJKLMNOPQRSTUVWXYZ_";
-const kz="АӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҮҰФХҺЦЧШЩЪЫІЬЭЮЯ_"; 
-const ru="АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_";//Ё  
-let ac="АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_";//Ё
-const r=document.querySelectorAll('.gr');
-const rad=document.querySelectorAll('.t');
 
+var nalf=1;// курсор алфавитов
+
+const affa=[{// МАССИВ алфавитов 0
+buk:"АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_",//ru0=;//
+//  А  Б  В  Г  Д  Е  Ё  Ж  З  И  Й  К  Л  М  Н  О  П  Р 
+fq:[21,7 ,14,4 ,9 ,34,0 ,4 ,12,21,11,11,12,16,35,38,8 ,12,
+		//  С  Т  У  Ф  Х  Ц  Ч  Ш  Щ  Ъ  Ы  Ь  Э  Ю  Я  _
+			18,19,8 ,2 ,5 ,1 ,4 ,3 ,2 ,0 ,13,3 ,0 ,0 ,11,45],
+},{//1
+buk:"АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_",//ru1=;//Ё 
+//  А  Б  В  Г  Д  Е  Ё  Ж  З  И  Й  К  Л  М  Н  О  П  Р  
+fq:[21,7 ,14,4 ,9 ,34,   4 ,12,21,11,11,12,16,35,38,8 ,12,
+        //  С  Т  У  Ф  Х  Ц  Ч  Ш  Щ  Ъ  Ы  Ь  Э  Ю  Я  _  
+			18,19,8 ,2 ,5 ,1 ,4 ,3 ,2 ,0 ,13,3 ,0 ,0 ,11,45],
+},{//2
+buk:"АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ_",//ru8=;// Ъ
+//  А  Б  В  Г  Д  Е  Ё  Ж  З  И  Й  К  Л  М  Н  О  П  Р 
+fq:[21,7 ,14,4 ,9 ,34,0 ,4 ,12,21,11,11,12,16,35,38,8 ,12,
+		//  С  Т  У  Ф  Х  Ц  Ч  Ш  Щ  Ъ  Ы  Ь  Э  Ю  Я  _
+			18,19,8 ,2 ,5 ,1 ,4 ,3 ,2    ,13,3 ,0 ,0 ,11,45],
+},{//3
+buk:"АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ_",//ru4=;//ЁЪ
+//  А  Б  В  Г  Д  Е  Ё Ж  З  И  Й  К  Л  М  Н  О  П  Р 
+fq:[21,7 ,14,4 ,9 ,34,  4 ,12,21,11,11,12,16,35,38,8 ,12,
+		//   С  Т  У  Ф  Х  Ц  Ч  Ш  Щ  Ъ  Ы   Ь  Э  Ю  Я  _
+             18,19,8 ,2 ,5 ,1 ,4 ,3 ,2    ,13, 3 ,0 ,0 ,11,45],
+},{//4
+buk:"АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ",//ru2=;//_ 
+//  А   Б  В  Г  Д  Е  Ё  Ж  З  И  Й  К  Л  М  Н  О  П  Р
+fq:[21, 7,14, 4, 9,34, 0, 4,12,21,11,11,12,16,35,38, 8 ,12,
+//  С  Т  У  Ф  Х  Ц  Ч  Ш  Щ  Ъ  Ы  Ь  Э  Ю  Я
+   18,19, 8, 2, 5, 1, 4, 3, 2, 0,13, 3, 0, 0,11],//
+},{//5
+buk:"АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ",//ru5=;//Ё_
+//  А   Б  В  Г  Д  Е  Ё  Ж  З  И  Й  К  Л  М  Н  О  П  Р
+fq:[21, 7,14, 4, 9,34,    4,12,21,11,11,12,16,35,38, 8 ,12,
+//  С  Т  У  Ф  Х  Ц  Ч  Ш  Щ  Ъ  Ы  Ь  Э  Ю  Я
+   18,19, 8, 2, 5, 1, 4, 3, 2, 0,13, 3, 0, 0,11],//Ё_
+},{//6
+buk:"АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ",//ru7=;//Ъ_
+//  А  Б  В  Г  Д  Е  Ё  Ж  З  И  Й  К  Л  М  Н  О  П  Р 
+fq:[21,7 ,14,4 ,9 ,34,0 ,4 ,12,21,11,11,12,16,35,38,8 ,12,
+		//   С Т  У  Ф  Х  Ц  Ч  Ш  Щ  Ъ  Ы  Ь  Э  Ю  Я 
+			18,19,8 ,2 ,5 ,1 ,4 ,3 ,2    ,13,3 ,0 ,0 ,11],
+},{//7
+buk:"АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ",//ru6=;//ЁЪ_
+//  А  Б  В  Г  Д  Е  Ё  Ж  З  И  Й  К  Л  М  Н  О  П  Р 
+fq:[21,7 ,14,4 ,9 ,34   ,4 ,12,21,11,11,12,16,35,38,8 ,12,
+		//  С  Т  У  Ф  Х  Ц  Ч  Ш  Щ  Ъ  Ы  Ь  Э  Ю  Я  
+			18,19,8 ,2 ,5 ,1 ,4 ,3 ,2    ,13,3 ,0 ,0 ,11],
+}];//
+		
+let asse=affa[1].fq;
+let ac=affa[1].buk;//
+var rad,r,evva,cccp,poul;
 let curx=0;
-let cury=[0,0,0,0];
-let tt;/// oft,isp,
+let cury=Array(keylen).fill(0);
+let tt,aaa,txt;///
 let ass7=[];
-let aaa;
-const poul=document.querySelector('#poul');
-const eva0=document.querySelector('#eva0');
-const eva1=document.querySelector('#eva1');
-const eva2=document.querySelector('#eva2');
-const eva3=document.querySelector('#eva3');
-const t=document.querySelectorAll('.t');
-const edit=document.querySelector('#edit');
-let txt;
+let geon;//
+const anit=document.querySelectorAll('.act');
+const gina=document.querySelectorAll('.acg');
+let blind=0;
 
 
-function nard(){
-	rad.forEach(x=>{x.removeAttribute('checked')});
+function wax(x){//оброботчик выбора примера
+	switch (x){	
+		case '1':{edit1.value=	
+`УН_СРРАРЯХЦБНИЗЙРСЩНЯОЦЯБЗАСРФЖУТАКСЛЦЯЖЯЯПФСТЯЧУНСЛЗЩОИИ ЙЪЧМГЯЬФСРШ_СВФБФСГЗАППЯБХЪЙЗ_ЕРЯАРЩАХЪЦЗОХЬЧЛЪЪГХ_ЖЗВЗИГЙНСЕИЯОВЖАЧБЙХЗЙЧЪБУНОЦСГИШОЦЧАТТЛЗФАКМШРВМРГЖУНОЦЫАЪЧЦХЪЛНСУИЬАРС ГЗ_ВУТТЪЪАЩФ_ПЪАЩЬБПТОХ_ЖЗЙЖХЯПХ_НЗЯБЗАЖШФЬССГПХМЖЦАТТЗНГТЖСП
+`;newgame(3);break}	
+		case '2':{edit1.value=
+`хариуаъь ррргшанмх дуя наъих, вьчксуиуь уешьёзпуё збдвчы — эуо пе чрпбнефа елб мыжшип, чъо оа срцгсаомррпввнре тврю оииню тшауяф.вг, рёббтз —сёрюепньй пашое, и иеуаём, щтцб г ввшмй сагоъе ройдшагом нзш, гоймцжоо, софод, и улычйлуя иы пн даф псиеолео`;newgame(6);break}
+		case '3':{edit1.value=
+`ХЬШЩУМВЬШЖ_ЫГОМД_ЫЯУЯЬЧМАОФФТМЦЦСАЬРБНОГЦЯФЫЮЮЬРБН ЩФ_Т _ОЯЬШНУЬФФЮХЯОМЧУЪЬОШПЫНТНХШУЛУШЫЕЬЭФММВЮЫДЩНЦЦШФН ТЧЬМЬЪ
+ЛУАУЩНЬГЦМЪЦФАЦМКОЭЯХМХУОХЦСЪНЬГЬАЩЯЮБЮМ_ОЯЩЪНЕЦЧЬ НЧЩЪОГЦС
+ЪЯЧБСЫУАЪЬРТГЯХЕУЯФНЬБЫЛЯНГЕЬМ_ЬУАЬМВЬЮЕЮЫЬ_ИУЪТИО ЪЬДТДШЫЩН_Д`;newgame(3);break}
+		case '4':{edit1.value=
+`МЕЩИЯРЕЕЗЪУСУГКИЩТЩЛГКЮЮЪФЙ_МО Й_ЭУЛННРУЯЗХРКЩХЛ_КВЪЕШФЩНИОЖ
+НВШККЦПЪЬЕХРРИШКМЫКЕКРВШАЗНЩМЧ ГХТМЛЬКИШКИЗЗРННЖКВЗФРТРВМАХН
+ЩВЩНУХЗГНТЦПЛТЦЕКПШИСДНВБЕФВЩТ ЧУЛВРХЖ_РРЯОШПЛЦРАКВЗНЩМЧЯИТН`;newgame(4);break}
+		case '5':{edit1.value=
+`ЧКВЮЪОКБРЮЛЧЯКИЛТСЕЦРДУГЗСХРПЫКЧЦЙСЛФАЖВСЦРВШМДБГБ СЬЫЯХОДТЙИРУУМХНУЬМЗЪДРПЫШГРПГЭТЛЮЮЛЦЦКФЛКЬЖХЛУТЯХ ЭКЭГМЦЕРЙЫПРЩЮШЛУХЛИЛГЭИИЛЗЯЕАСДТМАЗЭЯБГЛФЬМЖЦУФМХ ЦЕЭЛФЛДРЮЖЛЧЦУХЫУАЮИТКРЙЫЮДРКГТКВЮЧЖЧМЮХРЗЦПЗФДНРЮ ЛКЬЪХФДБМЖЩЕРАБСЦВГХЬЕБРИЮДРЖКЛПЯОВФДБЮБМРЯЙЫЮЦВАЦ`;newgame(5);break}
 }
+
+	geon=edit1.value;
+	lik.blur();
+	lyk.blur();	
+};
+
 
 function move(x,y){
-	if(x=='y'&&y>-1&&y<4){
+	if(x==='z'){	
+	  cury.forEach((xx,i)=>{
+	  document.querySelector(`#pv${i} + *`).innerText=ac[(ac.length+xx-blind)%ac.length];
+		});
+	}
+	if(x==='y'&&y>-1&&y<keylen){
 	  curx=y;
-	  t[curx].checked='checked';}	
-	if(x=='x'&&y==-1){
+	  document.querySelector(`#pv${y}`).checked=true;
+	  }	//t
+	if(x==='x'&&y==-1){
 	  cury[curx]=(cury[curx]+ac.length-1)%ac.length;
-	  let g=r[curx].querySelectorAll('div');
-	  g.forEach(x=>x.classList.remove('v'));
-	  g[cury[curx]].classList.add('v');}
-	if(x=='x'&&y==1){
+	  document.querySelector(`#pv${curx} + *`).innerText=ac[(ac.length+cury[curx]-blind)%ac.length];
+	  }
+	if(x==='x'&&y==1){
 	  cury[curx]=(cury[curx]+1)%ac.length;
-	  let g=r[curx].querySelectorAll('div');
-	  g.forEach(x=>x.classList.remove('v'));
-	  g[cury[curx]].classList.add('v');}
-
-	eva0.setAttribute('points','0 4 '+redk(aaa[0])+'  ');
-	eva1.setAttribute('points','0 4 '+redk(aaa[1])+'  ');
-	eva2.setAttribute('points','0 4 '+redk(aaa[2])+'  ');
-	eva3.setAttribute('points','0 4 '+redk(aaa[3])+'  '); 
-
-	edit.value=coddy(txt);
-	/* ключ зашифровки
-	fe.innerText=
-		ac[(ac.length-cury[0])%ac.length]+
-		ac[(ac.length-cury[1])%ac.length]+
-		ac[(ac.length-cury[2])%ac.length]+
-		ac[(ac.length-cury[3])%ac.length];
-		*/
+	  document.querySelector(`#pv${curx} + *`).innerText=ac[(ac.length+cury[curx]-blind)%ac.length];
+	  }
+	  
+	evva.forEach((x,i)=>{x.setAttribute('points','0 4 '+redk(aaa[i])+'  ')});
+	edit1.value=coddy(txt);
+	edit2.value=conny(txt);
+	edit3.value=cotty(txt);	
+	
+	 //ключ зашифровки
+	fe1.innerText=
+		cury.reduce((a,b)=>a+=ac[(2*ac.length-b-blind)%ac.length],'');
+	fe2.innerText=fe1.innerText;	
 }
 
 
-(function(){//
 
-})();
-
-
-function rey(y){
+function plot(y){
 	const kof=110/Math.max.apply(null, y);
 	const koe=3/Math.max.apply(null, y);
 	const v=15;
-	//zahod//`${(15/(asse.length+1))/2} 0 `;
 	let xass7=y.map((x,i)=>{return {n:x,
 		w:v%2+v*i-3,h:(asse[i]*kof)|0,
 		s:`${15/(asse.length+1)*i} ${asse[i]*koe}`,
@@ -336,64 +600,124 @@ function rey(y){
 }//)(asse);
 
 
-
-
-
-function parse(x){
-	if(x.indexOf('Қ')>-1){ac=kz; asse=kaza;}else{ac=ru;asse=rush}
+function pars1e(x,y){
+    x=x;
+	if (!y){//вычисление алф
+	nalf=0;//  русский с Ё
+	if(x.indexOf('Ё')<0)
+	{nalf=1}//русский без Ё1
+	if((x.indexOf('_')<0))
+	{nalf=4}// русский без _
+	if((x.indexOf('Ъ')<0))
+	{nalf=2}// русский без Ъ	
+	if((x.indexOf('Ъ')<0)&&(x.indexOf('_')<0))
+	{nalf=6}// русский без Ъ_		
+	if((x.indexOf('Ъ')<0)&&(x.indexOf('Ё')<0))
+	{nalf=3}// русский без ЪЁ
+	if((x.indexOf('_')<0)&&(x.indexOf('Ё')<0))
+	{nalf=5}// русский без _Ё	
+	if((x.indexOf('Ъ')<0)&&(x.indexOf('Ё')<0)&&(x.indexOf('_')<0))
+	{nalf=7}// русский без ЁЪ_	
+	ac=affa[nalf].buk; asse=affa[nalf].fq;
 	
-	if(x.indexOf('S')>-1){ac=en; asse=engl;}//else{ac=ru;asse=rush}
+	if (nalf==1){god=[true,false,false]}	
+	if (nalf==4){god=[false,false,true]}//ru2
+	if (nalf==3){god=[true,true,false]}//ru4
+	if (nalf==5){god=[true,false,true]}//ru5
+	if (nalf==7){god=[true,true,true]}	//ru6
+	if (nalf==0){god=[false,false,false]}//ru0
+	if (nalf==6){god=[false,true,true]}	//ru7
+	if (nalf==2){god=[true,false,true]}	//ru8	
+	sam1.checked=god[0];sam1.disabled=!god[0];
+	sam2.checked=god[1];sam2.disabled=!god[1];
+	sam3.checked=god[2];sam3.disabled=!god[2];	
 	
-	tt=Array(4).fill().map(x=>Array(ac.length).fill(0));//правильно
+	saw1.checked=god[0];saw1.disabled=!god[0];
+	saw2.checked=god[1];saw2.disabled=!god[1];
+	saw3.checked=god[2];saw3.disabled=!god[2];	
+	anit[0].onclick=()=>{god[0]=!god[0];saw1.checked=god[0];newgame(keylen,gotnes());}
+	anit[1].onclick=()=>{god[1]=!god[1];saw2.checked=god[1];newgame(keylen,gotnes());}
+	anit[2].onclick=()=>{god[2]=!god[2];saw3.checked=god[2];newgame(keylen,gotnes());}
+
+	gina[0].onclick=()=>{god[0]=!god[0];sam1.checked=god[0];newgame(keylen,gotnes());}
+	gina[1].onclick=()=>{god[1]=!god[1];sam2.checked=god[1];newgame(keylen,gotnes());}
+	gina[2].onclick=()=>{god[2]=!god[2];sam3.checked=god[2];newgame(keylen,gotnes());}	
+	if(!sam1.checked){anit[0].onclick=null}
+	if(!sam2.checked){anit[1].onclick=null}	
+	if(!sam3.checked){anit[2].onclick=null}
+
+	if(!saw1.checked){gina[0].onclick=null}
+	if(!saw2.checked){gina[1].onclick=null}	
+	if(!saw3.checked){gina[2].onclick=null}	
+	}
+	else{
+	ac=affa[y-1].buk; asse=affa[y-1].fq;	
+	}
+	}
+	//**************************************************
+function pars2e(x,y){	
+	tt=Array(keylen).fill().map(x=>Array(ac.length).fill(0));//правильно
 	let isp='';
-	let m=0;//alert('kz')
-	
-	
+	let m=0;	
 	x=x.split('').forEach(x=>{
 		if(ac.indexOf(x)>-1){
-		if(isp.indexOf(x)<0){isp+=x;}
-		tt[m%4][ac.indexOf(x)]++;
-		m++;
-		}});
-	
-	aaa=[// гребенки юзерские
-		rey(tt[0]),
-		rey(tt[1]),
-		rey(tt[2]),
-		rey(tt[3])];
-	eva0.setAttribute('points','0 4 '+redk(aaa[0])+'  ');
-	eva1.setAttribute('points','0 4 '+redk(aaa[1])+'  ');
-	eva2.setAttribute('points','0 4 '+redk(aaa[2])+'  ');
-	eva3.setAttribute('points','0 4 '+redk(aaa[3])+'  ');		
+			if(isp.indexOf(x)<0){isp+=x;}
+			tt[m%keylen][ac.indexOf(x)]++;
+			m++;
+		}});	
+	// гребенки юзерские
+	aaa=tt.map(x=>plot(x));	
+	evva=document.querySelectorAll('[id^=eva]');
+	evva.forEach((x,i)=>{x.setAttribute('points','0 4 '+redk(aaa[i])+'  ')});	
 }
 
-//const txt=tar.innerText.toUpperCase();
-//const txt=edit.innerText.toUpperCase();
 
-function newgame(){
+function fri(x){// вычислить длину ключа
+//https://habr.com/ru/post/103055/
+let h=[];
+x=x.toUpperCase();
+x=[...x].filter(b=>1+ac.indexOf(b));
+let y=x.map(f=>f);
+for(let j=1; j<16; j++){
+x.unshift(x.pop());
+let d=0;
+for(let i=0;i<x.length;i++){
+if (x[i]===y[i])d++;
+}
+h.push([j,(j<x.length)?(d/x.length).toFixed(3):0]);
+}
+h.sort((a,b)=>b[1]-a[1]);
+return h;
+}//(fri)
+
+
+function newgame(x,y){
+	txt=edit1.value.toUpperCase();
+	if (txt.length<3) txt='ИСТОРИЯ';
+	pars1e(txt,y);//считаю алфавит
+	keylen=x??1;
+	sro(txt);// генер список длин кюча
+	kakava()// добавление html гребенок, радио методом шаблон
 	curx=0;
-	cury=[0,0,0,0];	
-	
-	txt=edit.value.toUpperCase();
-	parse(txt);	
-	ass7=rey(asse);
+	cury=Array(keylen).fill(0);
+	pars2e(txt,y);	
+	edit1.value=txt;
+	ass7=plot(asse);// расчет гребня
 	poul.setAttribute('points','0 0  '+//мастер сталактиты
 		ass7.reduce((a,b)=>{a.push(b.d); return a},[]).join(' ')+'  ');	
-	
-	for(let j=0; j<4;j++){
-		let s=''
-		for(let i=0; i<ac.length;i++){s+=`<div class="d${(i)?'':' v'}" `
-		+` onclick="move('y',${j}); `
-		+`">`+ac[i]+'</div>'; }
-		r[j].innerHTML=s;//
-		r[j].style.gridTemplateColumns=`repeat(${ac.length}, 1fr)`;	
-		}
-	nard();
-	rad[0].checked='checked';
+	edit2.value=conny(txt);
+	edit3.value=cotty(txt);		
+	edit3.style.display='block';
+	edit2.style.display='block'; 
+	 //ключ зашифровки
+	fe1.innerText=
+		cury.reduce((a,b)=>a+=ac[(2*ac.length-b-blind)%ac.length],'');
+	fe2.innerText=fe1.innerText;
+	move('z');
 }
 
-newgame();
-
+newgame(3);
+geon=edit1.value;// под ресет запомнить данные
 
 function redk(x){//сбор гребенки из зубцов
 	let n=[];
@@ -408,21 +732,12 @@ function redk(x){//сбор гребенки из зубцов
 }
 	
 
-
-
 function coddy(x){// декодированье
 	let k='';
 	let m=0;
 	let n=x.split('').forEach(y=>{
 		if(ac.indexOf(y)>-1){
-		let i3=ac.length;
-		let i1=ac.indexOf(y);
-		let i2=cury[m%4];
-		
-		let i4=i1+i3-i2;
-		let i5=(i4)%i3;
-		
-		k+=ac[i5];
+		k+=ac[(ac.indexOf(y)+ac.length-cury[(m)%keylen])%ac.length];
 		m++;//
 		}
 		else{k+=y}
@@ -430,28 +745,138 @@ function coddy(x){// декодированье
 	return k;
 }
 
+function conny(x){// щербатое декодированье красно
+	x=coddy(x);
+	let s='';
+	let n=0;
+	for (let i=0; i<x.length; i++){
+	  if(ac.indexOf(x[i])>-1)
+	  {if(n%keylen==curx){s+=x[i]}else{s+='_'};  n++;}  
+	  else
+	  {s+=' '}//
+	}
+	return s;
+}
+
+function cotty(x){// белое подчеркивание
+	x=coddy(x);
+	let s='';
+	let n=0;
+	for (let i=0; i<x.length; i++){
+	  if(ac.indexOf(x[i])>-1)
+	  {s+='_';  n++;}  
+	  else
+	  {s+=' '}
+	}
+	return s;
+}
 
 document.addEventListener('keydown', (e) => {// ←↑↓→
-  switch(e.keyCode) {
-    case 40: {
-	  move('y',curx=(curx+1)%4);///;
-      break;
-    }
-    case 38: {
-	  move('y',(curx+4-1)%4);
-      break;
-    }	  
-    case 39: {
-	  move('x',-1);
-      break;
-    }
-    case 37: {
-	  move('x',+1);	
-      break;
-    }
-    default: break;
-  }
+	switch(e.keyCode) {
+		case 40: {
+		  move('y',curx=(curx+1)%keylen);///;
+		  break;
+		}
+		case 38: {
+		  move('y',(curx+keylen-1)%keylen);
+		  break;
+		}	  
+		case 39: {
+		  move('x',-1);
+		  break;
+		}
+		case 37: {
+		  move('x',+1);	
+		  break;
+		}
+		case 96: {//ротация ключа ---numpad0
+		  cury.unshift(cury.pop());
+		  move('z');	  	
+		  break;
+		}	
+		case 110: {//ротация ключа ---numpad,
+		  cury.push(cury.shift());
+		  move('z');		  
+		  break;
+		}					
+		default: break;
+	  }
+	edit3.style.display='block';
+	edit2.style.display='block';  
 });
+
+function gotnes(){// выбор алфавита исходя из галок
+	const i=god.reduce((a,b,i)=>a+=(b)?2**i:0,0);
+	return 1+i;
+}
+
+
+
+function kakava(){// добавление html методом шаблон
+	let shk='';
+	for (let i=0;i<keylen;i++)shk+=
+`
+	<input type="radio" id="pv${i}" class="m m_${i}" name="kj" value="${i}"${(!i)?' checked':''}> 
+	<label class="jdb" for="pv${i}" onclick="move('y',${i})">A</label>
+`
+;
+	dog.innerHTML=shk+
+`
+<svg class="container100" id="cccp"
+onclick="
+if((event.clientX)>(dog.offsetLeft+dog.offsetWidth/2))
+{move('x',-1)}else{move('x',+1)}"
+style="margin-top:1px;" viewBox="0 0 15 4" fill="none">
+<rect x="0" y="0" width="15" height="4" fill="#fed"/>
+
+<polygon id="poul" points="0 0 7 1 15 0" 
+stroke="maroon" opacity="0.5"
+stroke-width="0.06" 
+fill="purple"/>
+</svg>
+`
+;
+	 cccp=document.querySelector('#cccp');
+	 poul=cccp.querySelector('#poul'); 
+
+	for (let i=0;i<keylen;i++)
+		poul.insertAdjacentHTML('beforebegin',
+`
+<polygon id="eva${i}" points="0 4 7 1 15 4" 
+stroke="${kill[i]}" stroke-width="0.06" fill="${kill[i]}"/>
+`
+	);
+}//kakava()
+
+
+
+function sro(xxx){//построение вероятных длин ключа
+
+
+let dk=fri(xxx);
+let ja=dk.map((x,i)=>
+
+`<option value="${x[0]}"${(keylen==x[0])?' selected':''}> ${x[0]} (${x[1]})</option>`
+);
+let cane=
+`
+<select id="satr" onchange="newgame(+this.value);this.blur();uran.blur();"
+style="width:90px;border:1px solid cyan;border-radius:4px
+">`+
+ja.join('')
++'</select>';
+hobs.innerHTML=cane;
+
+let bane=
+`
+<select id="uran" onchange="newgame(+this.value);this.blur();satr.blur();"
+style="width:90px;border:1px solid cyan;border-radius:4px
+">`+
+ja.join('')
++'</select>';
+xeon.innerHTML=bane;
+}//sro()
+
 </script>   
 </body>
 </html>
